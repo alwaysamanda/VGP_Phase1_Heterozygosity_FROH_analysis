@@ -1,0 +1,353 @@
+#### SNAKEFILE FOR AUTOMATED PIPLELINE OF RUNNING HGDP ROH ANALYSES ####
+
+"""
+login to icelake node using login-icelake.hpc.cam.ac.uk
+start a screen terminal (screen -RD)
+make sure to use snakemake version 7.8.5
+
+check how many jobs are required AT EACH STAGE, this command also shows the shell commands it would use:
+- snakemake -n --printshellcmds -p
+
+to run locally use:
+    snakemake -s Snakefile_hgdp --touch
+    
+    --touch
+    --keep-going
+
+to run on slurm use:
+    conda activate snakemake && snakemake --executor slurm --jobs 30 --workflow-profile profiles -s Snakefile_hgdp
+
+Generate simplified plot to show rule flow with:
+    snakemake --executor slurm --workflow-profile profiles -s Snakefile_hgdp --jobs 10 --rulegraph | dot -Tpdf > dag.pdf
+Show full complicated path for each chromosome with:
+    snakemake --executor slurm --workflow-profile profiles -s Snakefile_hgdp --jobs 10 --dag | dot -Tpdf > dag_complex.pdf
+
+AUTHORS and UPDATES:
+Amanda Gardiner, 20260306
+UPDATES 20260318: Adding in code to calculate ROH in cM
+"""
+
+user = "ag2427"
+
+#### ---- Choose what parts of the code to run ---- ####
+bed_prep = 'yes'
+vcf_mask = 'yes'
+run_plink = 'no'
+plot_roh = 'yes'
+
+#### ---- Set Global Parameters ---- ####
+import datetime
+## Wildcards
+CHROMS = [str(i) for i in range(1, 23)]
+DATE = datetime.datetime.now().strftime("%Y-%m-%d")
+
+## Paths to dependent scripts
+FROH_CALC_PY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260310_hgdp_FROH_Calc.py"
+POP_ID_R="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260310_hgdp_pop_id.R"
+HULL_PLOT_R="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260319_HGDP_NROH_SROH.R"
+HEATMAP_PLOT_R="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260309_hgdp_ROH_plotting.R"
+MAPPING_PY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260317_HGDP_mapping_ROH.py"
+BINNING_PY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260317_HGDP_binning_ROH.py"
+POP_AVG_PY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260317_HGDP_pop_avg_bins.py"
+ZOOROH_MAP_PY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260318_HGDP_zooroh_map_snps.py"
+ZOOROH_ROH_CALC_R="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260318_ZooROH_calc.R"
+
+###############################################################################
+### the following shouldn't be changed to ensure working software versions on icelake are used
+bcfPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/bcftools'
+vcfPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/vcftools'
+tabixPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/tabix'
+
+###############################################################################
+
+#### ---- Create list of output files for each stage after passing checkpoints ---- ####
+output_files = list()
+
+## Output files for organizing the bed masking file
+if bed_prep == 'yes':
+    output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz")
+    output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz.tbi")
+
+## Output files for the masked vcf files
+if vcf_mask == 'yes':
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.masked.vcf.gz", CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.masked.vcf.gz.tbi", CHROM=CHROMS))
+
+## Output files for running plink and compiling results
+if run_plink == 'yes':
+    # output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_bp_chr{CHROM}.hom.summary", CHROM=CHROMS))
+    # output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_bp_chr{CHROM}.hom", CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.ids.vcf.gz",CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids.gen.gz",CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids.cm.gen.gz",CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.rzooroh_results.rds",CHROM=CHROMS))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.rzooroh_segments.csv",CHROM=CHROMS))
+
+## Output files for ROH visualizations and downstream analyses
+if plot_roh == 'yes':
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_nroh_sroh.svg", today=DATE))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_ROH_stats.txt", today=DATE))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_froh_medROH.svg", today=DATE))
+    output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_froh_maxROH.svg", today=DATE))
+
+    # output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled.csv")
+    # output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/Chrom_length_aln.txt")
+    # output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent.csv")
+    # output_files.append("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.csv")
+    # output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_Log_bin_heatmap.png", today=DATE))
+    # output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_Log_all_heatmap.png", today=DATE))
+    # output_files.append(expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_ROH_chrom_heatmap.png", today=DATE))
+
+#### ---- End ---- ####
+
+rule all: 
+    input: 
+        output_files
+
+#### ---- RULES FOR THE MASKING BED FILE ---- ####
+rule SORT_BED:
+    input:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.mask.bed"
+    output:
+        ZIPPED="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz",
+        INDEX="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz.tbi"
+    resources:
+        mem_mb=6000, 
+        runtime="1h"
+    shell:
+        """
+        bedtools sort -i {input} > /rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed
+        bgzip /rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed
+        tabix -p bed {output.ZIPPED}
+        """
+
+#### ---- RULES FOR THE MODIFYING VCF FILES ---- ####
+rule FILTER_VCF_SNVS:
+    input:
+        CHROM_VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.vcf.gz"
+    output:
+        MASKED_CHROM_VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.vcf.gz",
+        VCF_INDEX="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.vcf.gz.tbi"
+    resources:
+        mem_mb=8000, 
+        runtime="2h"
+    shell:
+        """
+        bcftools view -m2 -M2 -v snps -e 'MAF < 0.01 || QUAL < 60 || F_MISSING > 0.05 || INFO/DP < 100' {input.CHROM_VCF} -Oz -o {output.MASKED_CHROM_VCF}
+        tabix -p vcf {output.MASKED_CHROM_VCF}
+        """
+
+rule MASK_VCF:
+    input:
+        MASK="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz",
+        CHROM_VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.vcf.gz"
+    output:
+        MASKED_CHROM_VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.vcf.gz",
+        VCF_INDEX="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.vcf.gz.tbi"
+    resources:
+        mem_mb=8000, 
+        runtime="2h"
+    shell:
+        """
+        bcftools view -R {input.MASK} {input.CHROM_VCF} -Oz -o {output.MASKED_CHROM_VCF}
+        tabix -p vcf {output.MASKED_CHROM_VCF}
+        """
+
+#### ---- RULES FOR RUNNING PLINK ---- ####
+# rule ROH_PLINK_BP:
+#     input:
+#         VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.masked.vcf.gz"
+#     output:
+#         SUMMARY="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_bp_chr{CHROM}.hom.summary",
+#         HOM="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_bp_chr{CHROM}.hom"
+#     resources:
+#         mem_mb=6000, 
+#         runtime="1.5h"
+#     shell:
+#         """
+#         plink --homozyg --vcf {input.VCF} -out /rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_bp_chr{wildcards.CHROM}
+#         """
+
+rule FIX_VCF_MISSING_IDS:
+    input:
+        VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.vcf.gz"
+    output:
+        VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.ids.vcf.gz",
+        INDEX="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.ids.vcf.gz.csi"
+    resources:
+        runtime="30m"
+    shell:
+        """
+        bcftools annotate --set-id '%CHROM\_%POS\_%REF\_%ALT' {input.VCF} -Oz -o {output.VCF}
+        bcftools index {output.VCF}
+        """
+
+rule INERPOLATE_SNP_POS:
+    input:
+        VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.ids.vcf.gz",
+        MASK="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/genetic_map_hg38_withX.txt.gz"
+    output:
+        SNP="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/chr{CHROM}_snp_positions.txt",
+        MAP="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/chr{CHROM}_rzooroh_map.txt",
+    shell:
+        """
+        bcftools query -f '%ID\t%CHROM\t%POS\n' {input.VCF} > {output.SNP}
+        python {ZOOROH_MAP_PY} {wildcards.CHROM} {input.MASK} {output.SNP} {output.MAP}
+        """
+
+rule VCF_TO_GEN:
+    input:
+        VCF="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_wgs.20190516.full.chr{CHROM}.snp.fltr.masked.vcf.gz"
+    output:
+        GEN="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids.gen.gz"
+    resources:
+        runtime="30m"
+    params:
+        PREFIX="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids"
+    shell:
+        """
+        bcftools convert \
+        -t ^chrX,chrY,chrM \
+        -g {params.PREFIX} \
+        --3N6 \
+        --tag GT \
+        {input.VCF}
+        """
+
+CHR_RUNTIME = {
+    "1": "18h", "2": "18h", "3": "18h", "4": "18h", "5": "18h",
+    "6": "12h", "7": "12h", "8": "12h", "9": "12h", "10": "12h",
+    "11": "12h", "12": "12h", "13": "8h", "14": "8h", "15": "8h",
+    "16": "8h", "17": "8h", "18": "8h", "19": "4h", "20": "4h",
+    "21": "4h", "22": "4h"
+}
+
+LARGE_CHRS = {"1", "2", "3", "4", "5", "6"}
+
+rule ZOOROH_CM:
+    input:
+        GEN="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids.gen.gz",
+        CM_FILE="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/chr{CHROM}_rzooroh_map.txt"
+    output:
+        CM_GEN="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.snp.fltr.masked.ids.cm.gen.gz",
+        ZOOROH_RESULTS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.rzooroh_results.rds",
+        ZOOROH_SEGMENTS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp.chr{CHROM}.rzooroh_segments.csv"
+    threads: 4
+    resources:
+        mem_mb= lambda wc: 80000 if wc.CHROM in LARGE_CHRS else 64000, 
+        runtime= lambda wc: CHR_RUNTIME[wc.CHROM]
+    shell:
+        """
+        Rscript {ZOOROH_ROH_CALC_R} {input.GEN} {input.CM_FILE} {output.CM_GEN} {output.ZOOROH_RESULTS} {output.ZOOROH_SEGMENTS}
+        """
+
+#### ---- RULES FOR ANALYZING ROH ---- ####
+rule COMPILE_ROH_FILES:
+    input:
+        ROH=expand("/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_chr{CHROM}.hom", CHROM=CHROMS)
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled.csv"
+    shell:
+        """
+        awk 'FNR==1 && NR==1 {{ print $0 }} FNR!=1 {{ print $0 }}' {input.ROH} > {output}
+        """
+
+rule FIND_CHR_ALN_LENGTH:
+    input:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/20260305_hgdp_wgs.mask.srt.bed.gz"
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/Chrom_length_aln.txt"
+    shell:
+        """
+        zcat {input} | bedtools merge -i - | awk '{{sum[$1] += $3-$2}} END {{for (chr in sum) print chr, sum[chr]}}' | sort -V > {output}
+        """
+
+rule CALC_NORMALIZED_FROH:
+    input:
+        ROH="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled.csv",
+        CHR_ALN="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/Chrom_length_aln.txt"
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent.csv"
+    shell:
+        """
+        python {FROH_CALC_PY} {input.ROH} {input.CHR_ALN} {output}
+        """
+
+rule ASSIGN_POP:
+    input:
+        ROH="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent.csv",
+        POP="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/igsr-human_genome_diversity_project-samples.tsv"
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.csv"
+    shell:
+        """
+        Rscript {POP_ID_R} {input.ROH} {input.POP} {output}
+        """
+
+#### ---- RULES FOR CONVERTING TO CM ---- ####
+rule MAPPING_ROH:
+    input:
+        ROH="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.csv",
+        MAP="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/genetic_map_hg38_withX.txt.gz"
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.mapped.csv"
+    shell:
+        """
+        python {MAPPING_PY} {input.ROH} {input.MAP} {output}
+        """
+
+#### ---- RULES FOR PLOTTING AND ANALYSES ---- ####
+rule PLOT_HULLS:
+    input:
+        CSV="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.mapped.csv"
+    output:
+        FIG="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_nroh_sroh.svg",
+        STATS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_ROH_stats.txt",
+        MED_ROH_FIG="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_froh_medROH.svg", 
+        MAX_ROH_FIG="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_froh_maxROH.svg" 
+    params:
+        AUTOSOME_LENGTH = 2900000000
+    shell:
+        """
+        Rscript {HULL_PLOT_R} {input.CSV} {params.AUTOSOME_LENGTH} {output.FIG} {output.STATS} {output.MED_ROH_FIG} {output.MAX_ROH_FIG}
+        """
+
+# #### ---- RULES FOR BINNING ROH AND PLOTTING THEM ---- ####
+# rule BINNING_ROH:
+#     input:
+#         ROH="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.mapped.csv"
+#     output:
+#         BP_BINS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_bp_log_bins.csv",
+#         CM_BINS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_cm_log_bins.csv",
+#     shell:
+#         """
+#         python {BINNING_PY} {input.ROH} {output.BP_BINS} {output.CM_BINS}
+#         """
+
+# rule GET_POP_AVG:
+#     input:
+#         BP_BINS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_bp_log_bins.csv",
+#         CM_BINS="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_cm_log_bins.csv",
+#     output:
+#         BP_AVG="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_bp_popavg.csv",
+#         CM_AVG="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_roh_cm_popavg.csv",
+#     shell:
+#         """
+#         python {POP_AVG_PY} {input.BP_BINS} {input.CM_BINS} {output.BP_BINS} {output.CM_BINS}
+#         """
+
+## NOTE: need to modify to do a heatmap for ROH in both bp and in cM
+rule PLOT_HEATMAPS:
+    input:
+        ROH="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/hgdp_plink_hom_compiled_percent_popid.csv",
+        CHR_ALN="/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/HGDP_analyses/Chrom_length_aln.txt",
+    output:
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_Log_bin_heatmap.png",
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_Log_all_heatmap.png",
+        "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/Figures/{today}_HGDP_ROH_chrom_heatmap.png"
+    resources:
+        mem_mb=6000
+    shell:
+        """
+        Rscript {HEATMAP_PLOT_R} {input.ROH} {input.CHR_ALN}
+        """
