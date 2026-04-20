@@ -1,0 +1,685 @@
+#### SNAKEFILE FOR AUTOMATED PIPLELINE OF RUNNING ANALYSES ####
+
+"""
+login to icelake node using login-icelake.hpc.cam.ac.uk
+start a screen terminal (screen -RD)
+make sure to use snakemake version 7.8.5
+
+check how many jobs are required AT EACH STAGE, this command also shows the shell commands it would use:
+- snakemake -n --printshellcmds -p
+
+to run locally use:
+    snakemake --configfile config_files/sharks/{SPEC_NAME}_config.yml -s Snakefile_filtering --touch
+    
+    --touch
+    --keep-going
+to run on slurm use:
+    
+Add in the command --touch for when I want to make sure it doesn't regenerate previously made files
+    conda activate snakemake && snakemake --executor slurm --jobs 30 --workflow-profile profiles -s Snakefile_filtering --configfile config_files/mammals/XXXXXX_config.yml 
+For changing input parameters, change in the config.yml file
+
+Generate simplified plot to show rule flow with:
+    snakemake --executor slurm --workflow-profile profiles --jobs 10 --configfile config.yml --rulegraph | dot -Tpdf > dag.pdf
+Show full complicated path for each chromosome with:
+    snakemake --executor slurm --workflow-profile profiles --jobs 10 --configfile config.yml --dag | dot -Tpdf > dag_complex.pdf
+
+NOTES:
+    Based on Snakefile made by Bettina Fisher (https://github.com/bef22/vcf_snakemake/blob/main/Snakefile)
+
+AUTHORS and UPDATES:
+Amanda Gardiner, 20250313
+
+UPDATES: 20250530 -- Redoing pipeline to streamline it
+UPDATES: 20250618 -- Redoing pipeline to use fastga alingments which Richard created, and put output files in the VGP/groups/CLADE/SPECIES directories
+UPDATES: 20250626 -- Updating pipeline for FASTGA alignments which Richard created -- having to use new files because of the alternate format of the paftools output
+UPDATES: 20250925 -- Added rule for calculating NROH and SROH for reach species
+UPDATES: 20251120 -- Changing rules to include new filtering parameters for variants and updating scripts to reflect new input files
+"""
+
+user = "ag2427"
+
+pass_aln_paf = "yes"
+pass_var = "yes"
+pass_roh = "yes"
+pass_het = "yes"
+pass_primary_msmc_prep = "yes"
+pass_primary_msmc = "no"
+
+### set global parameters
+CLADE=config['CLADE']
+SPEC_NAME=config['SPEC_NAME']
+CHROM_START_CHR=config['CHROM_START_CHR']
+WINDOW_INTERVAL=config['WINDOW_INTERVAL']
+WINDOW_LENGTH=config['WINDOW_LENGTH']
+NUM_AUT_CHROMOSOMES=config['NUM_AUT_CHROMOSOMES']
+NUM_ALL_CHR=config['NUM_ALL_CHR']
+CHROMS=config['ALL_CHROMOSOMES']
+AUTO_CHROMS=config['AUTOSOMAL_CHROMOSOMES']
+BOOTSTRAPS=config['BOOTSTRAPPING_VALUES']
+MU=config['MUTATION_RATE']
+GEN_TIME=config['GENERATION_TIME']
+FULL_SPEC_NAME=config['FULL_SPEC_NAME']
+ALN_NAME=config['ALN_NAME']
+
+### paths to dependent scripts
+ROH_CALC_PY = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20251120_ROH_Durbin_Calc_Eqns_V9.py"
+ROH_PLOT_R = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260417_Plot_ROH_V5.R"
+FROH_CALC_PER_CHR = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260213_FROH_per_chr_calc_V5.py"
+FROH_CALC_WHOLE = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260213_FROH_Calc_Whole_Genome_V5.py"
+ROH_BINS_PY = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20260210_ROH_Distributions_V2.py"
+CALC_HET_PER_CHR_PY = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250827_find_het_per_chr_V5.py"
+CALC_HET_WHOLE_GENOME_PY = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250829_find_het_whole_genome_V5.py"
+PLOT_WHOLE_HET_R = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20251121_Plot_het_whole_genome_V2.R"
+PLOT_MSMC_R = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250508_Plot_MSMC.R"
+PLOT_MSMC_BOOSTRAP_R = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250529_Plot_MSMC_Bootstrap.R"
+ROH_MASKER = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250528_ROH_Masker.py"
+ALN_MASK_MAKER_PY = "/rds/project/rds-p67MZilb2eQ/projects/VGP/heterozygosity/20250529_Mask_Maker.py"
+GENERATE_MULTIHETSEP="/rds/project/rds-8b3VcZwY7rY/users/ag2427/hpc-work/msmc-tools/generate_multihetsep.py" ##change path, the script can be found in "MSMC-tools"
+MASK_FILE_GENERATOR="/rds/project/rds-8b3VcZwY7rY/users/ag2427/hpc-work/20241011_jaskaran_script_msmc_fileprep/mask_file.py" ##In this directory
+BOOTSTRAPPING_GENERATOR="/rds/project/rds-8b3VcZwY7rY/users/ag2427/hpc-work/20241011_jaskaran_script_msmc_fileprep/block_bootstrap_mhs.py" ## From "Cobraa-Trevor Cousins" also in this github directory
+BAM_CALLER="/rds/project/rds-8b3VcZwY7rY/users/ag2427/hpc-work/msmc-tools/bamCaller.py" ##change path, the script can be found in "MSMC-tools"
+INDEL_MASKER="/rds/project/rds-8b3VcZwY7rY/users/ag2427/hpc-work/20241011_jaskaran_script_msmc_fileprep/indel_mask.py" ##In this directory
+
+###############################################################################
+### the following shouldn't be changed to ensure working software versions on icelake are used
+bcfPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/bcftools'
+vcfPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/vcftools'
+tabixPath = f'/home/{user}/rds/rds-durbin-group-8b3VcZwY7rY/software_RHEL8/bin/tabix'
+
+###############################################################################
+
+import pdb
+import subprocess
+import os
+import re
+
+wildcard_constraints:
+    CLADE=CLADE,
+    SPEC_NAME=SPEC_NAME, 
+    CHROM_START_CHR=CHROM_START_CHR,
+    WINDOW_INTERVAL=WINDOW_INTERVAL, 
+    WINDOW_LENGTH=WINDOW_LENGTH, 
+    NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES, 
+    NUM_ALL_CHR=NUM_ALL_CHR, 
+    CHROMS=CHROMS, 
+    AUTO_CHROMS=AUTO_CHROMS,
+    BOOTSTRAPS=BOOTSTRAPS, 
+    FULL_SPEC_NAME=FULL_SPEC_NAME, 
+    ALN_NAME=ALN_NAME
+
+
+#### ---- Create list of output files for each stage after passing checkpoints ---- ####
+output_files = list()
+## Initial output from FastGA aligned file
+output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.paf")
+output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_chroms.txt")
+output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.pdf")
+
+## Outputs for Aln and Var Files
+if pass_aln_paf == 'yes':
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz") 
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.csi")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.stats")
+
+if pass_var == 'yes':
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHR}_ROH_Results.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHR=CHROMS))
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_ROH_Results.csv")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_Auto_ROH_FROH_percent.csv")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_Map.png")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_Map.svg")
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHROM}_FROH_results.csv", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHROM=AUTO_CHROMS))
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_FROH.csv")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Genome_Align.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_bins.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_alnROH_bins.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_bins_histogram.pdf")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_alnROH_bins_histogram.pdf")
+        
+
+if pass_roh == 'yes':
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{CHROM}_het.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHROM=AUTO_CHROMS))
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_per_chr_mean_heterozygosity.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_whole_genome_mean_heterozygosity.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{SPEC_NAME}_Het_Compiled.tsv")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Het_Whole_Genome_Map.png")
+
+if pass_het == 'no':
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/vcf_files/{SPEC_NAME}_{CHROM}.vcf.gz", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME, CHROM=AUTO_CHROMS))
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask/{SPEC_NAME}_{CHROM}_ROH_Mask.bed.gz", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME, CHROM=AUTO_CHROMS))
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Aln_Mask/{CHROM}_Aln_Mask.bed", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHROM=AUTO_CHROMS))
+    output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Output_primary_multihetsep/{SPEC_NAME}_{CHROM}_multihet_new.txt", SPEC_NAME=SPEC_NAME, CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHROM=AUTO_CHROMS))
+
+if pass_primary_msmc_prep == 'no':
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.loop.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.log")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.final.txt")
+    output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/{SPEC_NAME}_MSMC2.png")
+
+# if pass_primary_msmc == 'yes':
+#     output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Output_Multihet_Bootstrapped/{BOOT}/{SPEC_NAME}_{CHROM}_multihet.txt", SPEC_NAME=SPEC_NAME, CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, BOOT=BOOTSTRAPS, CHROM=AUTO_CHROMS))
+#     output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Bootstrap_results/{SPEC_NAME}_Bootstrapping_{BOOT}.msmc2.loop.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, BOOT=BOOTSTRAPS, CHROM=AUTO_CHROMS, SPEC_NAME=SPEC_NAME))
+#     output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Bootstrap_results/{SPEC_NAME}_Bootstrapping_{BOOT}.msmc2.log", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, BOOT=BOOTSTRAPS, CHROM=AUTO_CHROMS, SPEC_NAME=SPEC_NAME))
+#     output_files.append(expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Bootstrap_results/{SPEC_NAME}_Bootstrapping_{BOOT}.msmc2.final.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, BOOT=BOOTSTRAPS, CHROM=AUTO_CHROMS, SPEC_NAME=SPEC_NAME))
+#     output_files.append(f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/{SPEC_NAME}_MSMC2_Bootstrapped.png")
+
+#### ---- End ---- ####
+# print(output_files)
+
+rule all: 
+    input: 
+        output_files
+
+#### ---------- RULES FOR FASTGA ALINGMENT AND PAF FILE GENERATION ---------- ####
+rule ALNCHAIN:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/{ALN_NAME}-12.1aln"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.1aln"
+    resources:
+        mem_mb=20000, 
+        runtime="6h"
+    params:
+        SPEC_NAME=SPEC_NAME
+    shell:
+        """
+        mkdir -p ../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity
+        ALNchain -o../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.1aln -G -S -R../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{params.SPEC_NAME}_chroms.txt {input}
+        """
+
+rule ALNtoPAF:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.1aln"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.paf"
+    resources:
+        mem_mb=20000, 
+        runtime="1.5h"
+    shell:
+        """
+        ALNtoPAF -s -w -T8 {input} > {output}
+        """
+
+rule FILTER_PAF_VARIANCE:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.paf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.fltr.paf"
+    shell:
+        """
+        awk -v OFS="\t" '{{if(substr($13,6)<=0.1) print}}' {input} > {output}
+        """
+
+rule SORT_PAF:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.fltr.paf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.fltr.srt.paf"
+    shell:
+        """
+        sort -k6,6V -k8,8n {input} > {output}
+        """
+
+rule GET_CHROM_LISTS:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/{ALN_NAME}.fa.gz"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_chroms.txt"
+    params:
+        CHROMS="\n".join(CHROMS)
+    shell:
+        """
+        echo '{params.CHROMS}' > {output}
+        """
+
+rule FILTER_PAF_CHR_ONLY:
+    input:
+        PAF=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.fltr.srt.paf", 
+        ALL_CHROMS=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_chroms.txt"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.paf"
+    shell:
+        """
+        awk 'BEGIN {{ while (getline < "{input.ALL_CHROMS}") list[$0] }} $6 in list' {input.PAF} > {output}
+        """
+
+# rule REMOVE_UNPLACED_SCAFFOLDS:
+#     input:
+#         PAF=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.paf", 
+#     output:
+#         PAF=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.scafsort.paf"
+#     params:
+#         ALN_NAME=ALN_NAME,
+#         NUM_ALL_CHR=NUM_ALL_CHR
+#     shell:
+#         """
+#         CHR_HEADER=$(awk -v short={params.ALN_NAME} '{{
+#         prefix = substr($1, 1, 3)
+#         seen[prefix][$1]++
+#         }}
+#         END {{
+#             for (p in seen) {{
+#                 count = 0
+#                 for (s in seen[p]) count++
+#                 print short, p, count
+#             }}
+#         }}' {input.PAF} \
+#         | awk -v num={params.NUM_ALL_CHR} '{{
+#             if ($3 >= num-2 && $3 <= num+3) {{
+#                 print $2
+#             }}
+#         }}')
+
+#         awk -v var="$CHR_HEADER" 'BEGIN{{OFS="\t"}} {{ if (substr($1, 1, 3) == var) print }}' {input.PAF} > {output.PAF}
+#         """
+
+rule ALNPLOT:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.1aln"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.pdf"
+    resources:
+        mem_mb=4000
+    params:
+        ALN_NAME=ALN_NAME, 
+        CLADE=CLADE, 
+        FULL_SPEC_NAME=FULL_SPEC_NAME
+    shell:
+        """
+        ALNplot -p -H500 {input}
+        mv {params.ALN_NAME}.chain.pdf ../groups/{params.CLADE}/{params.FULL_SPEC_NAME}/heterozygosity/{params.ALN_NAME}.chain.pdf
+        """
+#### ---- END ---- ####
+
+#### ---- RULES TO GET CHROMOSOME INFORMATION ---- ####
+rule CHROM_LENGTH_CALC:
+    input:
+        FASTA=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/{ALN_NAME}.fa.gz", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, ALN_NAME=ALN_NAME), 
+        ALL_CHROMS=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_chroms.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME),
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt"
+    params:
+        CHROM_START_CHR=CHROM_START_CHR
+    shell:
+        """
+        zcat {input.FASTA} \
+        | awk '
+            $0 ~ ">" {{if (NR > 1) {{print name "\t" len;}}
+                name = substr($0, 2);
+                len = 0;
+                next;
+            }}
+            {{
+                len += length($0);
+            }}
+            END {{
+                print name "\t" len;
+            }}
+        ' \
+        | grep -F -f {input.ALL_CHROMS} > {output}
+        """
+
+rule GET_ALL_VAR:
+    input:
+        REF = f"../groups/{CLADE}/{FULL_SPEC_NAME}/{ALN_NAME}.fa.gz", 
+        PAF = f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.paf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.vcf"
+    resources:
+        mem_mb=80000, 
+        runtime="24h"
+    shell:
+        """
+        k8 paftools.js call -l 2000 -L 10000 -f {input.REF} {input.PAF} > {output}
+        """
+
+rule GET_ALL_ALN:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{ALN_NAME}.chain.chr.fltr.srt.paf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed"
+    resources:
+        mem_mb=40000, 
+        runtime="16h"
+    shell:
+        """
+        k8 paftools.js call -l 2000 -L 10000 {input} | awk '$1=="R"' | awk -v OFS='\t' '{{print $2, $3, $4}}' > {output}
+        """
+
+## NOTE: WILL HAVE TO UPDATE THIS TO MAKE THIS GENERALIZED FOR ALL SPECIES - GOAL IS TO REMOVE SHORT, UNPLACED CONTIGS WITH HIGH DIVERGENCE
+# rule FILTER_VCF_CHR_ONLY:
+#     input:
+#         f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.vcf"
+#     output:
+#         f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.vcf"
+#     shell:
+#         """
+#         grep -E '^#|QNAME=CM' {input} > {output}
+#         """
+
+rule CORRECT_VCF_GENOTYPE:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.vcf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.vcf"
+    shell:
+        """
+        sed 's/1\/1/0\/1/g' {input} | bcftools +fill-tags -o {output} -- -t AN,AC,AF
+        """
+
+rule FILTER_FOR_SNV:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.vcf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.vcf"
+    shell:
+        """
+        bcftools view -m2 -M2 -v snps {input} > {output}
+        """
+
+rule MASK_VCF:
+    input:
+        bed = f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed", 
+        snv = f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.vcf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf"
+    shell:
+        """
+        bcftools view -T {input.bed} {input.snv} -o {output}
+        """
+
+rule ZIP_VCF:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz"
+    shell:
+        """
+        bgzip {input}
+        """
+
+rule GET_SNV_STATS:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.stats"
+    shell:
+        """
+        bcftools stats {input} > {output}
+        """
+
+rule INDEX_VCF:
+    input:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz"
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.csi"
+    shell:
+        """
+        tabix -C -p vcf {input}
+        """
+
+####---------- RULES FOR CALCULATING ROH ----------####
+rule ROH_CALC:
+    input:
+        VCF_INDEX = f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.csi", ## Not actual input, but need this to parse VCF file in script
+        ALN=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed", 
+        VAR=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz"
+    output:
+        ROH_outfiles="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHR}_ROH_Results.txt"
+    shell:
+        """
+        mkdir -p ../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/
+        python {ROH_CALC_PY} {wildcards.CHR} {input.ALN} {input.VAR} {output}
+        """
+
+rule COMPILE_ROH:
+    input:
+        expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHR}_ROH_Results.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHR=CHROMS)
+    output:
+        f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_ROH_Results.csv"
+    shell:
+        """
+        awk -v var='chrom' -F',' '{{if ($1!=var) {{ print $0 }}}}' {input} >> {output}
+        """
+#### ---- END ---- ####
+
+####---------- RULES FOR PLOTTING ROH ----------####
+rule Plot_ROH:
+    input:
+        ROH="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_ROH_Results.csv",
+        CHROM_LENGTH_FILE="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt", 
+        ALN_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed",
+        GENOME_ALIGN="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Genome_Align.txt"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_Map.svg"
+    params:
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES, 
+        NUM_ALL_CHR=NUM_ALL_CHR, 
+        FULL_SPEC_NAME=FULL_SPEC_NAME
+    shell:
+        """
+        Rscript {ROH_PLOT_R} {input.ROH} {input.CHROM_LENGTH_FILE} {input.ALN_FILE} {params.NUM_AUT_CHROMOSOMES} {params.NUM_ALL_CHR} {input.GENOME_ALIGN} {params.FULL_SPEC_NAME} {output}
+        """
+#### ---- END ---- ####
+
+####---------- RULES FOR CALCULATING FROH ----------####
+rule ROH_BINS_CALC:
+    input:
+        ALN_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed",
+        CHROM_LENGTH_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt", 
+        ROH=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_ROH_Results.csv", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME)
+    output:
+        BINS_TXT_GROSS="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_bins.txt", 
+        BINS_TXT_ALN="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_alnROH_bins.txt", 
+        PLOT_GROSS="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_ROH_bins_histogram.pdf",
+        PLOT_ALN="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_alnROH_bins_histogram.pdf", 
+        AUTO_CSV="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_Auto_ROH_FROH_percent.csv"
+    resources:
+        mem_mb=1000 
+    params:
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES,
+        AUTO_CHROMS=AUTO_CHROMS, 
+        AUTO_CHROMS_COMMA=",".join(AUTO_CHROMS)
+    shell:
+        """
+        python {ROH_BINS_PY} {input.ALN_FILE} {params.NUM_AUT_CHROMOSOMES} {input.CHROM_LENGTH_FILE} {input.ROH} {output.BINS_TXT_GROSS} {output.BINS_TXT_ALN} {output.PLOT_GROSS} {output.PLOT_ALN} {output.AUTO_CSV} {params.AUTO_CHROMS}
+        """
+
+rule FROH_PER_AUT_CHR:
+    input:
+        ALN_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed",
+        ROH=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_Auto_ROH_FROH_percent.csv", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME), 
+        CHROM_LENGTH_FILE=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME)
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHROM}_FROH_results.csv"
+    shell:
+        """
+        python {FROH_CALC_PER_CHR} {input.ALN_FILE} {input.ROH} {wildcards.CHROM} {input.CHROM_LENGTH_FILE} {output}
+        """
+
+rule WHOLE_FROH:
+    input:
+        ALN_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed",
+        ROH="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_Auto_ROH_FROH_percent.csv", 
+        CHROM_LENGTH_FILE="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt", 
+    output:
+        WHOLE_FROH="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_FROH.csv",
+        GENOME_ALIGN="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Genome_Align.txt"
+    params:
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES,
+        AUTO_CHROMS=AUTO_CHROMS 
+    shell:
+        """
+        python {FROH_CALC_WHOLE} {input.ALN_FILE} {params.NUM_AUT_CHROMOSOMES} {input.CHROM_LENGTH_FILE} {input.ROH} {output.WHOLE_FROH} {output.GENOME_ALIGN} {params.AUTO_CHROMS}
+        """
+#### ---- END ---- ####
+
+####---------- RULES FOR CALCULATING HETEROZYGOSITY ----------####
+rule CALC_HET_PER_CHR:
+    input:
+        VCF_INDEX = f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz.csi", 
+        VAR_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz",
+        CHROM_LENGTH_FILE=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME), 
+        ROH=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{SPEC_NAME}_ROH_Results.csv", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, SPEC_NAME=SPEC_NAME)
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{CHROM}_het.txt"
+    params:
+        CLADE=CLADE, 
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES, 
+        SPEC_NAME=SPEC_NAME, 
+        FULL_SPEC_NAME=FULL_SPEC_NAME,
+        WINDOW_INTERVAL=WINDOW_INTERVAL,  
+        WINDOW_LENGTH=WINDOW_LENGTH
+    shell:
+        """
+        mkdir -p ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/Het
+        python {CALC_HET_PER_CHR_PY} {input.CHROM_LENGTH_FILE} {params.CLADE} {params.FULL_SPEC_NAME} {params.WINDOW_LENGTH} {params.WINDOW_INTERVAL} {input.ROH} {wildcards.CHROM} {output} {input.VAR_FILE}
+        """
+
+rule CALC_HET_WHOLE_GENOME:
+    input:
+        CHROM_LENGTH_FILE="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt",
+        PER_CHR_FILES=expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{CHROM}_het.txt", CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME, CHROM=AUTO_CHROMS)
+    output:
+        WHOLE_PER_CHR="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_per_chr_mean_heterozygosity.txt",
+        WHOLE_GENOME="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_whole_genome_mean_heterozygosity.txt", 
+    params:
+        CLADE=CLADE, 
+        SPEC_NAME=SPEC_NAME,
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES, 
+        FULL_SPEC_NAME=FULL_SPEC_NAME, 
+        AUTO_CHROMS=AUTO_CHROMS
+    shell:
+        """
+        python {CALC_HET_WHOLE_GENOME_PY} {params.NUM_AUT_CHROMOSOMES} {params.CLADE} {params.FULL_SPEC_NAME} {output.WHOLE_PER_CHR} {output.WHOLE_GENOME} {input.CHROM_LENGTH_FILE} {params.AUTO_CHROMS}
+        """
+
+rule COMPILE_HET:
+    input:
+        expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{CHROM}_het.txt", CHROM=AUTO_CHROMS, CLADE=CLADE, FULL_SPEC_NAME=FULL_SPEC_NAME)
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{SPEC_NAME}_Het_Compiled.tsv"
+    shell:
+        """
+        awk -v var='chrom' -F',' '{{if ($1!=var && !/less than 100kb and too short to analyze/) {{ print $1, $2, $3, $4, $5, $6, $7, $8, $9 }}}}' {input} >> {output}
+        """
+####---------- END ----------####
+
+####---------- RULES FOR PLOTTING HETEROZYGOSITY ----------####
+rule PLOT_WHOLE_HET:
+    input:
+        CHROM_LENGTH_FILE="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Chroms_Lengths.txt",
+        COMPILED="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/Het/{SPEC_NAME}_Het_Compiled.tsv"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/{SPEC_NAME}_Het_Whole_Genome_Map.png"
+    params:
+        CLADE=CLADE, 
+        NUM_AUT_CHROMOSOMES=NUM_AUT_CHROMOSOMES, 
+        SPEC_NAME=SPEC_NAME, 
+        AUTO_CHROMS=AUTO_CHROMS
+    shell:
+        """
+        Rscript {PLOT_WHOLE_HET_R} {input.COMPILED} {input.CHROM_LENGTH_FILE} {output} {params.NUM_AUT_CHROMOSOMES} {params.AUTO_CHROMS}
+        """
+####---------- END ----------####
+
+####---------- RULES FOR MSMC DATA PREP ----------####
+rule GEN_CHROM_VCF:
+    input:
+        vcf=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.chr_only.mutyper.snv.masked.vcf.gz"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/vcf_files/{SPEC_NAME}_{CHROM}.vcf.gz"
+    shell:
+        """
+        mkdir -p "../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/vcf_files"
+        bcftools view {input} -r {wildcards.CHROM} -o {output}
+        """
+        
+rule GEN_ROH_NEGATIVE_MASK:
+    input:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/ROH/{CHROM}_ROH_Results.txt"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask/{SPEC_NAME}_{CHROM}_ROH_Mask.bed.gz"
+    shell:
+        """
+        mkdir -p ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask
+        python {ROH_MASKER} {wildcards.CLADE} {wildcards.SPEC_NAME} {wildcards.CHROM} {input} ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask/{wildcards.SPEC_NAME}_{wildcards.CHROM}_ROH_Mask.bed
+        gzip ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask/{wildcards.SPEC_NAME}_{wildcards.CHROM}_ROH_Mask.bed
+        """
+
+rule MAKE_MASK:
+    input:
+        BED_FILE=f"../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/temp/{ALN_NAME}.bed"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Aln_Mask/{CHROM}_Aln_Mask.bed"
+    shell:
+        """
+        mkdir -p ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/Aln_Mask
+        awk -v chrom={wildcards.CHROM} '$1==chrom' {input.BED_FILE} > {output}
+        """
+
+rule MAIN_MULTIHETSEP:
+    input:
+        VCF="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/vcf_files/{SPEC_NAME}_{CHROM}.vcf.gz", 
+        ROH_negative_mask="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/ROH_Negative_Mask/{SPEC_NAME}_{CHROM}_ROH_Mask.bed.gz", 
+        MASK="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Aln_Mask/{CHROM}_Aln_Mask.bed"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Output_primary_multihetsep/{SPEC_NAME}_{CHROM}_multihet_new.txt"
+    resources:
+        runtime="1h"
+    shell:
+        """
+        mkdir -p ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/Output_primary_multihetsep
+        if [ "$(stat -c %s {input.ROH_negative_mask})" -eq 51 ] || [ "$(stat -c %s {input.ROH_negative_mask})" -eq 52 ]; then
+            python {GENERATE_MULTIHETSEP} {input.VCF} --mask={input.MASK} > {output}
+        else
+            python {GENERATE_MULTIHETSEP} {input.VCF} --mask={input.MASK} --negative_mask={input.ROH_negative_mask} > {output}
+        fi
+        """
+####---------- END ----------####
+
+####---------- RULES FOR RUNNING AND PLOTTING MSMC ----------####
+rule RUN_PRIMARY_MSMC:
+    input:
+        expand("../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Output_primary_multihetsep/{SPEC_NAME}_{CHROM}_multihet_new.txt",
+            FULL_SPEC_NAME=FULL_SPEC_NAME, 
+            CLADE=CLADE,
+            SPEC_NAME=SPEC_NAME,
+            CHROM=AUTO_CHROMS)
+    output:
+        loop="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.loop.txt", 
+        log="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.log", 
+        final="../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.final.txt"
+    resources:
+        mem_mb=48000, 
+        runtime="3h"
+    shell:
+        """
+        mkdir -p ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results
+        
+        # Filter for large files (>=1000 lines)
+        LARGE_FILES=$(for f in {input}; do
+            if [ $(wc -l < "$f") -ge 1000 ]; then
+                echo "$f"
+            fi
+        done)
+        
+        msmc2/build/release/msmc2 -t 12 --fixedRecombination -o ../groups/{wildcards.CLADE}/{wildcards.FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{wildcards.SPEC_NAME}.msmc2 $LARGE_FILES
+        """
+
+rule PLOT_MSMC:
+    input:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/Primary_Results/{SPEC_NAME}.msmc2.final.txt"
+    output:
+        "../groups/{CLADE}/{FULL_SPEC_NAME}/heterozygosity/MSMC/{SPEC_NAME}_MSMC2.png"
+    params:
+        CLADE=CLADE, 
+        SPEC_NAME=SPEC_NAME, 
+        MU=MU, 
+        GEN_TIME=GEN_TIME
+    shell:
+        """
+        Rscript {PLOT_MSMC_R} {params.CLADE} {params.SPEC_NAME} {params.MU} {params.GEN_TIME} {output} {input}
+        """
+####---------- END ----------####
