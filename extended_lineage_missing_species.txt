@@ -1,0 +1,22 @@
+species	Lineage	Extended_lineage
+Lonchura_striata	Birds	Birds
+Excalfactoria_chinensis	Birds	Birds
+Diceros_bicornis	Mammals	Mammals
+Ambystoma_mexicanum	Amphibians	Amphibians
+Strigops_habroptila	Birds	Birds
+Monodon_monoceros	Mammals	Mammals
+Struthio_camelus	Birds	Birds
+Mustela_nivalis	Mammals	Mammals
+Elephas_maximus	Mammals	Mammals
+Ammospiza_caudacuta	Birds	Birds
+Pseudopipra_pipra	Birds	Birds
+Notamacropus_eugenii	Mammals	Mammals
+Aspidoscelis_tigris	Reptiles	Lepidosauria
+Rhamphochromis_sp.	Fishes	Ray-finned fishes
+Balearica_regulorum	Birds	Birds
+Polymixia_hollisterae	Fishes	Ray-finned fishes
+Phalacrocorax_aristotelis	Birds	Birds
+Rhinolophus_perniger	Mammals	Mammals
+Elgaria_multicarinata	Reptiles	Lepidosauria
+Notolepis_coatsorum	Fishes	Ray-finned fishes
+Guaruba_guarouba	Birds	Birds
