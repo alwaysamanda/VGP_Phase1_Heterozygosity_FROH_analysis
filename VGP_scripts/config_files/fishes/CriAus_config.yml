@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : CriAus 
+    FULL_SPEC_NAME: Cristiceps_australis
+    ALN_NAME: fCriAus
+    REF_NAME : GCA_049082185.1 
+    ALT_NAME : GCA_049082045.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 2
+    ALL_CHROMOSOMES : 
+        - CM110696.1
+        - CM110697.1
+        - CM110698.1
+        - CM110699.1
+        - CM110700.1
+        - CM110701.1
+        - CM110702.1
+        - CM110703.1
+        - CM110704.1
+        - CM110705.1
+        - CM110706.1
+        - CM110707.1
+        - CM110708.1
+        - CM110709.1
+        - CM110710.1
+        - CM110711.1
+        - CM110712.1
+        - CM110713.1
+        - CM110714.1
+        - CM110715.1
+        - CM110716.1
+        - CM110717.1
+        - CM110718.1
+        - CM110719.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM110696.1
+        - CM110697.1
+        - CM110698.1
+        - CM110699.1
+        - CM110700.1
+        - CM110701.1
+        - CM110702.1
+        - CM110703.1
+        - CM110704.1
+        - CM110705.1
+        - CM110706.1
+        - CM110707.1
+        - CM110708.1
+        - CM110709.1
+        - CM110710.1
+        - CM110711.1
+        - CM110712.1
+        - CM110713.1
+        - CM110714.1
+        - CM110715.1
+        - CM110716.1
+        - CM110717.1
+        - CM110718.1
+        - CM110719.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

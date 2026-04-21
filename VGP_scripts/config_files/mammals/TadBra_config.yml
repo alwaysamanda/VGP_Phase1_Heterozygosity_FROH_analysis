@@ -1,0 +1,92 @@
+    CLADE : mammals 
+    SPEC_NAME : TadBra 
+    FULL_SPEC_NAME : Tadarida_brasiliensis 
+    ALN_NAME : mTadBra 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM061257.1
+        - CM061258.1
+        - CM061259.1
+        - CM061260.1
+        - CM061261.1
+        - CM061262.1
+        - CM061263.1
+        - CM061264.1
+        - CM061265.1
+        - CM061266.1
+        - CM061267.1
+        - CM061268.1
+        - CM061269.1
+        - CM061270.1
+        - CM061271.1
+        - CM061272.1
+        - CM061273.1
+        - CM061274.1
+        - CM061275.1
+        - CM061276.1
+        - CM061277.1
+        - CM061278.1
+        - CM061279.1
+        - CM061280.1
+        - CM061281.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM061257.1
+        - CM061258.1
+        - CM061259.1
+        - CM061260.1
+        - CM061261.1
+        - CM061262.1
+        - CM061263.1
+        - CM061264.1
+        - CM061265.1
+        - CM061266.1
+        - CM061267.1
+        - CM061268.1
+        - CM061269.1
+        - CM061270.1
+        - CM061271.1
+        - CM061272.1
+        - CM061273.1
+        - CM061274.1
+        - CM061275.1
+        - CM061276.1
+        - CM061277.1
+        - CM061278.1
+        - CM061279.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : PhoSin 
+    FULL_SPEC_NAME : Phocoena_sinus 
+    ALN_NAME : mPhoSin 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_045763.1
+        - NC_045764.1
+        - NC_045765.1
+        - NC_045766.1
+        - NC_045767.1
+        - NC_045768.1
+        - NC_045769.1
+        - NC_045770.1
+        - NC_045771.1
+        - NC_045772.1
+        - NC_045773.1
+        - NC_045774.1
+        - NC_045775.1
+        - NC_045776.1
+        - NC_045777.1
+        - NC_045778.1
+        - NC_045779.1
+        - NC_045780.1
+        - NC_045781.1
+        - NC_045782.1
+        - NC_045783.1
+        - NC_045784.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_045763.1
+        - NC_045764.1
+        - NC_045765.1
+        - NC_045766.1
+        - NC_045767.1
+        - NC_045768.1
+        - NC_045769.1
+        - NC_045770.1
+        - NC_045771.1
+        - NC_045772.1
+        - NC_045773.1
+        - NC_045774.1
+        - NC_045775.1
+        - NC_045776.1
+        - NC_045777.1
+        - NC_045778.1
+        - NC_045779.1
+        - NC_045780.1
+        - NC_045781.1
+        - NC_045782.1
+        - NC_045783.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

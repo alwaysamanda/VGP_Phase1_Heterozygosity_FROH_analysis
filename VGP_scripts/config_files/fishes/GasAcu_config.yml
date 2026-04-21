@@ -1,0 +1,87 @@
+    CLADE : fishes 
+    SPEC_NAME : GasAcu 
+    FULL_SPEC_NAME: Gasterosteus_aculeatus
+    ALN_NAME: fGasAcu
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - OZ193833.1
+        - OZ193834.1
+        - OZ193835.1
+        - OZ193836.1
+        - OZ193837.1
+        - OZ193838.1
+        - OZ193839.1
+        - OZ193840.1
+        - OZ193841.1
+        - OZ193842.1
+        - OZ193843.1
+        - OZ193845.1
+        - OZ193846.1
+        - OZ193847.1
+        - OZ193848.1
+        - OZ193849.1
+        - OZ193850.1
+        - OZ193851.1
+        - OZ193852.1
+        - OZ193853.1
+        - OZ193854.1
+        - OZ193844.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ193833.1
+        - OZ193834.1
+        - OZ193835.1
+        - OZ193836.1
+        - OZ193837.1
+        - OZ193838.1
+        - OZ193839.1
+        - OZ193840.1
+        - OZ193841.1
+        - OZ193842.1
+        - OZ193843.1
+        - OZ193845.1
+        - OZ193846.1
+        - OZ193847.1
+        - OZ193848.1
+        - OZ193849.1
+        - OZ193850.1
+        - OZ193851.1
+        - OZ193852.1
+        - OZ193853.1
+        - OZ193854.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

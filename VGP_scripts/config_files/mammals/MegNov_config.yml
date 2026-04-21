@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : MegNov 
+    FULL_SPEC_NAME : Megaptera_novaeangliae 
+    ALN_NAME : mMegNov 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM085695.1
+        - CM085696.1
+        - CM085697.1
+        - CM085698.1
+        - CM085699.1
+        - CM085700.1
+        - CM085701.1
+        - CM085702.1
+        - CM085703.1
+        - CM085704.1
+        - CM085705.1
+        - CM085706.1
+        - CM085707.1
+        - CM085708.1
+        - CM085709.1
+        - CM085710.1
+        - CM085711.1
+        - CM085712.1
+        - CM085713.1
+        - CM085714.1
+        - CM085715.1
+        - CM085716.1
+        - CM085717.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM085695.1
+        - CM085696.1
+        - CM085697.1
+        - CM085698.1
+        - CM085699.1
+        - CM085700.1
+        - CM085701.1
+        - CM085702.1
+        - CM085703.1
+        - CM085704.1
+        - CM085705.1
+        - CM085706.1
+        - CM085707.1
+        - CM085708.1
+        - CM085709.1
+        - CM085710.1
+        - CM085711.1
+        - CM085712.1
+        - CM085713.1
+        - CM085714.1
+        - CM085715.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

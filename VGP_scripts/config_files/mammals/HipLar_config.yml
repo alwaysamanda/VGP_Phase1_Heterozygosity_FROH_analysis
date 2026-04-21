@@ -1,0 +1,79 @@
+    CLADE : mammals 
+    SPEC_NAME : HipLar 
+    FULL_SPEC_NAME : Hipposideros_larvatus 
+    ALN_NAME : mHipLar
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM063088.1
+        - CM063089.1
+        - CM063090.1
+        - CM063091.1
+        - CM063092.1
+        - CM063093.1
+        - CM063094.1
+        - CM063095.1
+        - CM063096.1
+        - CM063097.1
+        - CM063098.1
+        - CM063099.1
+        - CM063100.1
+        - CM063101.1
+        - CM063102.1
+        - CM063103.1
+        - CM063104.1
+        - CM063105.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM063088.1
+        - CM063089.1
+        - CM063090.1
+        - CM063091.1
+        - CM063092.1
+        - CM063093.1
+        - CM063094.1
+        - CM063095.1
+        - CM063096.1
+        - CM063097.1
+        - CM063098.1
+        - CM063099.1
+        - CM063100.1
+        - CM063101.1
+        - CM063102.1
+        - CM063103.1
+        - CM063104.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

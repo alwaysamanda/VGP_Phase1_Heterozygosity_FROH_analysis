@@ -1,0 +1,70 @@
+    CLADE : amphibians 
+    SPEC_NAME : RanTem 
+    FULL_SPEC_NAME : Rana_temporaria 
+    ALN_NAME : aRanTem 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_053489.1
+        - NC_053490.1
+        - NC_053491.1
+        - NC_053492.1
+        - NC_053493.1
+        - NC_053494.1
+        - NC_053495.1
+        - NC_053496.1
+        - NC_053497.1
+        - NC_053498.1
+        - NC_053499.1
+        - NC_053500.1
+        - NC_053501.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_053489.1
+        - NC_053490.1
+        - NC_053491.1
+        - NC_053492.1
+        - NC_053493.1
+        - NC_053494.1
+        - NC_053495.1
+        - NC_053496.1
+        - NC_053497.1
+        - NC_053498.1
+        - NC_053499.1
+        - NC_053500.1
+        - NC_053501.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

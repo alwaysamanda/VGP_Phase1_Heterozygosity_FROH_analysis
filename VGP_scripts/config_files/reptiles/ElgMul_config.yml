@@ -1,0 +1,90 @@
+    CLADE : reptiles 
+    SPEC_NAME : ElgMul 
+    FULL_SPEC_NAME : Elgaria_multicarinata 
+    ALN_NAME : rElgMul 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_086171.1
+        - NC_086172.1
+        - NC_086173.1
+        - NC_086174.1
+        - NC_086175.1
+        - NC_086176.1
+        - NC_086177.1
+        - NC_086178.1
+        - NC_086179.1
+        - NC_086180.1
+        - NC_086181.1
+        - NC_086182.1
+        - NC_086183.1
+        - NC_086184.1
+        - NC_086185.1
+        - NC_086186.1
+        - NC_086187.1
+        - NC_086188.1
+        - NC_086189.1
+        - NC_086190.1
+        - NC_086191.1
+        - NC_086192.1
+        - NC_086193.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_086171.1
+        - NC_086172.1
+        - NC_086173.1
+        - NC_086174.1
+        - NC_086175.1
+        - NC_086176.1
+        - NC_086177.1
+        - NC_086178.1
+        - NC_086179.1
+        - NC_086180.1
+        - NC_086181.1
+        - NC_086182.1
+        - NC_086183.1
+        - NC_086184.1
+        - NC_086185.1
+        - NC_086186.1
+        - NC_086187.1
+        - NC_086188.1
+        - NC_086189.1
+        - NC_086190.1
+        - NC_086191.1
+        - NC_086192.1
+        - NC_086193.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

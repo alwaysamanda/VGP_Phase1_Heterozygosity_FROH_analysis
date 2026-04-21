@@ -1,0 +1,72 @@
+    CLADE : mammals 
+    SPEC_NAME : DesRot 
+    FULL_SPEC_NAME : Desmodus_rotundus 
+    ALN_NAME : mDesRot 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 15
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM040288.1
+        - CM040289.1
+        - CM040290.1
+        - CM040291.1
+        - CM040292.1
+        - CM040293.1
+        - CM040294.1
+        - CM040295.1
+        - CM040296.1
+        - CM040297.1
+        - CM040298.1
+        - CM040299.1
+        - CM040300.1
+        - CM040301.1
+        - CM040287.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM040288.1
+        - CM040289.1
+        - CM040290.1
+        - CM040291.1
+        - CM040292.1
+        - CM040293.1
+        - CM040294.1
+        - CM040295.1
+        - CM040296.1
+        - CM040297.1
+        - CM040298.1
+        - CM040299.1
+        - CM040300.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

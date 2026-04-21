@@ -1,0 +1,96 @@
+    CLADE : birds 
+    SPEC_NAME : SteHir 
+    FULL_SPEC_NAME : Sterna_hirundo 
+    ALN_NAME : bSteHir 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 27
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM020437.1
+        - CM020438.1
+        - CM020439.1
+        - CM020440.1
+        - CM020441.1
+        - CM020442.1
+        - CM020443.1
+        - CM020444.1
+        - CM020445.1
+        - CM020446.1
+        - CM020447.1
+        - CM020448.1
+        - CM020449.1
+        - CM020450.1
+        - CM020451.1
+        - CM020452.1
+        - CM020453.1
+        - CM020454.1
+        - CM020455.1
+        - CM020456.1
+        - CM020457.1
+        - CM020458.1
+        - CM020459.1
+        - CM020460.1
+        - CM020461.1
+        - CM020463.1
+        - CM020462.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM020437.1
+        - CM020438.1
+        - CM020439.1
+        - CM020440.1
+        - CM020441.1
+        - CM020442.1
+        - CM020443.1
+        - CM020444.1
+        - CM020445.1
+        - CM020446.1
+        - CM020447.1
+        - CM020448.1
+        - CM020449.1
+        - CM020450.1
+        - CM020451.1
+        - CM020452.1
+        - CM020453.1
+        - CM020454.1
+        - CM020455.1
+        - CM020456.1
+        - CM020457.1
+        - CM020458.1
+        - CM020459.1
+        - CM020460.1
+        - CM020461.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

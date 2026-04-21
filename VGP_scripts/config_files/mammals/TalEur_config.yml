@@ -1,0 +1,77 @@
+    CLADE : mammals 
+    SPEC_NAME : TalEur 
+    FULL_SPEC_NAME : Talpa_europaea 
+    ALN_NAME : mTalEur 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 16
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ077399.1
+        - OZ077400.1
+        - OZ077401.1
+        - OZ077402.1
+        - OZ077403.1
+        - OZ077404.1
+        - OZ077405.1
+        - OZ077406.1
+        - OZ077407.1
+        - OZ077408.1
+        - OZ077409.1
+        - OZ077410.1
+        - OZ077411.1
+        - OZ077413.1
+        - OZ077414.1
+        - OZ077415.1
+        - OZ077412.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ077399.1
+        - OZ077400.1
+        - OZ077401.1
+        - OZ077402.1
+        - OZ077403.1
+        - OZ077404.1
+        - OZ077405.1
+        - OZ077406.1
+        - OZ077407.1
+        - OZ077408.1
+        - OZ077409.1
+        - OZ077410.1
+        - OZ077411.1
+        - OZ077413.1
+        - OZ077414.1
+        - OZ077415.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

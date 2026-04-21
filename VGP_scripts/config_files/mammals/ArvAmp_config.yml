@@ -1,0 +1,79 @@
+    CLADE : mammals 
+    SPEC_NAME : ArvAmp 
+    FULL_SPEC_NAME : Arvicola_amphibius 
+    ALN_NAME : mArvAmp 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_052047.1
+        - NC_052048.2
+        - NC_052049.1
+        - NC_052050.1
+        - NC_052051.1
+        - NC_052052.2
+        - NC_052053.1
+        - NC_052054.1
+        - NC_052055.2
+        - NC_052056.1
+        - NC_052057.2
+        - NC_052058.2
+        - NC_052059.1
+        - NC_052060.1
+        - NC_052061.1
+        - NC_052063.2
+        - NC_052064.1
+        - NC_052065.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_052047.1
+        - NC_052048.2
+        - NC_052049.1
+        - NC_052050.1
+        - NC_052051.1
+        - NC_052052.2
+        - NC_052053.1
+        - NC_052054.1
+        - NC_052055.2
+        - NC_052056.1
+        - NC_052057.2
+        - NC_052058.2
+        - NC_052059.1
+        - NC_052060.1
+        - NC_052061.1
+        - NC_052063.2
+        - NC_052064.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

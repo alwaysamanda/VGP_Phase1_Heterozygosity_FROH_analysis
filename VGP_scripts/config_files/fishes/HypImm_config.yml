@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : HypImm 
+    FULL_SPEC_NAME : Hyperoplus_immaculatus 
+    ALN_NAME : fHypImm 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX442349.1
+        - OX442350.1
+        - OX442351.1
+        - OX442352.1
+        - OX442353.1
+        - OX442354.1
+        - OX442355.1
+        - OX442356.1
+        - OX442357.1
+        - OX442358.1
+        - OX442359.1
+        - OX442360.1
+        - OX442361.1
+        - OX442362.1
+        - OX442363.1
+        - OX442364.1
+        - OX442365.1
+        - OX442366.1
+        - OX442367.1
+        - OX442368.1
+        - OX442369.1
+        - OX442370.1
+        - OX442371.1
+        - OX442372.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX442349.1
+        - OX442350.1
+        - OX442351.1
+        - OX442352.1
+        - OX442353.1
+        - OX442354.1
+        - OX442355.1
+        - OX442356.1
+        - OX442357.1
+        - OX442358.1
+        - OX442359.1
+        - OX442360.1
+        - OX442361.1
+        - OX442362.1
+        - OX442363.1
+        - OX442364.1
+        - OX442365.1
+        - OX442366.1
+        - OX442367.1
+        - OX442368.1
+        - OX442369.1
+        - OX442370.1
+        - OX442371.1
+        - OX442372.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

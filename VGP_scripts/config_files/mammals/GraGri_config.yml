@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : GraGri 
+    FULL_SPEC_NAME : Grampus_griseus  
+    ALN_NAME : mGraGri 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ206313.1
+        - OZ206314.1
+        - OZ206315.1
+        - OZ206316.1
+        - OZ206317.1
+        - OZ206319.1
+        - OZ206320.1
+        - OZ206321.1
+        - OZ206322.1
+        - OZ206323.1
+        - OZ206324.1
+        - OZ206325.1
+        - OZ206326.1
+        - OZ206327.1
+        - OZ206328.1
+        - OZ206329.1
+        - OZ206330.1
+        - OZ206331.1
+        - OZ206332.1
+        - OZ206333.1
+        - OZ206334.1
+        - OZ206318.1
+        - OZ206335.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ206313.1
+        - OZ206314.1
+        - OZ206315.1
+        - OZ206316.1
+        - OZ206317.1
+        - OZ206319.1
+        - OZ206320.1
+        - OZ206321.1
+        - OZ206322.1
+        - OZ206323.1
+        - OZ206324.1
+        - OZ206325.1
+        - OZ206326.1
+        - OZ206327.1
+        - OZ206328.1
+        - OZ206329.1
+        - OZ206330.1
+        - OZ206331.1
+        - OZ206332.1
+        - OZ206333.1
+        - OZ206334.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

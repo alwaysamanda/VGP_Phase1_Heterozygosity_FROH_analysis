@@ -1,0 +1,88 @@
+    CLADE : fishes 
+    SPEC_NAME : SynAcu 
+    FULL_SPEC_NAME : Syngnathus_acus
+    ALN_NAME : fSynAcu
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_051087.1
+        - NC_051088.1
+        - NC_051089.1
+        - NC_051090.1
+        - NC_051091.1
+        - NC_051092.1
+        - NC_051093.1
+        - NC_051094.1
+        - NC_051095.1
+        - NC_051096.1
+        - NC_051097.1
+        - NC_051098.1
+        - NC_051099.1
+        - NC_051100.1
+        - NC_051101.1
+        - NC_051102.1
+        - NC_051103.1
+        - NC_051104.1
+        - NC_051105.1
+        - NC_051106.1
+        - NC_051107.1
+        - NC_051108.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_051087.1
+        - NC_051088.1
+        - NC_051089.1
+        - NC_051090.1
+        - NC_051091.1
+        - NC_051092.1
+        - NC_051093.1
+        - NC_051094.1
+        - NC_051095.1
+        - NC_051096.1
+        - NC_051097.1
+        - NC_051098.1
+        - NC_051099.1
+        - NC_051100.1
+        - NC_051101.1
+        - NC_051102.1
+        - NC_051103.1
+        - NC_051104.1
+        - NC_051105.1
+        - NC_051106.1
+        - NC_051107.1
+        - NC_051108.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,76 @@
+    CLADE : mammals 
+    SPEC_NAME : PhyDis 
+    FULL_SPEC_NAME : Phyllostomus_discolor 
+    ALN_NAME : mPhyDis 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 15
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_040903.2
+        - NC_040904.2
+        - NC_040905.2
+        - NC_040906.2
+        - NC_040907.2
+        - NC_040908.2
+        - NC_040909.2
+        - NC_040910.2
+        - NC_040911.2
+        - NC_040912.2
+        - NC_040913.2
+        - NC_040914.2
+        - NC_040915.2
+        - NC_040916.2
+        - NC_040917.2
+        - NC_050198.1
+        - NC_050199.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_040903.2
+        - NC_040904.2
+        - NC_040905.2
+        - NC_040906.2
+        - NC_040907.2
+        - NC_040908.2
+        - NC_040909.2
+        - NC_040910.2
+        - NC_040911.2
+        - NC_040912.2
+        - NC_040913.2
+        - NC_040914.2
+        - NC_040915.2
+        - NC_040916.2
+        - NC_040917.2
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

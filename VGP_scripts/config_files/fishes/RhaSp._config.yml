@@ -1,0 +1,88 @@
+    CLADE : fishes 
+    SPEC_NAME : RhaSp. 
+    FULL_SPEC_NAME : Rhamphochromis_sp. 
+    ALN_NAME : fRhaSp. 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ017715.1
+        - OZ017716.1
+        - OZ017717.1
+        - OZ017718.1
+        - OZ017719.1
+        - OZ017720.1
+        - OZ017721.1
+        - OZ017722.1
+        - OZ017723.1
+        - OZ017724.1
+        - OZ017725.1
+        - OZ017726.1
+        - OZ017727.1
+        - OZ017728.1
+        - OZ017729.1
+        - OZ017730.1
+        - OZ017731.1
+        - OZ017732.1
+        - OZ017733.1
+        - OZ017734.1
+        - OZ017735.1
+        - OZ017736.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ017715.1
+        - OZ017716.1
+        - OZ017717.1
+        - OZ017718.1
+        - OZ017719.1
+        - OZ017720.1
+        - OZ017721.1
+        - OZ017722.1
+        - OZ017723.1
+        - OZ017724.1
+        - OZ017725.1
+        - OZ017726.1
+        - OZ017727.1
+        - OZ017728.1
+        - OZ017729.1
+        - OZ017730.1
+        - OZ017731.1
+        - OZ017732.1
+        - OZ017733.1
+        - OZ017734.1
+        - OZ017735.1
+        - OZ017736.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

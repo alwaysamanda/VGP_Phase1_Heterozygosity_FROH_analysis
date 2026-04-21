@@ -1,0 +1,79 @@
+    CLADE : reptiles 
+    SPEC_NAME : VipLat 
+    FULL_SPEC_NAME : Vipera_latastei 
+    ALN_NAME : rVipLat 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM044354.1
+        - CM044355.1
+        - CM044356.1
+        - CM044357.1
+        - CM044358.1
+        - CM044359.1
+        - CM044360.1
+        - CM044361.1
+        - CM044362.1
+        - CM044363.1
+        - CM044364.1
+        - CM044365.1
+        - CM044366.1
+        - CM044367.1
+        - CM044368.1
+        - CM044369.1
+        - CM044370.1
+        - CM044371.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM044354.1
+        - CM044355.1
+        - CM044356.1
+        - CM044357.1
+        - CM044358.1
+        - CM044359.1
+        - CM044360.1
+        - CM044361.1
+        - CM044362.1
+        - CM044363.1
+        - CM044364.1
+        - CM044365.1
+        - CM044366.1
+        - CM044367.1
+        - CM044368.1
+        - CM044369.1
+        - CM044370.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

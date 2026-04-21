@@ -1,0 +1,85 @@
+    CLADE : mammals 
+    SPEC_NAME : KogBre 
+    FULL_SPEC_NAME : Kogia_breviceps 
+    ALN_NAME : mKogBre 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_081310.1
+        - NC_081311.1
+        - NC_081312.1
+        - NC_081313.1
+        - NC_081314.1
+        - NC_081315.1
+        - NC_081316.1
+        - NC_081317.1
+        - NC_081318.1
+        - NC_081319.1
+        - NC_081320.1
+        - NC_081321.1
+        - NC_081322.1
+        - NC_081323.1
+        - NC_081324.1
+        - NC_081325.1
+        - NC_081326.1
+        - NC_081327.1
+        - NC_081328.1
+        - NC_081329.1
+        - NC_081330.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_081310.1
+        - NC_081311.1
+        - NC_081312.1
+        - NC_081313.1
+        - NC_081314.1
+        - NC_081315.1
+        - NC_081316.1
+        - NC_081317.1
+        - NC_081318.1
+        - NC_081319.1
+        - NC_081320.1
+        - NC_081321.1
+        - NC_081322.1
+        - NC_081323.1
+        - NC_081324.1
+        - NC_081325.1
+        - NC_081326.1
+        - NC_081327.1
+        - NC_081328.1
+        - NC_081329.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

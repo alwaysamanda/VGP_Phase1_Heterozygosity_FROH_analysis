@@ -1,0 +1,96 @@
+    CLADE : fishes 
+    SPEC_NAME : SalBra 
+    FULL_SPEC_NAME: Salminus_brasiliensis
+    ALN_NAME: fSalBra
+    REF_NAME : GCF_030463535.1 
+    ALT_NAME : GCA_030448965.1 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - NC_132878.1
+        - NC_132879.1
+        - NC_132880.1
+        - NC_132881.1
+        - NC_132882.1
+        - NC_132883.1
+        - NC_132884.1
+        - NC_132885.1
+        - NC_132886.1
+        - NC_132887.1
+        - NC_132888.1
+        - NC_132889.1
+        - NC_132890.1
+        - NC_132891.1
+        - NC_132892.1
+        - NC_132893.1
+        - NC_132894.1
+        - NC_132895.1
+        - NC_132896.1
+        - NC_132897.1
+        - NC_132898.1
+        - NC_132899.1
+        - NC_132900.1
+        - NC_132901.1
+        - NC_132902.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_132878.1
+        - NC_132879.1
+        - NC_132880.1
+        - NC_132881.1
+        - NC_132882.1
+        - NC_132883.1
+        - NC_132884.1
+        - NC_132885.1
+        - NC_132886.1
+        - NC_132887.1
+        - NC_132888.1
+        - NC_132889.1
+        - NC_132890.1
+        - NC_132891.1
+        - NC_132892.1
+        - NC_132893.1
+        - NC_132894.1
+        - NC_132895.1
+        - NC_132896.1
+        - NC_132897.1
+        - NC_132898.1
+        - NC_132899.1
+        - NC_132900.1
+        - NC_132901.1
+        - NC_132902.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

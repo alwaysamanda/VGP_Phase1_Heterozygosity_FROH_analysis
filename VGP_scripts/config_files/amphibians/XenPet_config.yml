@@ -1,0 +1,80 @@
+    CLADE : amphibians 
+    SPEC_NAME : XenPet 
+    FULL_SPEC_NAME : Xenopus_petersii 
+    ALN_NAME : aXenPet 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM076672.1
+        - CM076673.1
+        - CM076674.1
+        - CM076675.1
+        - CM076676.1
+        - CM076677.1
+        - CM076678.1
+        - CM076679.1
+        - CM076680.1
+        - CM076681.1
+        - CM076682.1
+        - CM076683.1
+        - CM076684.1
+        - CM076685.1
+        - CM076686.1
+        - CM076687.1
+        - CM076688.1
+        - CM076689.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM076672.1
+        - CM076673.1
+        - CM076674.1
+        - CM076675.1
+        - CM076676.1
+        - CM076677.1
+        - CM076678.1
+        - CM076679.1
+        - CM076680.1
+        - CM076681.1
+        - CM076682.1
+        - CM076683.1
+        - CM076684.1
+        - CM076685.1
+        - CM076686.1
+        - CM076687.1
+        - CM076688.1
+        - CM076689.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

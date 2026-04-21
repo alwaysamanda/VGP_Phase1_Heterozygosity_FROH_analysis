@@ -1,0 +1,88 @@
+    CLADE : other 
+    SPEC_NAME : AstRub 
+    FULL_SPEC_NAME : Asterias_rubens 
+    ALN_NAME : eAstRub 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_047062.1
+        - NC_047063.1
+        - NC_047064.1
+        - NC_047065.1
+        - NC_047066.1
+        - NC_047067.1
+        - NC_047068.1
+        - NC_047069.1
+        - NC_047070.1
+        - NC_047071.1
+        - NC_047072.1
+        - NC_047073.1
+        - NC_047074.1
+        - NC_047075.1
+        - NC_047076.1
+        - NC_047077.1
+        - NC_047078.1
+        - NC_047079.1
+        - NC_047080.1
+        - NC_047081.1
+        - NC_047082.1
+        - NC_047083.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_047062.1
+        - NC_047063.1
+        - NC_047064.1
+        - NC_047065.1
+        - NC_047066.1
+        - NC_047067.1
+        - NC_047068.1
+        - NC_047069.1
+        - NC_047070.1
+        - NC_047071.1
+        - NC_047072.1
+        - NC_047073.1
+        - NC_047074.1
+        - NC_047075.1
+        - NC_047076.1
+        - NC_047077.1
+        - NC_047078.1
+        - NC_047079.1
+        - NC_047080.1
+        - NC_047081.1
+        - NC_047082.1
+        - NC_047083.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

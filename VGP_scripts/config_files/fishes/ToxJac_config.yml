@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : ToxJac 
+    FULL_SPEC_NAME : Toxotes_jaculatrix 
+    ALN_NAME : fToxJac 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_054394.1
+        - NC_054395.1
+        - NC_054396.1
+        - NC_054397.1
+        - NC_054398.1
+        - NC_054399.1
+        - NC_054400.1
+        - NC_054401.1
+        - NC_054402.1
+        - NC_054403.1
+        - NC_054404.1
+        - NC_054405.1
+        - NC_054406.1
+        - NC_054407.1
+        - NC_054408.1
+        - NC_054409.1
+        - NC_054410.1
+        - NC_054411.1
+        - NC_054412.1
+        - NC_054413.1
+        - NC_054414.1
+        - NC_054415.1
+        - NC_054416.1
+        - NC_054417.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_054394.1
+        - NC_054395.1
+        - NC_054396.1
+        - NC_054397.1
+        - NC_054398.1
+        - NC_054399.1
+        - NC_054400.1
+        - NC_054401.1
+        - NC_054402.1
+        - NC_054403.1
+        - NC_054404.1
+        - NC_054405.1
+        - NC_054406.1
+        - NC_054407.1
+        - NC_054408.1
+        - NC_054409.1
+        - NC_054410.1
+        - NC_054411.1
+        - NC_054412.1
+        - NC_054413.1
+        - NC_054414.1
+        - NC_054415.1
+        - NC_054416.1
+        - NC_054417.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

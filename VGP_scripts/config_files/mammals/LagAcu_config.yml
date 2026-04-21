@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : LagAcu 
+    FULL_SPEC_NAME : Lagenorhynchus_acutus 
+    ALN_NAME : mLagAcu 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ185456.1
+        - OZ185457.1
+        - OZ185458.1
+        - OZ185459.1
+        - OZ185460.1
+        - OZ185462.1
+        - OZ185463.1
+        - OZ185464.1
+        - OZ185465.1
+        - OZ185466.1
+        - OZ185467.1
+        - OZ185468.1
+        - OZ185469.1
+        - OZ185470.1
+        - OZ185471.1
+        - OZ185472.1
+        - OZ185473.1
+        - OZ185474.1
+        - OZ185475.1
+        - OZ185476.1
+        - OZ185477.1
+        - OZ185461.1
+        - OZ185478.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ185456.1
+        - OZ185457.1
+        - OZ185458.1
+        - OZ185459.1
+        - OZ185460.1
+        - OZ185462.1
+        - OZ185463.1
+        - OZ185464.1
+        - OZ185465.1
+        - OZ185466.1
+        - OZ185467.1
+        - OZ185468.1
+        - OZ185469.1
+        - OZ185470.1
+        - OZ185471.1
+        - OZ185472.1
+        - OZ185473.1
+        - OZ185474.1
+        - OZ185475.1
+        - OZ185476.1
+        - OZ185477.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

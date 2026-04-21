@@ -1,0 +1,75 @@
+    CLADE : mammals 
+    SPEC_NAME : ArtInt 
+    FULL_SPEC_NAME : Artibeus_intermedius 
+    ALN_NAME : mArtInt 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 14
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM076312.1
+        - CM076313.1
+        - CM076314.1
+        - CM076315.1
+        - CM076316.1
+        - CM076317.1
+        - CM076318.1
+        - CM076319.1
+        - CM076320.1
+        - CM076321.1
+        - CM076322.1
+        - CM076323.1
+        - CM076324.1
+        - CM076325.1
+        - CM076326.1
+        - CM076327.1
+        - CM076328.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM076312.1
+        - CM076313.1
+        - CM076314.1
+        - CM076315.1
+        - CM076316.1
+        - CM076317.1
+        - CM076318.1
+        - CM076319.1
+        - CM076320.1
+        - CM076321.1
+        - CM076322.1
+        - CM076323.1
+        - CM076324.1
+        - CM076325.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

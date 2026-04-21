@@ -1,0 +1,70 @@
+    CLADE : amphibians 
+    SPEC_NAME : PelFus 
+    FULL_SPEC_NAME : Pelobates_fuscus 
+    ALN_NAME : aPelFus 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_086317.1
+        - NC_086318.1
+        - NC_086319.1
+        - NC_086320.1
+        - NC_086321.1
+        - NC_086322.1
+        - NC_086323.1
+        - NC_086324.1
+        - NC_086325.1
+        - NC_086326.1
+        - NC_086327.1
+        - NC_086328.1
+        - NC_086329.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_086317.1
+        - NC_086318.1
+        - NC_086319.1
+        - NC_086320.1
+        - NC_086321.1
+        - NC_086322.1
+        - NC_086323.1
+        - NC_086324.1
+        - NC_086325.1
+        - NC_086326.1
+        - NC_086327.1
+        - NC_086328.1
+        - NC_086329.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : LycPac 
+    FULL_SPEC_NAME: Lycodopsis_pacificus
+    ALN_NAME: fLycPac
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 2
+    ALL_CHROMOSOMES : 
+        - CM051688.1
+        - CM051689.1
+        - CM051690.1
+        - CM051691.1
+        - CM051692.1
+        - CM051693.1
+        - CM051694.1
+        - CM051695.1
+        - CM051696.1
+        - CM051697.1
+        - CM051698.1
+        - CM051699.1
+        - CM051700.1
+        - CM051701.1
+        - CM051702.1
+        - CM051703.1
+        - CM051704.1
+        - CM051705.1
+        - CM051706.1
+        - CM051707.1
+        - CM051708.1
+        - CM051709.1
+        - CM051710.1
+        - CM051711.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM051688.1
+        - CM051689.1
+        - CM051690.1
+        - CM051691.1
+        - CM051692.1
+        - CM051693.1
+        - CM051694.1
+        - CM051695.1
+        - CM051696.1
+        - CM051697.1
+        - CM051698.1
+        - CM051699.1
+        - CM051700.1
+        - CM051701.1
+        - CM051702.1
+        - CM051703.1
+        - CM051704.1
+        - CM051705.1
+        - CM051706.1
+        - CM051707.1
+        - CM051708.1
+        - CM051709.1
+        - CM051710.1
+        - CM051711.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

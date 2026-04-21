@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : GymBra 
+    FULL_SPEC_NAME : Gymnoscopelus_braueri 
+    ALN_NAME : fGymBra 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY725508.1
+        - OY725509.1
+        - OY725510.1
+        - OY725511.1
+        - OY725512.1
+        - OY725513.1
+        - OY725514.1
+        - OY725515.1
+        - OY725516.1
+        - OY725517.1
+        - OY725518.1
+        - OY725519.1
+        - OY725520.1
+        - OY725521.1
+        - OY725522.1
+        - OY725523.1
+        - OY725524.1
+        - OY725525.1
+        - OY725526.1
+        - OY725527.1
+        - OY725528.1
+        - OY725529.1
+        - OY725530.1
+        - OY725531.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY725508.1
+        - OY725509.1
+        - OY725510.1
+        - OY725511.1
+        - OY725512.1
+        - OY725513.1
+        - OY725514.1
+        - OY725515.1
+        - OY725516.1
+        - OY725517.1
+        - OY725518.1
+        - OY725519.1
+        - OY725520.1
+        - OY725521.1
+        - OY725522.1
+        - OY725523.1
+        - OY725524.1
+        - OY725525.1
+        - OY725526.1
+        - OY725527.1
+        - OY725528.1
+        - OY725529.1
+        - OY725530.1
+        - OY725531.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

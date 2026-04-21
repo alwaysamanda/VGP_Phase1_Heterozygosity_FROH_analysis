@@ -1,0 +1,85 @@
+    CLADE : mammals 
+    SPEC_NAME : HypAmp 
+    FULL_SPEC_NAME : Hyperoodon_ampullatus 
+    ALN_NAME : mHypAmp 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX457056.1
+        - OX457057.1
+        - OX457058.1
+        - OX457059.1
+        - OX457060.1
+        - OX457061.1
+        - OX457062.1
+        - OX457063.1
+        - OX457064.1
+        - OX457065.1
+        - OX457066.1
+        - OX457067.1
+        - OX457068.1
+        - OX457069.1
+        - OX457070.1
+        - OX457071.1
+        - OX457072.1
+        - OX457073.1
+        - OX457074.1
+        - OX457075.1
+        - OX457055.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX457056.1
+        - OX457057.1
+        - OX457058.1
+        - OX457059.1
+        - OX457060.1
+        - OX457061.1
+        - OX457062.1
+        - OX457063.1
+        - OX457064.1
+        - OX457065.1
+        - OX457066.1
+        - OX457067.1
+        - OX457068.1
+        - OX457069.1
+        - OX457070.1
+        - OX457071.1
+        - OX457072.1
+        - OX457073.1
+        - OX457074.1
+        - OX457075.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

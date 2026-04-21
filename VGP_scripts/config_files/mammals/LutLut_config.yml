@@ -1,0 +1,82 @@
+    CLADE : mammals 
+    SPEC_NAME : LutLut 
+    FULL_SPEC_NAME : Lutra_lutra 
+    ALN_NAME : mLutLut 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_062278.1
+        - NC_062279.1
+        - NC_062280.1
+        - NC_062281.1
+        - NC_062282.1
+        - NC_062283.1
+        - NC_062284.1
+        - NC_062285.1
+        - NC_062286.1
+        - NC_062287.1
+        - NC_062288.1
+        - NC_062289.1
+        - NC_062290.1
+        - NC_062291.1
+        - NC_062292.1
+        - NC_062293.1
+        - NC_062294.1
+        - NC_062295.1
+        - NC_062296.1
+        - NC_062297.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_062278.1
+        - NC_062279.1
+        - NC_062280.1
+        - NC_062281.1
+        - NC_062282.1
+        - NC_062283.1
+        - NC_062284.1
+        - NC_062285.1
+        - NC_062286.1
+        - NC_062287.1
+        - NC_062288.1
+        - NC_062289.1
+        - NC_062290.1
+        - NC_062291.1
+        - NC_062292.1
+        - NC_062293.1
+        - NC_062294.1
+        - NC_062295.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,94 @@
+    CLADE : fishes
+    SPEC_NAME : ArrGeo
+    FULL_SPEC_NAME: "Arripis_georgiana"
+    ALN_NAME: "fArrGeo"
+    REF_NAME : GCA_042242135.1 
+    ALT_NAME : GCA_042242115.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 2
+    ALL_CHROMOSOMES : 
+        - CM090191.1
+        - CM090192.1
+        - CM090193.1
+        - CM090194.1
+        - CM090195.1
+        - CM090196.1
+        - CM090197.1
+        - CM090198.1
+        - CM090199.1
+        - CM090200.1
+        - CM090201.1
+        - CM090202.1
+        - CM090203.1
+        - CM090204.1
+        - CM090205.1
+        - CM090206.1
+        - CM090207.1
+        - CM090208.1
+        - CM090209.1
+        - CM090210.1
+        - CM090211.1
+        - CM090212.1
+        - CM090213.1
+        - CM090214.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM090191.1
+        - CM090192.1
+        - CM090193.1
+        - CM090194.1
+        - CM090195.1
+        - CM090196.1
+        - CM090197.1
+        - CM090198.1
+        - CM090199.1
+        - CM090200.1
+        - CM090201.1
+        - CM090202.1
+        - CM090203.1
+        - CM090204.1
+        - CM090205.1
+        - CM090206.1
+        - CM090207.1
+        - CM090208.1
+        - CM090209.1
+        - CM090210.1
+        - CM090211.1
+        - CM090212.1
+        - CM090213.1
+        - CM090214.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

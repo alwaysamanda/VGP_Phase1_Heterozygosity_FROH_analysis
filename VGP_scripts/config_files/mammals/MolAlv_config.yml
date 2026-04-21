@@ -1,0 +1,91 @@
+    CLADE : mammals 
+    SPEC_NAME : MolAlv 
+    FULL_SPEC_NAME : Molossus_alvarezi 
+    ALN_NAME : mMolAlv
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM073846.1
+        - CM073847.1
+        - CM073848.1
+        - CM073849.1
+        - CM073850.1
+        - CM073851.1
+        - CM073852.1
+        - CM073853.1
+        - CM073854.1
+        - CM073855.1
+        - CM073856.1
+        - CM073857.1
+        - CM073858.1
+        - CM073859.1
+        - CM073860.1
+        - CM073861.1
+        - CM073862.1
+        - CM073863.1
+        - CM073864.1
+        - CM073865.1
+        - CM073866.1
+        - CM073867.1
+        - CM073868.1
+        - CM073869.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM073846.1
+        - CM073847.1
+        - CM073848.1
+        - CM073849.1
+        - CM073850.1
+        - CM073851.1
+        - CM073852.1
+        - CM073853.1
+        - CM073854.1
+        - CM073855.1
+        - CM073856.1
+        - CM073857.1
+        - CM073858.1
+        - CM073859.1
+        - CM073860.1
+        - CM073861.1
+        - CM073862.1
+        - CM073863.1
+        - CM073864.1
+        - CM073865.1
+        - CM073866.1
+        - CM073867.1
+        - CM073868.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

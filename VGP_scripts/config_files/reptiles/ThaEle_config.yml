@@ -1,0 +1,79 @@
+    CLADE : reptiles 
+    SPEC_NAME : ThaEle 
+    FULL_SPEC_NAME : Thamnophis_elegans 
+    ALN_NAME : rThaEle 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_045541.1
+        - NC_045542.1
+        - NC_045543.1
+        - NC_045544.1
+        - NC_045545.1
+        - NC_045546.1
+        - NC_045547.1
+        - NC_045548.1
+        - NC_045549.1
+        - NC_045550.1
+        - NC_045551.1
+        - NC_045552.1
+        - NC_045553.1
+        - NC_045554.1
+        - NC_045555.1
+        - NC_045556.1
+        - NC_045557.1
+        - NC_045558.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_045541.1
+        - NC_045542.1
+        - NC_045543.1
+        - NC_045544.1
+        - NC_045545.1
+        - NC_045546.1
+        - NC_045547.1
+        - NC_045548.1
+        - NC_045549.1
+        - NC_045550.1
+        - NC_045551.1
+        - NC_045552.1
+        - NC_045553.1
+        - NC_045554.1
+        - NC_045555.1
+        - NC_045556.1
+        - NC_045557.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

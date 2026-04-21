@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : EchVip 
+    FULL_SPEC_NAME : Echiichthys_vipera 
+    ALN_NAME : fEchVip 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY829646.1
+        - OY829647.1
+        - OY829648.1
+        - OY829649.1
+        - OY829650.1
+        - OY829651.1
+        - OY829652.1
+        - OY829653.1
+        - OY829654.1
+        - OY829655.1
+        - OY829656.1
+        - OY829657.1
+        - OY829658.1
+        - OY829659.1
+        - OY829660.1
+        - OY829661.1
+        - OY829662.1
+        - OY829663.1
+        - OY829664.1
+        - OY829665.1
+        - OY829666.1
+        - OY829667.1
+        - OY829668.1
+        - OY829645.1
+        - OY829669.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY829646.1
+        - OY829647.1
+        - OY829648.1
+        - OY829649.1
+        - OY829650.1
+        - OY829651.1
+        - OY829652.1
+        - OY829653.1
+        - OY829654.1
+        - OY829655.1
+        - OY829656.1
+        - OY829657.1
+        - OY829658.1
+        - OY829659.1
+        - OY829660.1
+        - OY829661.1
+        - OY829662.1
+        - OY829663.1
+        - OY829664.1
+        - OY829665.1
+        - OY829666.1
+        - OY829667.1
+        - OY829668.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

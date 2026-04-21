@@ -1,0 +1,84 @@
+    CLADE : mammals 
+    SPEC_NAME : SciCar 
+    FULL_SPEC_NAME : Sciurus_carolinensis 
+    ALN_NAME : mSciCar 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_062213.1
+        - NC_062214.1
+        - NC_062215.1
+        - NC_062216.1
+        - NC_062217.1
+        - NC_062218.1
+        - NC_062219.1
+        - NC_062220.1
+        - NC_062221.1
+        - NC_062222.1
+        - NC_062223.1
+        - NC_062224.1
+        - NC_062225.1
+        - NC_062226.1
+        - NC_062227.1
+        - NC_062228.1
+        - NC_062229.1
+        - NC_062230.1
+        - NC_062231.1
+        - NC_062232.1
+        - NC_062233.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_062213.1
+        - NC_062214.1
+        - NC_062215.1
+        - NC_062216.1
+        - NC_062217.1
+        - NC_062218.1
+        - NC_062219.1
+        - NC_062220.1
+        - NC_062221.1
+        - NC_062222.1
+        - NC_062223.1
+        - NC_062224.1
+        - NC_062225.1
+        - NC_062226.1
+        - NC_062227.1
+        - NC_062228.1
+        - NC_062229.1
+        - NC_062230.1
+        - NC_062231.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

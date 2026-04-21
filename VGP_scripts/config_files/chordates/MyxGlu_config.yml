@@ -1,0 +1,72 @@
+    CLADE : chordates 
+    SPEC_NAME : MyxGlu 
+    FULL_SPEC_NAME : Myxine_glutinosa 
+    ALN_NAME : kMyxGlu 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 14
+    NUM_ALL_CHR: 14
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ076423.1
+        - OZ076424.1
+        - OZ076425.1
+        - OZ076426.1
+        - OZ076427.1
+        - OZ076428.1
+        - OZ076429.1
+        - OZ076430.1
+        - OZ076431.1
+        - OZ076432.1
+        - OZ076433.1
+        - OZ076434.1
+        - OZ076435.1
+        - OZ076436.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ076423.1
+        - OZ076424.1
+        - OZ076425.1
+        - OZ076426.1
+        - OZ076427.1
+        - OZ076428.1
+        - OZ076429.1
+        - OZ076430.1
+        - OZ076431.1
+        - OZ076432.1
+        - OZ076433.1
+        - OZ076434.1
+        - OZ076435.1
+        - OZ076436.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

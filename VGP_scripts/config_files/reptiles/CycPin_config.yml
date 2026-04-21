@@ -1,0 +1,78 @@
+    CLADE : reptiles 
+    SPEC_NAME : CycPin 
+    FULL_SPEC_NAME : Cyclura_pinguis 
+    ALN_NAME : rCycPin 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM059599.1
+        - CM059600.1
+        - CM059601.1
+        - CM059602.1
+        - CM059603.1
+        - CM059604.1
+        - CM059605.1
+        - CM059606.1
+        - CM059607.1
+        - CM059608.1
+        - CM059609.1
+        - CM059610.1
+        - CM059611.1
+        - CM059612.1
+        - CM059613.1
+        - CM059614.1
+        - CM059615.1
+        - CM059616.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM059599.1
+        - CM059600.1
+        - CM059601.1
+        - CM059602.1
+        - CM059603.1
+        - CM059604.1
+        - CM059605.1
+        - CM059606.1
+        - CM059607.1
+        - CM059608.1
+        - CM059609.1
+        - CM059610.1
+        - CM059611.1
+        - CM059612.1
+        - CM059613.1
+        - CM059614.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

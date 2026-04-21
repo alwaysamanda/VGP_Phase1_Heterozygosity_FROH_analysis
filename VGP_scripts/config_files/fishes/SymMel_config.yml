@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : SymMel 
+    FULL_SPEC_NAME : Symphodus_melops 
+    ALN_NAME : fSymMel 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX393525.1
+        - OX393526.1
+        - OX393527.1
+        - OX393528.1
+        - OX393529.1
+        - OX393530.1
+        - OX393531.1
+        - OX393532.1
+        - OX393533.1
+        - OX393534.1
+        - OX393535.1
+        - OX393536.1
+        - OX393537.1
+        - OX393538.1
+        - OX393539.1
+        - OX393540.1
+        - OX393541.1
+        - OX393542.1
+        - OX393543.1
+        - OX393544.1
+        - OX393545.1
+        - OX393546.1
+        - OX393547.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX393525.1
+        - OX393526.1
+        - OX393527.1
+        - OX393528.1
+        - OX393529.1
+        - OX393530.1
+        - OX393531.1
+        - OX393532.1
+        - OX393533.1
+        - OX393534.1
+        - OX393535.1
+        - OX393536.1
+        - OX393537.1
+        - OX393538.1
+        - OX393539.1
+        - OX393540.1
+        - OX393541.1
+        - OX393542.1
+        - OX393543.1
+        - OX393544.1
+        - OX393545.1
+        - OX393546.1
+        - OX393547.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

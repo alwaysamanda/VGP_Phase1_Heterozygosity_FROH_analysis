@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : SaiBol 
+    FULL_SPEC_NAME : Saimiri_boliviensis 
+    ALN_NAME : mSaiBol 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM109009.1
+        - CM109010.1
+        - CM109011.1
+        - CM109012.1
+        - CM109013.1
+        - CM109014.1
+        - CM109015.1
+        - CM109016.1
+        - CM109017.1
+        - CM109018.1
+        - CM109019.1
+        - CM109020.1
+        - CM109021.1
+        - CM109022.1
+        - CM109023.1
+        - CM109024.1
+        - CM109025.1
+        - CM109026.1
+        - CM109027.1
+        - CM109028.1
+        - CM109029.1
+        - CM109030.1
+        - CM109031.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109009.1
+        - CM109010.1
+        - CM109011.1
+        - CM109012.1
+        - CM109013.1
+        - CM109014.1
+        - CM109015.1
+        - CM109016.1
+        - CM109017.1
+        - CM109018.1
+        - CM109019.1
+        - CM109020.1
+        - CM109021.1
+        - CM109022.1
+        - CM109023.1
+        - CM109024.1
+        - CM109025.1
+        - CM109026.1
+        - CM109027.1
+        - CM109028.1
+        - CM109029.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

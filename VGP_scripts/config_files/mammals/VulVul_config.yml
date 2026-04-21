@@ -1,0 +1,77 @@
+    CLADE : mammals 
+    SPEC_NAME : VulVul 
+    FULL_SPEC_NAME : Vulpes_vulpes 
+    ALN_NAME : mVulVul 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 16
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ067313.1
+        - OZ067314.1
+        - OZ067315.1
+        - OZ067316.1
+        - OZ067317.1
+        - OZ067318.1
+        - OZ067319.1
+        - OZ067320.1
+        - OZ067321.1
+        - OZ067322.1
+        - OZ067324.1
+        - OZ067325.1
+        - OZ067326.1
+        - OZ067327.1
+        - OZ067328.1
+        - OZ067329.1 
+        - OZ067323.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ067313.1
+        - OZ067314.1
+        - OZ067315.1
+        - OZ067316.1
+        - OZ067317.1
+        - OZ067318.1
+        - OZ067319.1
+        - OZ067320.1
+        - OZ067321.1
+        - OZ067322.1
+        - OZ067324.1
+        - OZ067325.1
+        - OZ067326.1
+        - OZ067327.1
+        - OZ067328.1
+        - OZ067329.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

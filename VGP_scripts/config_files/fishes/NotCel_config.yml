@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : NotCel 
+    FULL_SPEC_NAME : Notolabrus_celidotus 
+    ALN_NAME : fNotCel 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_048272.1
+        - NC_048273.1
+        - NC_048274.1
+        - NC_048275.1
+        - NC_048276.1
+        - NC_048277.1
+        - NC_048278.1
+        - NC_048279.1
+        - NC_048280.1
+        - NC_048281.1
+        - NC_048282.1
+        - NC_048283.1
+        - NC_048284.1
+        - NC_048285.1
+        - NC_048286.1
+        - NC_048287.1
+        - NC_048288.1
+        - NC_048289.1
+        - NC_048290.1
+        - NC_048291.1
+        - NC_048292.1
+        - NC_048293.1
+        - NC_048294.1
+        - NC_048295.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_048272.1
+        - NC_048273.1
+        - NC_048274.1
+        - NC_048275.1
+        - NC_048276.1
+        - NC_048277.1
+        - NC_048278.1
+        - NC_048279.1
+        - NC_048280.1
+        - NC_048281.1
+        - NC_048282.1
+        - NC_048283.1
+        - NC_048284.1
+        - NC_048285.1
+        - NC_048286.1
+        - NC_048287.1
+        - NC_048288.1
+        - NC_048289.1
+        - NC_048290.1
+        - NC_048291.1
+        - NC_048292.1
+        - NC_048293.1
+        - NC_048294.1
+        - NC_048295.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

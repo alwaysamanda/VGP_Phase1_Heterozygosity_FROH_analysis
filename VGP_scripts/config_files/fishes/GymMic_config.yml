@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : GymMic 
+    FULL_SPEC_NAME : Gymnoscopelus_microlampas 
+    ALN_NAME : fGymMic 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY732703.1
+        - OY732704.1
+        - OY732705.1
+        - OY732706.1
+        - OY732707.1
+        - OY732708.1
+        - OY732709.1
+        - OY732710.1
+        - OY732711.1
+        - OY732712.1
+        - OY732713.1
+        - OY732714.1
+        - OY732715.1
+        - OY732716.1
+        - OY732717.1
+        - OY732718.1
+        - OY732719.1
+        - OY732720.1
+        - OY732721.1
+        - OY732722.1
+        - OY732723.1
+        - OY732724.1
+        - OY732725.1
+        - OY732726.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY732703.1
+        - OY732704.1
+        - OY732705.1
+        - OY732706.1
+        - OY732707.1
+        - OY732708.1
+        - OY732709.1
+        - OY732710.1
+        - OY732711.1
+        - OY732712.1
+        - OY732713.1
+        - OY732714.1
+        - OY732715.1
+        - OY732716.1
+        - OY732717.1
+        - OY732718.1
+        - OY732719.1
+        - OY732720.1
+        - OY732721.1
+        - OY732722.1
+        - OY732723.1
+        - OY732724.1
+        - OY732725.1
+        - OY732726.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

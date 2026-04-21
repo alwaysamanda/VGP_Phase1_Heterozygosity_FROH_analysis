@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : BalRic 
+    FULL_SPEC_NAME : Balaenoptera_ricei 
+    ALN_NAME : mBalRic 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_082639.1
+        - NC_082640.1
+        - NC_082641.1
+        - NC_082642.1
+        - NC_082643.1
+        - NC_082644.1
+        - NC_082645.1
+        - NC_082646.1
+        - NC_082647.1
+        - NC_082648.1
+        - NC_082649.1
+        - NC_082650.1
+        - NC_082651.1
+        - NC_082652.1
+        - NC_082653.1
+        - NC_082654.1
+        - NC_082655.1
+        - NC_082656.1
+        - NC_082657.1
+        - NC_082658.1
+        - NC_082659.1
+        - NC_082660.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_082639.1
+        - NC_082640.1
+        - NC_082641.1
+        - NC_082642.1
+        - NC_082643.1
+        - NC_082644.1
+        - NC_082645.1
+        - NC_082646.1
+        - NC_082647.1
+        - NC_082648.1
+        - NC_082649.1
+        - NC_082650.1
+        - NC_082651.1
+        - NC_082652.1
+        - NC_082653.1
+        - NC_082654.1
+        - NC_082655.1
+        - NC_082656.1
+        - NC_082657.1
+        - NC_082658.1
+        - NC_082659.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

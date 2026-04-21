@@ -1,0 +1,72 @@
+    CLADE : amphibians 
+    SPEC_NAME : MicUni 
+    FULL_SPEC_NAME : Microcaecilia_unicolor 
+    ALN_NAME : aMicUni 
+    CHROM_START_CHR : LR
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 14
+    NUM_ALL_CHR: 14
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - LR594632.1
+        - LR594633.1
+        - LR594634.1
+        - LR594635.1
+        - LR594636.1
+        - LR594637.1
+        - LR594638.1
+        - LR594639.1
+        - LR594640.1
+        - LR594641.1
+        - LR594642.1
+        - LR594643.1
+        - LR594644.1
+        - LR594645.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - LR594632.1
+        - LR594633.1
+        - LR594634.1
+        - LR594635.1
+        - LR594636.1
+        - LR594637.1
+        - LR594638.1
+        - LR594639.1
+        - LR594640.1
+        - LR594641.1
+        - LR594642.1
+        - LR594643.1
+        - LR594644.1
+        - LR594645.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

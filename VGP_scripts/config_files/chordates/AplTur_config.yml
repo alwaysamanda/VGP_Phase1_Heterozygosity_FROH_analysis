@@ -1,0 +1,80 @@
+    CLADE : chordates 
+    SPEC_NAME : AplTur 
+    FULL_SPEC_NAME : Aplidium_turbinatum 
+    ALN_NAME : kAplTur 
+    CHROM_START_CHR : OU
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OU964918.1
+        - OU964919.1
+        - OU964920.1
+        - OU964921.1
+        - OU964922.1
+        - OU964923.1
+        - OU964924.1
+        - OU964925.1
+        - OU964926.1
+        - OU964927.1
+        - OU964928.1
+        - OU964929.1
+        - OU964930.1
+        - OU964931.1
+        - OU964932.1
+        - OU964933.1
+        - OU964934.1
+        - OU964935.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OU964918.1
+        - OU964919.1
+        - OU964920.1
+        - OU964921.1
+        - OU964922.1
+        - OU964923.1
+        - OU964924.1
+        - OU964925.1
+        - OU964926.1
+        - OU964927.1
+        - OU964928.1
+        - OU964929.1
+        - OU964930.1
+        - OU964931.1
+        - OU964932.1
+        - OU964933.1
+        - OU964934.1
+        - OU964935.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

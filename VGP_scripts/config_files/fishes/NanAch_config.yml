@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : NanAch 
+    FULL_SPEC_NAME : Nannobrachium_achirus 
+    ALN_NAME : fNanAch 
+    CHROM_START_CHR : OY    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY997638.1
+        - OY997639.1
+        - OY997640.1
+        - OY997641.1
+        - OY997642.1
+        - OY997643.1
+        - OY997644.1
+        - OY997645.1
+        - OY997646.1
+        - OY997647.1
+        - OY997648.1
+        - OY997649.1
+        - OY997650.1
+        - OY997651.1
+        - OY997652.1
+        - OY997653.1
+        - OY997654.1
+        - OY997655.1
+        - OY997656.1
+        - OY997657.1
+        - OY997658.1
+        - OY997659.1
+        - OY997660.1
+        - OY997661.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY997638.1
+        - OY997639.1
+        - OY997640.1
+        - OY997641.1
+        - OY997642.1
+        - OY997643.1
+        - OY997644.1
+        - OY997645.1
+        - OY997646.1
+        - OY997647.1
+        - OY997648.1
+        - OY997649.1
+        - OY997650.1
+        - OY997651.1
+        - OY997652.1
+        - OY997653.1
+        - OY997654.1
+        - OY997655.1
+        - OY997656.1
+        - OY997657.1
+        - OY997658.1
+        - OY997659.1
+        - OY997660.1
+        - OY997661.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

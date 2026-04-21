@@ -1,0 +1,88 @@
+    CLADE : fishes 
+    SPEC_NAME : ScoMax 
+    FULL_SPEC_NAME : Scophthalmus_maximus 
+    ALN_NAME : fScoMax 
+    CHROM_START_CHR : OY    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY978252.1
+        - OY978253.1
+        - OY978254.1
+        - OY978255.1
+        - OY978256.1
+        - OY978257.1
+        - OY978258.1
+        - OY978259.1
+        - OY978260.1
+        - OY978261.1
+        - OY978262.1
+        - OY978263.1
+        - OY978264.1
+        - OY978265.1
+        - OY978266.1
+        - OY978267.1
+        - OY978268.1
+        - OY978269.1
+        - OY978270.1
+        - OY978271.1
+        - OY978272.1
+        - OY978273.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY978252.1
+        - OY978253.1
+        - OY978254.1
+        - OY978255.1
+        - OY978256.1
+        - OY978257.1
+        - OY978258.1
+        - OY978259.1
+        - OY978260.1
+        - OY978261.1
+        - OY978262.1
+        - OY978263.1
+        - OY978264.1
+        - OY978265.1
+        - OY978266.1
+        - OY978267.1
+        - OY978268.1
+        - OY978269.1
+        - OY978270.1
+        - OY978271.1
+        - OY978272.1
+        - OY978273.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

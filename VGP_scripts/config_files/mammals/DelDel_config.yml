@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : DelDel 
+    FULL_SPEC_NAME : Delphinus_delphis 
+    ALN_NAME : mDelDel 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_082683.1
+        - NC_082684.1
+        - NC_082685.1
+        - NC_082686.1
+        - NC_082687.1
+        - NC_082688.1
+        - NC_082689.1
+        - NC_082690.1
+        - NC_082691.1
+        - NC_082692.2
+        - NC_082693.1
+        - NC_082694.2
+        - NC_082695.1
+        - NC_082696.1
+        - NC_082697.1
+        - NC_082698.1
+        - NC_082699.1
+        - NC_082700.1
+        - NC_082701.1
+        - NC_082702.1
+        - NC_082703.1
+        - NC_082704.1
+        - NC_082705.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_082683.1
+        - NC_082684.1
+        - NC_082685.1
+        - NC_082686.1
+        - NC_082687.1
+        - NC_082688.1
+        - NC_082689.1
+        - NC_082690.1
+        - NC_082691.1
+        - NC_082692.2
+        - NC_082693.1
+        - NC_082694.2
+        - NC_082695.1
+        - NC_082696.1
+        - NC_082697.1
+        - NC_082698.1
+        - NC_082699.1
+        - NC_082700.1
+        - NC_082701.1
+        - NC_082702.1
+        - NC_082703.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

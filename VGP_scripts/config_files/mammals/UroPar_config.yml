@@ -1,0 +1,78 @@
+    CLADE : mammals 
+    SPEC_NAME : UroPar 
+    FULL_SPEC_NAME : Urocitellus_parryii 
+    ALN_NAME : mUroPar 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 16
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM099860.1
+        - CM099861.1
+        - CM099862.1
+        - CM099863.1
+        - CM099864.1
+        - CM099865.1
+        - CM099866.1
+        - CM099867.1
+        - CM099868.1
+        - CM099869.1
+        - CM099870.1
+        - CM099871.1
+        - CM099872.1
+        - CM099873.1
+        - CM099874.1
+        - CM099875.1
+        - CM099876.1
+        - CM099877.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM099860.1
+        - CM099861.1
+        - CM099862.1
+        - CM099863.1
+        - CM099864.1
+        - CM099865.1
+        - CM099866.1
+        - CM099867.1
+        - CM099868.1
+        - CM099869.1
+        - CM099870.1
+        - CM099871.1
+        - CM099872.1
+        - CM099873.1
+        - CM099874.1
+        - CM099875.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

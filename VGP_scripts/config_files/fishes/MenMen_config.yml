@@ -1,0 +1,92 @@
+    CLADE : fishes
+    SPEC_NAME : MenMen 
+    FULL_SPEC_NAME : Menidia_menidia
+    ALN_NAME : fMenMen 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM109610.1
+        - CM109611.1
+        - CM109612.1
+        - CM109613.1
+        - CM109614.1
+        - CM109615.1
+        - CM109616.1
+        - CM109617.1
+        - CM109618.1
+        - CM109619.1
+        - CM109620.1
+        - CM109621.1
+        - CM109622.1
+        - CM109623.1
+        - CM109624.1
+        - CM109625.1
+        - CM109626.1
+        - CM109627.1
+        - CM109628.1
+        - CM109629.1
+        - CM109630.1
+        - CM109631.1
+        - CM109632.1
+        - CM109633.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109610.1
+        - CM109611.1
+        - CM109612.1
+        - CM109613.1
+        - CM109614.1
+        - CM109615.1
+        - CM109616.1
+        - CM109617.1
+        - CM109618.1
+        - CM109619.1
+        - CM109620.1
+        - CM109621.1
+        - CM109622.1
+        - CM109623.1
+        - CM109624.1
+        - CM109625.1
+        - CM109626.1
+        - CM109627.1
+        - CM109628.1
+        - CM109629.1
+        - CM109630.1
+        - CM109631.1
+        - CM109632.1
+        - CM109633.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

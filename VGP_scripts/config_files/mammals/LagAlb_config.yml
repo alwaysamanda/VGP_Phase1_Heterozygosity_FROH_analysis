@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : LagAlb 
+    FULL_SPEC_NAME : Lagenorhynchus_albirostris 
+    ALN_NAME : mLagAlb 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_083095.1
+        - NC_083096.1
+        - NC_083097.1
+        - NC_083098.1
+        - NC_083099.1
+        - NC_083100.1
+        - NC_083101.1
+        - NC_083102.1
+        - NC_083103.1
+        - NC_083104.1
+        - NC_083105.1
+        - NC_083106.1
+        - NC_083107.1
+        - NC_083108.1
+        - NC_083109.1
+        - NC_083110.1
+        - NC_083111.1
+        - NC_083112.1
+        - NC_083113.1
+        - NC_083114.1
+        - NC_083115.1
+        - NC_083116.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_083095.1
+        - NC_083096.1
+        - NC_083097.1
+        - NC_083098.1
+        - NC_083099.1
+        - NC_083100.1
+        - NC_083101.1
+        - NC_083102.1
+        - NC_083103.1
+        - NC_083104.1
+        - NC_083105.1
+        - NC_083106.1
+        - NC_083107.1
+        - NC_083108.1
+        - NC_083109.1
+        - NC_083110.1
+        - NC_083111.1
+        - NC_083112.1
+        - NC_083113.1
+        - NC_083114.1
+        - NC_083115.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

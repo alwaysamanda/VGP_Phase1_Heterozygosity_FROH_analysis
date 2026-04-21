@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : DirArg 
+    FULL_SPEC_NAME: "Diretmus_argenteus"
+    ALN_NAME: "fDirArg"
+    REF_NAME : GCA_048569125.1 
+    ALT_NAME : GCA_048569135.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 17 ##Round of 16.7
+    ALL_CHROMOSOMES : 
+        - CM109045.1
+        - CM109046.1
+        - CM109047.1
+        - CM109048.1
+        - CM109049.1
+        - CM109050.1
+        - CM109051.1
+        - CM109052.1
+        - CM109053.1
+        - CM109054.1
+        - CM109055.1
+        - CM109056.1
+        - CM109057.1
+        - CM109058.1
+        - CM109059.1
+        - CM109060.1
+        - CM109061.1
+        - CM109062.1
+        - CM109063.1
+        - CM109064.1
+        - CM109065.1
+        - CM109066.1
+        - CM109067.1
+        - CM109068.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109045.1
+        - CM109046.1
+        - CM109047.1
+        - CM109048.1
+        - CM109049.1
+        - CM109050.1
+        - CM109051.1
+        - CM109052.1
+        - CM109053.1
+        - CM109054.1
+        - CM109055.1
+        - CM109056.1
+        - CM109057.1
+        - CM109058.1
+        - CM109059.1
+        - CM109060.1
+        - CM109061.1
+        - CM109062.1
+        - CM109063.1
+        - CM109064.1
+        - CM109065.1
+        - CM109066.1
+        - CM109067.1
+        - CM109068.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

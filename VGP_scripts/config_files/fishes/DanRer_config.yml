@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : DanRer 
+    FULL_SPEC_NAME : Danio_rerio 
+    ALN_NAME : fDanRer 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX063290.1
+        - OX063291.1
+        - OX063292.1
+        - OX063293.1
+        - OX063294.1
+        - OX063295.1
+        - OX063296.1
+        - OX063297.1
+        - OX063298.1
+        - OX063299.1
+        - OX063300.1
+        - OX063301.1
+        - OX063302.1
+        - OX063303.1
+        - OX063304.1
+        - OX063305.1
+        - OX063306.1
+        - OX063307.1
+        - OX063308.1
+        - OX063309.1
+        - OX063310.1
+        - OX063311.1
+        - OX063312.1
+        - OX063313.1
+        - OX063314.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX063290.1
+        - OX063291.1
+        - OX063292.1
+        - OX063293.1
+        - OX063294.1
+        - OX063295.1
+        - OX063296.1
+        - OX063297.1
+        - OX063298.1
+        - OX063299.1
+        - OX063300.1
+        - OX063301.1
+        - OX063302.1
+        - OX063303.1
+        - OX063304.1
+        - OX063305.1
+        - OX063306.1
+        - OX063307.1
+        - OX063308.1
+        - OX063309.1
+        - OX063310.1
+        - OX063311.1
+        - OX063312.1
+        - OX063313.1
+        - OX063314.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

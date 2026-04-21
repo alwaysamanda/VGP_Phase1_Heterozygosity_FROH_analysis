@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : EpiLan 
+    FULL_SPEC_NAME : Epinephelus_lanceolatus 
+    ALN_NAME : fEpiLan 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 21.5 
+    ALL_CHROMOSOMES : 
+        - CM086019.1
+        - CM086020.1
+        - CM086021.1
+        - CM086022.1
+        - CM086023.1
+        - CM086024.1
+        - CM086025.1
+        - CM086026.1
+        - CM086027.1
+        - CM086028.1
+        - CM086029.1
+        - CM086030.1
+        - CM086031.1
+        - CM086032.1
+        - CM086033.1
+        - CM086034.1
+        - CM086035.1
+        - CM086036.1
+        - CM086037.1
+        - CM086038.1
+        - CM086039.1
+        - CM086040.1
+        - CM086041.1
+        - CM086042.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM086019.1
+        - CM086020.1
+        - CM086021.1
+        - CM086022.1
+        - CM086023.1
+        - CM086024.1
+        - CM086025.1
+        - CM086026.1
+        - CM086027.1
+        - CM086028.1
+        - CM086029.1
+        - CM086030.1
+        - CM086031.1
+        - CM086032.1
+        - CM086033.1
+        - CM086034.1
+        - CM086035.1
+        - CM086036.1
+        - CM086037.1
+        - CM086038.1
+        - CM086039.1
+        - CM086040.1
+        - CM086041.1
+        - CM086042.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

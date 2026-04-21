@@ -1,0 +1,98 @@
+    CLADE : mammals 
+    SPEC_NAME : TamTet 
+    FULL_SPEC_NAME : Tamandua_tetradactyla 
+    ALN_NAME : mTamTet 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 26
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM043327.1
+        - CM043328.1
+        - CM043329.1
+        - CM043330.1
+        - CM043331.1
+        - CM043332.1
+        - CM043333.1
+        - CM043334.1
+        - CM043335.1
+        - CM043336.1
+        - CM043337.1
+        - CM043338.1
+        - CM043339.1
+        - CM043340.1
+        - CM043341.1
+        - CM043342.1
+        - CM043343.1
+        - CM043344.1
+        - CM043345.1
+        - CM043346.1
+        - CM043347.1
+        - CM043348.1
+        - CM043349.1
+        - CM043350.1
+        - CM043351.1
+        - CM043352.1
+        - CM043353.1
+        - CM043354.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM043327.1
+        - CM043328.1
+        - CM043329.1
+        - CM043330.1
+        - CM043331.1
+        - CM043332.1
+        - CM043333.1
+        - CM043334.1
+        - CM043335.1
+        - CM043336.1
+        - CM043337.1
+        - CM043338.1
+        - CM043339.1
+        - CM043340.1
+        - CM043341.1
+        - CM043342.1
+        - CM043343.1
+        - CM043344.1
+        - CM043345.1
+        - CM043346.1
+        - CM043347.1
+        - CM043348.1
+        - CM043349.1
+        - CM043350.1
+        - CM043351.1
+        - CM043352.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

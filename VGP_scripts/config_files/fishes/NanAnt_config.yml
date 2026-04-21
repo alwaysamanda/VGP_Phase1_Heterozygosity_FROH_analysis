@@ -1,0 +1,84 @@
+    CLADE : fishes 
+    SPEC_NAME : NanAnt 
+    FULL_SPEC_NAME : Nansenia_antarctica 
+    ALN_NAME : fNanAnt 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ022339.1
+        - OZ022340.1
+        - OZ022341.1
+        - OZ022342.1
+        - OZ022343.1
+        - OZ022344.1
+        - OZ022345.1
+        - OZ022346.1
+        - OZ022347.1
+        - OZ022348.1
+        - OZ022349.1
+        - OZ022350.1
+        - OZ022351.1
+        - OZ022352.1
+        - OZ022353.1
+        - OZ022354.1
+        - OZ022355.1
+        - OZ022356.1
+        - OZ022357.1
+        - OZ022358.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ022339.1
+        - OZ022340.1
+        - OZ022341.1
+        - OZ022342.1
+        - OZ022343.1
+        - OZ022344.1
+        - OZ022345.1
+        - OZ022346.1
+        - OZ022347.1
+        - OZ022348.1
+        - OZ022349.1
+        - OZ022350.1
+        - OZ022351.1
+        - OZ022352.1
+        - OZ022353.1
+        - OZ022354.1
+        - OZ022355.1
+        - OZ022356.1
+        - OZ022357.1
+        - OZ022358.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

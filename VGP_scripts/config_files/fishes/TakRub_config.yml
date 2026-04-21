@@ -1,0 +1,88 @@
+    CLADE : fishes 
+    SPEC_NAME : TakRub 
+    FULL_SPEC_NAME : Takifugu_rubripes 
+    ALN_NAME : fTakRub 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22 
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_042285.1
+        - NC_042286.1
+        - NC_042287.1
+        - NC_042288.1
+        - NC_042289.1
+        - NC_042290.1
+        - NC_042291.1
+        - NC_042292.1
+        - NC_042293.1
+        - NC_042294.1
+        - NC_042295.1
+        - NC_042296.1
+        - NC_042297.1
+        - NC_042298.1
+        - NC_042299.1
+        - NC_042300.1
+        - NC_042301.1
+        - NC_042302.1
+        - NC_042303.1
+        - NC_042304.1
+        - NC_042305.1
+        - NC_042306.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_042285.1
+        - NC_042286.1
+        - NC_042287.1
+        - NC_042288.1
+        - NC_042289.1
+        - NC_042290.1
+        - NC_042291.1
+        - NC_042292.1
+        - NC_042293.1
+        - NC_042294.1
+        - NC_042295.1
+        - NC_042296.1
+        - NC_042297.1
+        - NC_042298.1
+        - NC_042299.1
+        - NC_042300.1
+        - NC_042301.1
+        - NC_042302.1
+        - NC_042303.1
+        - NC_042304.1
+        - NC_042305.1
+        - NC_042306.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

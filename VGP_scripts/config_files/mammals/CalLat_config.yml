@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : CalLat 
+    FULL_SPEC_NAME : Callospermophilus_lateralis 
+    ALN_NAME : mCalLat 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM109884.1
+        - CM109885.1
+        - CM109886.1
+        - CM109887.1
+        - CM109888.1
+        - CM109889.1
+        - CM109890.1
+        - CM109891.1
+        - CM109892.1
+        - CM109893.1
+        - CM109894.1
+        - CM109895.1
+        - CM109896.1
+        - CM109897.1
+        - CM109898.1
+        - CM109899.1
+        - CM109900.1
+        - CM109901.1
+        - CM109902.1
+        - CM109903.1
+        - CM109904.1
+        - CM109905.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109884.1
+        - CM109885.1
+        - CM109886.1
+        - CM109887.1
+        - CM109888.1
+        - CM109889.1
+        - CM109890.1
+        - CM109891.1
+        - CM109892.1
+        - CM109893.1
+        - CM109894.1
+        - CM109895.1
+        - CM109896.1
+        - CM109897.1
+        - CM109898.1
+        - CM109899.1
+        - CM109900.1
+        - CM109901.1
+        - CM109902.1
+        - CM109903.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

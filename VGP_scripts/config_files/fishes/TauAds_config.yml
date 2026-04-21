@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : TauAds 
+    FULL_SPEC_NAME : Tautogolabrus_adspersus 
+    ALN_NAME : fTauAds 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM036534.1
+        - CM036535.1
+        - CM036536.1
+        - CM036537.1
+        - CM036538.1
+        - CM036539.1
+        - CM036540.1
+        - CM036541.1
+        - CM036542.1
+        - CM036543.1
+        - CM036544.1
+        - CM036545.1
+        - CM036546.1
+        - CM036547.1
+        - CM036548.1
+        - CM036549.1
+        - CM036550.1
+        - CM036551.1
+        - CM036552.1
+        - CM036553.1
+        - CM036554.1
+        - CM036555.1
+        - CM036556.1
+        - CM036557.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM036534.1
+        - CM036535.1
+        - CM036536.1
+        - CM036537.1
+        - CM036538.1
+        - CM036539.1
+        - CM036540.1
+        - CM036541.1
+        - CM036542.1
+        - CM036543.1
+        - CM036544.1
+        - CM036545.1
+        - CM036546.1
+        - CM036547.1
+        - CM036548.1
+        - CM036549.1
+        - CM036550.1
+        - CM036551.1
+        - CM036552.1
+        - CM036553.1
+        - CM036554.1
+        - CM036555.1
+        - CM036556.1
+        - CM036557.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

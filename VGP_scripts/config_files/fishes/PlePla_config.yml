@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : PlePla 
+    FULL_SPEC_NAME : Pleuronectes_platessa 
+    ALN_NAME : fPlePla 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_070626.1
+        - NC_070627.1
+        - NC_070628.1
+        - NC_070629.1
+        - NC_070630.1
+        - NC_070631.1
+        - NC_070632.1
+        - NC_070633.1
+        - NC_070634.1
+        - NC_070635.1
+        - NC_070636.1
+        - NC_070637.1
+        - NC_070638.1
+        - NC_070639.1
+        - NC_070640.1
+        - NC_070641.1
+        - NC_070642.1
+        - NC_070643.1
+        - NC_070644.1
+        - NC_070645.1
+        - NC_070646.1
+        - NC_070647.1
+        - NC_070648.1
+        - NC_070649.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_070626.1
+        - NC_070627.1
+        - NC_070628.1
+        - NC_070629.1
+        - NC_070630.1
+        - NC_070631.1
+        - NC_070632.1
+        - NC_070633.1
+        - NC_070634.1
+        - NC_070635.1
+        - NC_070636.1
+        - NC_070637.1
+        - NC_070638.1
+        - NC_070639.1
+        - NC_070640.1
+        - NC_070641.1
+        - NC_070642.1
+        - NC_070643.1
+        - NC_070644.1
+        - NC_070645.1
+        - NC_070646.1
+        - NC_070647.1
+        - NC_070648.1
+        - NC_070649.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

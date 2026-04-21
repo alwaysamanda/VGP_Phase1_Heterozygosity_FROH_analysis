@@ -1,0 +1,86 @@
+    CLADE : fishes 
+    SPEC_NAME : TauBub 
+    FULL_SPEC_NAME : Taurulus_bubalis 
+    ALN_NAME : fTauBub 
+    CHROM_START_CHR : OU    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OU342711.1
+        - OU342712.1
+        - OU342713.1
+        - OU342714.1
+        - OU342715.1
+        - OU342716.1
+        - OU342717.1
+        - OU342718.1
+        - OU342719.1
+        - OU342720.1
+        - OU342721.1
+        - OU342722.1
+        - OU342723.1
+        - OU342724.1
+        - OU342725.1
+        - OU342726.1
+        - OU342727.1
+        - OU342728.1
+        - OU342729.1
+        - OU342730.1
+        - OU342731.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OU342711.1
+        - OU342712.1
+        - OU342713.1
+        - OU342714.1
+        - OU342715.1
+        - OU342716.1
+        - OU342717.1
+        - OU342718.1
+        - OU342719.1
+        - OU342720.1
+        - OU342721.1
+        - OU342722.1
+        - OU342723.1
+        - OU342724.1
+        - OU342725.1
+        - OU342726.1
+        - OU342727.1
+        - OU342728.1
+        - OU342729.1
+        - OU342730.1
+        - OU342731.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

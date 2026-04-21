@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : EnoArm 
+    FULL_SPEC_NAME: Enoplosus_armatus
+    ALN_NAME: fEnoArm
+    REF_NAME : GCF_043641665.1 
+    ALT_NAME : GCA_043640875.1 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - NC_092180.1
+        - NC_092181.1
+        - NC_092182.1
+        - NC_092183.1
+        - NC_092184.1
+        - NC_092185.1
+        - NC_092186.1
+        - NC_092187.1
+        - NC_092188.1
+        - NC_092189.1
+        - NC_092190.1
+        - NC_092191.1
+        - NC_092192.1
+        - NC_092193.1
+        - NC_092194.1
+        - NC_092195.1
+        - NC_092196.1
+        - NC_092197.1
+        - NC_092198.1
+        - NC_092199.1
+        - NC_092200.1
+        - NC_092201.1
+        - NC_092202.1
+        - NC_092203.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_092180.1
+        - NC_092181.1
+        - NC_092182.1
+        - NC_092183.1
+        - NC_092184.1
+        - NC_092185.1
+        - NC_092186.1
+        - NC_092187.1
+        - NC_092188.1
+        - NC_092189.1
+        - NC_092190.1
+        - NC_092191.1
+        - NC_092192.1
+        - NC_092193.1
+        - NC_092194.1
+        - NC_092195.1
+        - NC_092196.1
+        - NC_092197.1
+        - NC_092198.1
+        - NC_092199.1
+        - NC_092200.1
+        - NC_092201.1
+        - NC_092202.1
+        - NC_092203.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

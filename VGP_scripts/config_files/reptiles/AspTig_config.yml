@@ -1,0 +1,90 @@
+    CLADE : reptiles 
+    SPEC_NAME : AspTig 
+    FULL_SPEC_NAME : Aspidoscelis_tigris 
+    ALN_NAME : rAspTig 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM107880.1
+        - CM107881.1
+        - CM107882.1
+        - CM107883.1
+        - CM107884.1
+        - CM107885.1
+        - CM107886.1
+        - CM107887.1
+        - CM107888.1
+        - CM107889.1
+        - CM107890.1
+        - CM107891.1
+        - CM107892.1
+        - CM107893.1
+        - CM107894.1
+        - CM107895.1
+        - CM107896.1
+        - CM107897.1
+        - CM107898.1
+        - CM107899.1
+        - CM107900.1
+        - CM107901.1
+        - CM107902.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM107880.1
+        - CM107881.1
+        - CM107882.1
+        - CM107883.1
+        - CM107884.1
+        - CM107885.1
+        - CM107886.1
+        - CM107887.1
+        - CM107888.1
+        - CM107889.1
+        - CM107890.1
+        - CM107891.1
+        - CM107892.1
+        - CM107893.1
+        - CM107894.1
+        - CM107895.1
+        - CM107896.1
+        - CM107897.1
+        - CM107898.1
+        - CM107899.1
+        - CM107900.1
+        - CM107901.1
+        - CM107902.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

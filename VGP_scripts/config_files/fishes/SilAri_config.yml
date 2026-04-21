@@ -1,0 +1,102 @@
+    CLADE : fishes 
+    SPEC_NAME : SilAri 
+    FULL_SPEC_NAME : Silurus_aristotelis 
+    ALN_NAME : fSilAri 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 29
+    NUM_ALL_CHR: 29
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX327753.1
+        - OX327754.1
+        - OX327755.1
+        - OX327756.1
+        - OX327757.1
+        - OX327758.1
+        - OX327759.1
+        - OX327760.1
+        - OX327761.1
+        - OX327762.1
+        - OX327763.1
+        - OX327764.1
+        - OX327765.1
+        - OX327766.1
+        - OX327767.1
+        - OX327768.1
+        - OX327769.1
+        - OX327770.1
+        - OX327771.1
+        - OX327772.1
+        - OX327773.1
+        - OX327774.1
+        - OX327775.1
+        - OX327776.1
+        - OX327777.1
+        - OX327778.1
+        - OX327779.1
+        - OX327780.1
+        - OX327781.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX327753.1
+        - OX327754.1
+        - OX327755.1
+        - OX327756.1
+        - OX327757.1
+        - OX327758.1
+        - OX327759.1
+        - OX327760.1
+        - OX327761.1
+        - OX327762.1
+        - OX327763.1
+        - OX327764.1
+        - OX327765.1
+        - OX327766.1
+        - OX327767.1
+        - OX327768.1
+        - OX327769.1
+        - OX327770.1
+        - OX327771.1
+        - OX327772.1
+        - OX327773.1
+        - OX327774.1
+        - OX327775.1
+        - OX327776.1
+        - OX327777.1
+        - OX327778.1
+        - OX327779.1
+        - OX327780.1
+        - OX327781.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

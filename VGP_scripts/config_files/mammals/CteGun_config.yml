@@ -1,0 +1,83 @@
+    CLADE : mammals 
+    SPEC_NAME : CteGun 
+    FULL_SPEC_NAME : Ctenodactylus_gundi  
+    ALN_NAME : mCteGun 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM109694.1
+        - CM109695.1
+        - CM109696.1
+        - CM109697.1
+        - CM109698.1
+        - CM109699.1
+        - CM109700.1
+        - CM109701.1
+        - CM109702.1
+        - CM109703.1
+        - CM109704.1
+        - CM109705.1
+        - CM109706.1
+        - CM109707.1
+        - CM109708.1
+        - CM109709.1
+        - CM109710.1
+        - CM109711.1
+        - CM109712.1
+        - CM109713.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109694.1
+        - CM109695.1
+        - CM109696.1
+        - CM109697.1
+        - CM109698.1
+        - CM109699.1
+        - CM109700.1
+        - CM109701.1
+        - CM109702.1
+        - CM109703.1
+        - CM109704.1
+        - CM109705.1
+        - CM109706.1
+        - CM109707.1
+        - CM109708.1
+        - CM109709.1
+        - CM109710.1
+        - CM109711.1
+        - CM109712.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

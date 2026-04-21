@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : MyoNat 
+    FULL_SPEC_NAME : Myotis_nattereri 
+    ALN_NAME : mMyoNat
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ125675.2
+        - OZ125676.2
+        - OZ125677.2
+        - OZ125679.2
+        - OZ125680.2
+        - OZ125681.2
+        - OZ125682.2
+        - OZ125683.2
+        - OZ125684.2
+        - OZ125685.2
+        - OZ125686.2
+        - OZ125687.2
+        - OZ125688.2
+        - OZ125689.2
+        - OZ125690.2
+        - OZ125691.2
+        - OZ125692.2
+        - OZ125693.2
+        - OZ125695.2
+        - OZ125696.2
+        - OZ125697.2 
+        - OZ125678.2
+        - OZ125694.2
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ125675.2
+        - OZ125676.2
+        - OZ125677.2
+        - OZ125679.2
+        - OZ125680.2
+        - OZ125681.2
+        - OZ125682.2
+        - OZ125683.2
+        - OZ125684.2
+        - OZ125685.2
+        - OZ125686.2
+        - OZ125687.2
+        - OZ125688.2
+        - OZ125689.2
+        - OZ125690.2
+        - OZ125691.2
+        - OZ125692.2
+        - OZ125693.2
+        - OZ125695.2
+        - OZ125696.2
+        - OZ125697.2 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

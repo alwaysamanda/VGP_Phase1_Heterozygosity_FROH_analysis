@@ -1,0 +1,84 @@
+    CLADE : amphibians 
+    SPEC_NAME : AmbMex 
+    FULL_SPEC_NAME : Ambystoma_mexicanum 
+    ALN_NAME : aAmbMex 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 6 ## Midpoint between 2-10 yrs
+    ALL_CHROMOSOMES : 
+        - NC_090921.1
+        - NC_090922.1
+        - NC_090923.1
+        - NC_090924.1
+        - NC_090925.1
+        - NC_090926.1
+        - NC_090927.1
+        - NC_090928.1
+        - NC_090929.1
+        - NC_090930.1
+        - NC_090931.1
+        - NC_090932.1
+        - NC_090933.1
+        - NC_090934.1
+        - NC_090935.1
+        - NC_090936.1
+        - NC_090937.1
+        - NC_090938.1
+        - NC_090939.1
+        - NC_090940.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_090921.1
+        - NC_090922.1
+        - NC_090923.1
+        - NC_090924.1
+        - NC_090925.1
+        - NC_090926.1
+        - NC_090927.1
+        - NC_090928.1
+        - NC_090929.1
+        - NC_090930.1
+        - NC_090931.1
+        - NC_090932.1
+        - NC_090933.1
+        - NC_090934.1
+        - NC_090935.1
+        - NC_090936.1
+        - NC_090937.1
+        - NC_090938.1
+        - NC_090939.1
+        - NC_090940.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

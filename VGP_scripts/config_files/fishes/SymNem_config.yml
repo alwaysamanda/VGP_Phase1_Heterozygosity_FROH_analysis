@@ -1,0 +1,92 @@
+    CLADE : fishes
+    SPEC_NAME : SymNem 
+    FULL_SPEC_NAME : Symphorus_nematophorus  
+    ALN_NAME : fSymNem
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM107411.1
+        - CM107412.1
+        - CM107413.1
+        - CM107414.1
+        - CM107415.1
+        - CM107416.1
+        - CM107417.1
+        - CM107418.1
+        - CM107419.1
+        - CM107420.1
+        - CM107421.1
+        - CM107422.1
+        - CM107423.1
+        - CM107424.1
+        - CM107425.1
+        - CM107426.1
+        - CM107427.1
+        - CM107428.1
+        - CM107429.1
+        - CM107430.1
+        - CM107431.1
+        - CM107432.1
+        - CM107433.1
+        - CM107434.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM107411.1
+        - CM107412.1
+        - CM107413.1
+        - CM107414.1
+        - CM107415.1
+        - CM107416.1
+        - CM107417.1
+        - CM107418.1
+        - CM107419.1
+        - CM107420.1
+        - CM107421.1
+        - CM107422.1
+        - CM107423.1
+        - CM107424.1
+        - CM107425.1
+        - CM107426.1
+        - CM107427.1
+        - CM107428.1
+        - CM107429.1
+        - CM107430.1
+        - CM107431.1
+        - CM107432.1
+        - CM107433.1
+        - CM107434.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

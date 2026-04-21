@@ -1,0 +1,86 @@
+    CLADE : fishes 
+    SPEC_NAME : SolSol 
+    FULL_SPEC_NAME : Solea_solea 
+    ALN_NAME : fSolSol 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_081134.1
+        - NC_081135.1
+        - NC_081136.1
+        - NC_081137.1
+        - NC_081138.1
+        - NC_081139.1
+        - NC_081140.1
+        - NC_081141.1
+        - NC_081142.1
+        - NC_081143.1
+        - NC_081144.1
+        - NC_081145.1
+        - NC_081146.1
+        - NC_081147.1
+        - NC_081148.1
+        - NC_081149.1
+        - NC_081150.1
+        - NC_081151.1
+        - NC_081152.1
+        - NC_081153.1
+        - NC_081154.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_081134.1
+        - NC_081135.1
+        - NC_081136.1
+        - NC_081137.1
+        - NC_081138.1
+        - NC_081139.1
+        - NC_081140.1
+        - NC_081141.1
+        - NC_081142.1
+        - NC_081143.1
+        - NC_081144.1
+        - NC_081145.1
+        - NC_081146.1
+        - NC_081147.1
+        - NC_081148.1
+        - NC_081149.1
+        - NC_081150.1
+        - NC_081151.1
+        - NC_081152.1
+        - NC_081153.1
+        - NC_081154.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

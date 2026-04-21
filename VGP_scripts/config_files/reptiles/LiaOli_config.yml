@@ -1,0 +1,78 @@
+    CLADE : reptiles 
+    SPEC_NAME : LiaOli 
+    FULL_SPEC_NAME : Liasis_olivaceus 
+    ALN_NAME : rLiaOli 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM061348.1
+        - CM061349.1
+        - CM061350.1
+        - CM061351.1
+        - CM061352.1
+        - CM061353.1
+        - CM061354.1
+        - CM061355.1
+        - CM061356.1
+        - CM061357.1
+        - CM061358.1
+        - CM061359.1
+        - CM061360.1
+        - CM061361.1
+        - CM061362.1
+        - CM061363.1
+        - CM061364.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM061348.1
+        - CM061349.1
+        - CM061350.1
+        - CM061351.1
+        - CM061352.1
+        - CM061353.1
+        - CM061354.1
+        - CM061355.1
+        - CM061356.1
+        - CM061357.1
+        - CM061358.1
+        - CM061359.1
+        - CM061360.1
+        - CM061361.1
+        - CM061362.1
+        - CM061363.1
+        - CM061364.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

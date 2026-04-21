@@ -1,0 +1,75 @@
+    CLADE : mammals 
+    SPEC_NAME : HalGry 
+    FULL_SPEC_NAME : Halichoerus_grypus 
+    ALN_NAME : mHalGry 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 15
+    NUM_ALL_CHR: 16
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ210060.1
+        - OZ210061.1
+        - OZ210062.1
+        - OZ210063.1
+        - OZ210064.1
+        - OZ210065.1
+        - OZ210066.1
+        - OZ210067.1
+        - OZ210068.1
+        - OZ210069.1
+        - OZ210071.1
+        - OZ210072.1
+        - OZ210073.1
+        - OZ210074.1
+        - OZ210075.1
+        - OZ210070.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ210060.1
+        - OZ210061.1
+        - OZ210062.1
+        - OZ210063.1
+        - OZ210064.1
+        - OZ210065.1
+        - OZ210066.1
+        - OZ210067.1
+        - OZ210068.1
+        - OZ210069.1
+        - OZ210071.1
+        - OZ210072.1
+        - OZ210073.1
+        - OZ210074.1
+        - OZ210075.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

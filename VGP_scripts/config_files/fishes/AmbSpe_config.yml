@@ -1,0 +1,92 @@
+    CLADE : fishes
+    SPEC_NAME : AmbSpe 
+    FULL_SPEC_NAME: "Amblyopsis_spelaea"
+    ALN_NAME: "fAmbSpe"
+    REF_NAME : GCA_046255685.1 
+    ALT_NAME : GCA_046255725.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23 
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - CM101371.1
+        - CM101372.1
+        - CM101373.1
+        - CM101374.1
+        - CM101375.1
+        - CM101376.1
+        - CM101377.1
+        - CM101378.1
+        - CM101379.1
+        - CM101380.1
+        - CM101381.1
+        - CM101382.1
+        - CM101383.1
+        - CM101384.1
+        - CM101385.1
+        - CM101386.1
+        - CM101387.1
+        - CM101388.1
+        - CM101389.1
+        - CM101390.1
+        - CM101391.1
+        - CM101392.1
+        - CM101393.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM101371.1
+        - CM101372.1
+        - CM101373.1
+        - CM101374.1
+        - CM101375.1
+        - CM101376.1
+        - CM101377.1
+        - CM101378.1
+        - CM101379.1
+        - CM101380.1
+        - CM101381.1
+        - CM101382.1
+        - CM101383.1
+        - CM101384.1
+        - CM101385.1
+        - CM101386.1
+        - CM101387.1
+        - CM101388.1
+        - CM101389.1
+        - CM101390.1
+        - CM101391.1
+        - CM101392.1
+        - CM101393.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

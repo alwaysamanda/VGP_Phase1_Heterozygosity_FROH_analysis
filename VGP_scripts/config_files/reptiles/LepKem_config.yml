@@ -1,0 +1,100 @@
+    CLADE : reptiles 
+    SPEC_NAME : LepKem 
+    FULL_SPEC_NAME : Lepidochelys_kempii 
+    ALN_NAME : rLepKem 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 28
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ223559.1
+        - OZ223560.1
+        - OZ223561.1
+        - OZ223562.1
+        - OZ223563.1
+        - OZ223564.1
+        - OZ223565.1
+        - OZ223566.1
+        - OZ223567.1
+        - OZ223568.1
+        - OZ223569.1
+        - OZ223570.1
+        - OZ223571.1
+        - OZ223572.1
+        - OZ223573.1
+        - OZ223574.1
+        - OZ223575.1
+        - OZ223576.1
+        - OZ223577.1
+        - OZ223578.1
+        - OZ223579.1
+        - OZ223580.1
+        - OZ223581.1
+        - OZ223582.1
+        - OZ223583.1
+        - OZ223584.1
+        - OZ223585.1
+        - OZ223586.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ223559.1
+        - OZ223560.1
+        - OZ223561.1
+        - OZ223562.1
+        - OZ223563.1
+        - OZ223564.1
+        - OZ223565.1
+        - OZ223566.1
+        - OZ223567.1
+        - OZ223568.1
+        - OZ223569.1
+        - OZ223570.1
+        - OZ223571.1
+        - OZ223572.1
+        - OZ223573.1
+        - OZ223574.1
+        - OZ223575.1
+        - OZ223576.1
+        - OZ223577.1
+        - OZ223578.1
+        - OZ223579.1
+        - OZ223580.1
+        - OZ223581.1
+        - OZ223582.1
+        - OZ223583.1
+        - OZ223584.1
+        - OZ223585.1
+        - OZ223586.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

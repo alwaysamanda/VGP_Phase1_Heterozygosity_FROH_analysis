@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : AbrBra 
+    FULL_SPEC_NAME : Abramis_brama 
+    ALN_NAME : fAbrBra 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ023076.1
+        - OZ023077.1
+        - OZ023078.1
+        - OZ023079.1
+        - OZ023080.1
+        - OZ023081.1
+        - OZ023082.1
+        - OZ023083.1
+        - OZ023084.1
+        - OZ023085.1
+        - OZ023086.1
+        - OZ023087.1
+        - OZ023088.1
+        - OZ023089.1
+        - OZ023090.1
+        - OZ023091.1
+        - OZ023092.1
+        - OZ023093.1
+        - OZ023094.1
+        - OZ023095.1
+        - OZ023096.1
+        - OZ023097.1
+        - OZ023098.1
+        - OZ023099.1
+        - OZ023100.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ023076.1
+        - OZ023077.1
+        - OZ023078.1
+        - OZ023079.1
+        - OZ023080.1
+        - OZ023081.1
+        - OZ023082.1
+        - OZ023083.1
+        - OZ023084.1
+        - OZ023085.1
+        - OZ023086.1
+        - OZ023087.1
+        - OZ023088.1
+        - OZ023089.1
+        - OZ023090.1
+        - OZ023091.1
+        - OZ023092.1
+        - OZ023093.1
+        - OZ023094.1
+        - OZ023095.1
+        - OZ023096.1
+        - OZ023097.1
+        - OZ023098.1
+        - OZ023099.1
+        - OZ023100.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

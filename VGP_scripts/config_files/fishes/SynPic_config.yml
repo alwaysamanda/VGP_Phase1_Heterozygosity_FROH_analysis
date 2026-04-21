@@ -1,0 +1,84 @@
+    CLADE : fishes 
+    SPEC_NAME : SynPic 
+    FULL_SPEC_NAME : Synchiropus_picturatus
+    ALN_NAME : fSynPic
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM094650.1
+        - CM094651.1
+        - CM094652.1
+        - CM094653.1
+        - CM094654.1
+        - CM094655.1
+        - CM094656.1
+        - CM094657.1
+        - CM094658.1
+        - CM094659.1
+        - CM094660.1
+        - CM094661.1
+        - CM094662.1
+        - CM094663.1
+        - CM094664.1
+        - CM094665.1
+        - CM094666.1
+        - CM094667.1
+        - CM094668.1
+        - CM094669.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM094650.1
+        - CM094651.1
+        - CM094652.1
+        - CM094653.1
+        - CM094654.1
+        - CM094655.1
+        - CM094656.1
+        - CM094657.1
+        - CM094658.1
+        - CM094659.1
+        - CM094660.1
+        - CM094661.1
+        - CM094662.1
+        - CM094663.1
+        - CM094664.1
+        - CM094665.1
+        - CM094666.1
+        - CM094667.1
+        - CM094668.1
+        - CM094669.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

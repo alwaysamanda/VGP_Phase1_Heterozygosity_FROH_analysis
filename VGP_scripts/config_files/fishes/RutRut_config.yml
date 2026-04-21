@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : RutRut 
+    FULL_SPEC_NAME : Rutilus_rutilus 
+    ALN_NAME : fRutRut 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX637933.1
+        - OX637934.1
+        - OX637935.1
+        - OX637936.1
+        - OX637937.1
+        - OX637938.1
+        - OX637939.1
+        - OX637940.1
+        - OX637941.1
+        - OX637942.1
+        - OX637943.1
+        - OX637944.1
+        - OX637945.1
+        - OX637946.1
+        - OX637947.1
+        - OX637948.1
+        - OX637949.1
+        - OX637950.1
+        - OX637951.1
+        - OX637952.1
+        - OX637953.1
+        - OX637954.1
+        - OX637955.1
+        - OX637956.1
+        - OX637957.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX637933.1
+        - OX637934.1
+        - OX637935.1
+        - OX637936.1
+        - OX637937.1
+        - OX637938.1
+        - OX637939.1
+        - OX637940.1
+        - OX637941.1
+        - OX637942.1
+        - OX637943.1
+        - OX637944.1
+        - OX637945.1
+        - OX637946.1
+        - OX637947.1
+        - OX637948.1
+        - OX637949.1
+        - OX637950.1
+        - OX637951.1
+        - OX637952.1
+        - OX637953.1
+        - OX637954.1
+        - OX637955.1
+        - OX637956.1
+        - OX637957.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

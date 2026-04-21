@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : SunEtr 
+    FULL_SPEC_NAME : Suncus_etruscus 
+    ALN_NAME : mSunEtr 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_064848.1
+        - NC_064849.1
+        - NC_064850.1
+        - NC_064851.1
+        - NC_064852.1
+        - NC_064853.1
+        - NC_064854.1
+        - NC_064855.1
+        - NC_064856.1
+        - NC_064857.1
+        - NC_064858.1
+        - NC_064859.1
+        - NC_064860.1
+        - NC_064861.1
+        - NC_064862.1
+        - NC_064863.1
+        - NC_064864.1
+        - NC_064865.1
+        - NC_064866.1
+        - NC_064867.1
+        - NC_064868.1
+        - NC_064869.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_064848.1
+        - NC_064849.1
+        - NC_064850.1
+        - NC_064851.1
+        - NC_064852.1
+        - NC_064853.1
+        - NC_064854.1
+        - NC_064855.1
+        - NC_064856.1
+        - NC_064857.1
+        - NC_064858.1
+        - NC_064859.1
+        - NC_064860.1
+        - NC_064861.1
+        - NC_064862.1
+        - NC_064863.1
+        - NC_064864.1
+        - NC_064865.1
+        - NC_064866.1
+        - NC_064867.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

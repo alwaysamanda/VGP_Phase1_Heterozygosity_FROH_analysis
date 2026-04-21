@@ -1,0 +1,66 @@
+    CLADE : amphibians 
+    SPEC_NAME : RhiDor 
+    FULL_SPEC_NAME : Rhinophrynus_dorsalis 
+    ALN_NAME : aRhiDor 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 11
+    NUM_ALL_CHR: 11
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM074718.1
+        - CM074719.1
+        - CM074720.1
+        - CM074721.1
+        - CM074722.1
+        - CM074723.1
+        - CM074724.1
+        - CM074725.1
+        - CM074726.1
+        - CM074727.1
+        - CM074728.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM074718.1
+        - CM074719.1
+        - CM074720.1
+        - CM074721.1
+        - CM074722.1
+        - CM074723.1
+        - CM074724.1
+        - CM074725.1
+        - CM074726.1
+        - CM074727.1
+        - CM074728.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : MasArm 
+    FULL_SPEC_NAME : Mastacembelus_armatus 
+    ALN_NAME : fMasArm 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_046633.1
+        - NC_046634.1
+        - NC_046635.1
+        - NC_046636.1
+        - NC_046637.1
+        - NC_046638.1
+        - NC_046639.1
+        - NC_046640.1
+        - NC_046641.1
+        - NC_046642.1
+        - NC_046643.1
+        - NC_046644.1
+        - NC_046645.1
+        - NC_046646.1
+        - NC_046647.1
+        - NC_046648.1
+        - NC_046649.1
+        - NC_046650.1
+        - NC_046651.1
+        - NC_046652.1
+        - NC_046653.1
+        - NC_046654.1
+        - NC_046655.1
+        - NC_046656.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_046633.1
+        - NC_046634.1
+        - NC_046635.1
+        - NC_046636.1
+        - NC_046637.1
+        - NC_046638.1
+        - NC_046639.1
+        - NC_046640.1
+        - NC_046641.1
+        - NC_046642.1
+        - NC_046643.1
+        - NC_046644.1
+        - NC_046645.1
+        - NC_046646.1
+        - NC_046647.1
+        - NC_046648.1
+        - NC_046649.1
+        - NC_046650.1
+        - NC_046651.1
+        - NC_046652.1
+        - NC_046653.1
+        - NC_046654.1
+        - NC_046655.1
+        - NC_046656.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

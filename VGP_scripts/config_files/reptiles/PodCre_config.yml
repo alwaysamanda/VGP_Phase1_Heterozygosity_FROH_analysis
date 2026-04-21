@@ -1,0 +1,81 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodCre 
+    FULL_SPEC_NAME : Podarcis_cretensis 
+    ALN_NAME : rPodCre 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX638149.1
+        - OX638150.1
+        - OX638151.1
+        - OX638152.1
+        - OX638153.1
+        - OX638154.1
+        - OX638155.1
+        - OX638156.1
+        - OX638157.1
+        - OX638158.1
+        - OX638159.1
+        - OX638160.1
+        - OX638161.1
+        - OX638162.1
+        - OX638164.1
+        - OX638165.1
+        - OX638166.1
+        - OX638167.1
+        - OX638163.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX638149.1
+        - OX638150.1
+        - OX638151.1
+        - OX638152.1
+        - OX638153.1
+        - OX638154.1
+        - OX638155.1
+        - OX638156.1
+        - OX638157.1
+        - OX638158.1
+        - OX638159.1
+        - OX638160.1
+        - OX638161.1
+        - OX638162.1
+        - OX638164.1
+        - OX638165.1
+        - OX638166.1
+        - OX638167.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

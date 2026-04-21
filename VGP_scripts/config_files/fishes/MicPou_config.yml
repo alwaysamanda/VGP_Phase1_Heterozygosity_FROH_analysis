@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : MicPou 
+    FULL_SPEC_NAME : Micromesistius_poutassou 
+    ALN_NAME : fMicPou 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ034936.1
+        - OZ034937.1
+        - OZ034938.1
+        - OZ034939.1
+        - OZ034940.1
+        - OZ034941.1
+        - OZ034942.1
+        - OZ034943.1
+        - OZ034944.1
+        - OZ034945.1
+        - OZ034946.1
+        - OZ034947.1
+        - OZ034948.1
+        - OZ034949.1
+        - OZ034950.1
+        - OZ034951.1
+        - OZ034952.1
+        - OZ034953.1
+        - OZ034954.1
+        - OZ034955.1
+        - OZ034956.1
+        - OZ034957.1
+        - OZ034958.1
+        - OZ034959.1
+        - OZ034960.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ034936.1
+        - OZ034937.1
+        - OZ034938.1
+        - OZ034939.1
+        - OZ034940.1
+        - OZ034941.1
+        - OZ034942.1
+        - OZ034943.1
+        - OZ034944.1
+        - OZ034945.1
+        - OZ034946.1
+        - OZ034947.1
+        - OZ034948.1
+        - OZ034949.1
+        - OZ034950.1
+        - OZ034951.1
+        - OZ034952.1
+        - OZ034953.1
+        - OZ034954.1
+        - OZ034955.1
+        - OZ034956.1
+        - OZ034957.1
+        - OZ034958.1
+        - OZ034959.1
+        - OZ034960.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

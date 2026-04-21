@@ -1,0 +1,80 @@
+    CLADE : reptiles 
+    SPEC_NAME : VipBer 
+    FULL_SPEC_NAME : Vipera_berus 
+    ALN_NAME : rVipBer 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ077557.1
+        - OZ077558.1
+        - OZ077559.1
+        - OZ077561.1
+        - OZ077562.1
+        - OZ077563.1
+        - OZ077564.1
+        - OZ077566.1
+        - OZ077567.1
+        - OZ077568.1
+        - OZ077569.1
+        - OZ077570.1
+        - OZ077571.1
+        - OZ077572.1
+        - OZ077573.1
+        - OZ077574.1
+        - OZ077575.1
+        - OZ077565.1
+        - OZ077560.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ077557.1
+        - OZ077558.1
+        - OZ077559.1
+        - OZ077561.1
+        - OZ077562.1
+        - OZ077563.1
+        - OZ077564.1
+        - OZ077566.1
+        - OZ077567.1
+        - OZ077568.1
+        - OZ077569.1
+        - OZ077570.1
+        - OZ077571.1
+        - OZ077572.1
+        - OZ077573.1
+        - OZ077574.1
+        - OZ077575.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

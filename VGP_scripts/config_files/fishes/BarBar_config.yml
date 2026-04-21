@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : BarBar 
+    FULL_SPEC_NAME : Barbatula_barbatula 
+    ALN_NAME : fBarBar 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX344768.1
+        - OX344769.1
+        - OX344770.1
+        - OX344771.1
+        - OX344772.1
+        - OX344773.1
+        - OX344774.1
+        - OX344775.1
+        - OX344776.1
+        - OX344777.1
+        - OX344778.1
+        - OX344779.1
+        - OX344780.1
+        - OX344781.1
+        - OX344782.1
+        - OX344783.1
+        - OX344784.1
+        - OX344785.1
+        - OX344786.1
+        - OX344787.1
+        - OX344788.1
+        - OX344789.1
+        - OX344790.1
+        - OX344791.1
+        - OX344792.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX344768.1
+        - OX344769.1
+        - OX344770.1
+        - OX344771.1
+        - OX344772.1
+        - OX344773.1
+        - OX344774.1
+        - OX344775.1
+        - OX344776.1
+        - OX344777.1
+        - OX344778.1
+        - OX344779.1
+        - OX344780.1
+        - OX344781.1
+        - OX344782.1
+        - OX344783.1
+        - OX344784.1
+        - OX344785.1
+        - OX344786.1
+        - OX344787.1
+        - OX344788.1
+        - OX344789.1
+        - OX344790.1
+        - OX344791.1
+        - OX344792.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

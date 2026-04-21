@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : MusErm 
+    FULL_SPEC_NAME : Mustela_erminea 
+    ALN_NAME : mMusErm 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_045614.1
+        - NC_045615.1
+        - NC_045616.1
+        - NC_045617.1
+        - NC_045618.1
+        - NC_045619.1
+        - NC_045620.1
+        - NC_045621.1
+        - NC_045622.1
+        - NC_045623.1
+        - NC_045624.1
+        - NC_045625.1
+        - NC_045626.1
+        - NC_045627.1
+        - NC_045628.1
+        - NC_045629.1
+        - NC_045630.1
+        - NC_045631.1
+        - NC_045632.1
+        - NC_045633.1
+        - NC_045634.1
+        - NC_045635.1
+        - NC_045636.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_045614.1
+        - NC_045615.1
+        - NC_045616.1
+        - NC_045617.1
+        - NC_045618.1
+        - NC_045619.1
+        - NC_045620.1
+        - NC_045621.1
+        - NC_045622.1
+        - NC_045623.1
+        - NC_045624.1
+        - NC_045625.1
+        - NC_045626.1
+        - NC_045627.1
+        - NC_045628.1
+        - NC_045629.1
+        - NC_045630.1
+        - NC_045631.1
+        - NC_045632.1
+        - NC_045633.1
+        - NC_045634.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

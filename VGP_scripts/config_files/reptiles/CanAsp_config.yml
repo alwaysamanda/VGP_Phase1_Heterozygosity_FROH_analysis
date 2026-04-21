@@ -1,0 +1,80 @@
+    CLADE : reptiles 
+    SPEC_NAME : CanAsp 
+    FULL_SPEC_NAME : Candoia_aspera 
+    ALN_NAME : rCanAsp 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_086153.1
+        - NC_086154.1
+        - NC_086155.1
+        - NC_086156.1
+        - NC_086157.1
+        - NC_086158.1
+        - NC_086159.1
+        - NC_086160.1
+        - NC_086161.1
+        - NC_086162.1
+        - NC_086163.1
+        - NC_086164.1
+        - NC_086165.1
+        - NC_086166.1
+        - NC_086167.1
+        - NC_086168.1
+        - NC_086169.1
+        - NC_086170.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_086153.1
+        - NC_086154.1
+        - NC_086155.1
+        - NC_086156.1
+        - NC_086157.1
+        - NC_086158.1
+        - NC_086159.1
+        - NC_086160.1
+        - NC_086161.1
+        - NC_086162.1
+        - NC_086163.1
+        - NC_086164.1
+        - NC_086165.1
+        - NC_086166.1
+        - NC_086167.1
+        - NC_086168.1
+        - NC_086169.1
+        - NC_086170.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

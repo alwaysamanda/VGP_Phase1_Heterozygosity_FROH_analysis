@@ -1,0 +1,82 @@
+    CLADE : mammals 
+    SPEC_NAME : CynVol 
+    FULL_SPEC_NAME : Cynocephalus_volans 
+    ALN_NAME : mCynVol 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_084460.1
+        - NC_084461.1
+        - NC_084462.1
+        - NC_084463.1
+        - NC_084464.1
+        - NC_084465.1
+        - NC_084466.1
+        - NC_084467.1
+        - NC_084468.1
+        - NC_084469.1
+        - NC_084470.1
+        - NC_084471.1
+        - NC_084472.1
+        - NC_084473.1
+        - NC_084474.1
+        - NC_084475.1
+        - NC_084476.1
+        - NC_084477.1
+        - NC_084478.1
+        - NC_084479.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_084460.1
+        - NC_084461.1
+        - NC_084462.1
+        - NC_084463.1
+        - NC_084464.1
+        - NC_084465.1
+        - NC_084466.1
+        - NC_084467.1
+        - NC_084468.1
+        - NC_084469.1
+        - NC_084470.1
+        - NC_084471.1
+        - NC_084472.1
+        - NC_084473.1
+        - NC_084474.1
+        - NC_084475.1
+        - NC_084476.1
+        - NC_084477.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

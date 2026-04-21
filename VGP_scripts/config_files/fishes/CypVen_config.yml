@@ -1,0 +1,96 @@
+    CLADE : fishes 
+    SPEC_NAME : CypVen 
+    FULL_SPEC_NAME: "Cyprinella_venusta"
+    ALN_NAME: "fCypVen"
+    REF_NAME : GCA_038024135.1 
+    ALT_NAME : GCA_038021265.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - CM075888.1
+        - CM075889.1
+        - CM075890.1
+        - CM075891.1
+        - CM075892.1
+        - CM075893.1
+        - CM075894.1
+        - CM075895.1
+        - CM075896.1
+        - CM075897.1
+        - CM075898.1
+        - CM075899.1
+        - CM075900.1
+        - CM075901.1
+        - CM075902.1
+        - CM075903.1
+        - CM075904.1
+        - CM075905.1
+        - CM075906.1
+        - CM075907.1
+        - CM075908.1
+        - CM075909.1
+        - CM075910.1
+        - CM075911.1
+        - CM075912.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM075888.1
+        - CM075889.1
+        - CM075890.1
+        - CM075891.1
+        - CM075892.1
+        - CM075893.1
+        - CM075894.1
+        - CM075895.1
+        - CM075896.1
+        - CM075897.1
+        - CM075898.1
+        - CM075899.1
+        - CM075900.1
+        - CM075901.1
+        - CM075902.1
+        - CM075903.1
+        - CM075904.1
+        - CM075905.1
+        - CM075906.1
+        - CM075907.1
+        - CM075908.1
+        - CM075909.1
+        - CM075910.1
+        - CM075911.1
+        - CM075912.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

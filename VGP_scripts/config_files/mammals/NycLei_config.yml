@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : NycLei 
+    FULL_SPEC_NAME : Nyctalus_leisleri 
+    ALN_NAME : mNycLei
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ183624.2
+        - OZ183625.2
+        - OZ183626.2
+        - OZ183627.2
+        - OZ183629.2
+        - OZ183630.2
+        - OZ183631.2
+        - OZ183632.2
+        - OZ183633.2
+        - OZ183634.2
+        - OZ183635.2
+        - OZ183636.2
+        - OZ183637.2
+        - OZ183638.2
+        - OZ183639.2
+        - OZ183640.2
+        - OZ183641.2
+        - OZ183642.2
+        - OZ183644.2
+        - OZ183645.2
+        - OZ183646.2 
+        - OZ183628.2
+        - OZ183643.2
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ183624.2
+        - OZ183625.2
+        - OZ183626.2
+        - OZ183627.2
+        - OZ183629.2
+        - OZ183630.2
+        - OZ183631.2
+        - OZ183632.2
+        - OZ183633.2
+        - OZ183634.2
+        - OZ183635.2
+        - OZ183636.2
+        - OZ183637.2
+        - OZ183638.2
+        - OZ183639.2
+        - OZ183640.2
+        - OZ183641.2
+        - OZ183642.2
+        - OZ183644.2
+        - OZ183645.2
+        - OZ183646.2
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

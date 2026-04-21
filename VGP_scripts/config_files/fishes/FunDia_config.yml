@@ -1,0 +1,94 @@
+    CLADE : fishes
+    SPEC_NAME : FunDia 
+    FULL_SPEC_NAME: "Fundulus_diaphanus"
+    ALN_NAME: "fFunDia"
+    REF_NAME : GCA_037039145.1 
+    ALT_NAME : GCA_037038625.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1.5
+    ALL_CHROMOSOMES : 
+        - CM073121.1
+        - CM073122.1
+        - CM073123.1
+        - CM073124.1
+        - CM073125.1
+        - CM073126.1
+        - CM073127.1
+        - CM073128.1
+        - CM073129.1
+        - CM073130.1
+        - CM073131.1
+        - CM073132.1
+        - CM073133.1
+        - CM073134.1
+        - CM073135.1
+        - CM073136.1
+        - CM073137.1
+        - CM073138.1
+        - CM073139.1
+        - CM073140.1
+        - CM073141.1
+        - CM073142.1
+        - CM073143.1
+        - CM073144.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM073121.1
+        - CM073122.1
+        - CM073123.1
+        - CM073124.1
+        - CM073125.1
+        - CM073126.1
+        - CM073127.1
+        - CM073128.1
+        - CM073129.1
+        - CM073130.1
+        - CM073131.1
+        - CM073132.1
+        - CM073133.1
+        - CM073134.1
+        - CM073135.1
+        - CM073136.1
+        - CM073137.1
+        - CM073138.1
+        - CM073139.1
+        - CM073140.1
+        - CM073141.1
+        - CM073142.1
+        - CM073143.1
+        - CM073144.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

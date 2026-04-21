@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : SquCep 
+    FULL_SPEC_NAME : Squalius_cephalus 
+    ALN_NAME : fSquCep 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX439247.1
+        - OX439248.1
+        - OX439249.1
+        - OX439250.1
+        - OX439251.1
+        - OX439252.1
+        - OX439253.1
+        - OX439254.1
+        - OX439255.1
+        - OX439256.1
+        - OX439257.1
+        - OX439258.1
+        - OX439259.1
+        - OX439260.1
+        - OX439261.1
+        - OX439262.1
+        - OX439263.1
+        - OX439264.1
+        - OX439265.1
+        - OX439266.1
+        - OX439267.1
+        - OX439268.1
+        - OX439269.1
+        - OX439270.1
+        - OX439271.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX439247.1
+        - OX439248.1
+        - OX439249.1
+        - OX439250.1
+        - OX439251.1
+        - OX439252.1
+        - OX439253.1
+        - OX439254.1
+        - OX439255.1
+        - OX439256.1
+        - OX439257.1
+        - OX439258.1
+        - OX439259.1
+        - OX439260.1
+        - OX439261.1
+        - OX439262.1
+        - OX439263.1
+        - OX439264.1
+        - OX439265.1
+        - OX439266.1
+        - OX439267.1
+        - OX439268.1
+        - OX439269.1
+        - OX439270.1
+        - OX439271.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,92 @@
+    CLADE : fishes
+    SPEC_NAME : AmiCal 
+    FULL_SPEC_NAME: "Amia_calva"
+    ALN_NAME: "fAmiCal"
+    REF_NAME : GCF_036373705.1 
+    ALT_NAME : GCA_036365475.1 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 3
+    ALL_CHROMOSOMES : 
+        - NC_089850.1
+        - NC_089851.1
+        - NC_089852.1
+        - NC_089853.1
+        - NC_089854.1
+        - NC_089855.1
+        - NC_089856.1
+        - NC_089857.1
+        - NC_089858.1
+        - NC_089859.1
+        - NC_089860.1
+        - NC_089861.1
+        - NC_089862.1
+        - NC_089863.1
+        - NC_089864.1
+        - NC_089865.1
+        - NC_089866.1
+        - NC_089867.1
+        - NC_089868.1
+        - NC_089869.1
+        - NC_089870.1
+        - NC_089871.1
+        - NC_089872.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_089850.1
+        - NC_089851.1
+        - NC_089852.1
+        - NC_089853.1
+        - NC_089854.1
+        - NC_089855.1
+        - NC_089856.1
+        - NC_089857.1
+        - NC_089858.1
+        - NC_089859.1
+        - NC_089860.1
+        - NC_089861.1
+        - NC_089862.1
+        - NC_089863.1
+        - NC_089864.1
+        - NC_089865.1
+        - NC_089866.1
+        - NC_089867.1
+        - NC_089868.1
+        - NC_089869.1
+        - NC_089870.1
+        - NC_089871.1
+        - NC_089872.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

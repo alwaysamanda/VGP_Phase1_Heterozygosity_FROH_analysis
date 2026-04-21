@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodBoc 
+    FULL_SPEC_NAME : Podarcis_bocagei 
+    ALN_NAME : rPodBoc 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ076885.1
+        - OZ076886.1
+        - OZ076887.1
+        - OZ076888.1
+        - OZ076889.1
+        - OZ076890.1
+        - OZ076892.1
+        - OZ076893.1
+        - OZ076894.1
+        - OZ076895.1
+        - OZ076896.1
+        - OZ076897.1
+        - OZ076898.1
+        - OZ076899.1
+        - OZ076901.1
+        - OZ076902.1
+        - OZ076903.1
+        - OZ076904.1
+        - OZ076900.1
+        - OZ076891.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ076885.1
+        - OZ076886.1
+        - OZ076887.1
+        - OZ076888.1
+        - OZ076889.1
+        - OZ076890.1
+        - OZ076892.1
+        - OZ076893.1
+        - OZ076894.1
+        - OZ076895.1
+        - OZ076896.1
+        - OZ076897.1
+        - OZ076898.1
+        - OZ076899.1
+        - OZ076901.1
+        - OZ076902.1
+        - OZ076903.1
+        - OZ076904.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

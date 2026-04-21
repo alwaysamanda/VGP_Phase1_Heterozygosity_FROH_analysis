@@ -1,0 +1,72 @@
+    CLADE : reptiles 
+    SPEC_NAME : EryReg 
+    FULL_SPEC_NAME : Erythrolamprus_reginae 
+    ALN_NAME : rEryReg 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 14
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_091950.1
+        - NC_091951.1
+        - NC_091952.1
+        - NC_091953.1
+        - NC_091954.1
+        - NC_091955.1
+        - NC_091956.1
+        - NC_091957.1
+        - NC_091958.1
+        - NC_091959.1
+        - NC_091960.1
+        - NC_091961.1
+        - NC_091962.1
+        - NC_091963.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_091950.1
+        - NC_091951.1
+        - NC_091952.1
+        - NC_091953.1
+        - NC_091954.1
+        - NC_091955.1
+        - NC_091956.1
+        - NC_091957.1
+        - NC_091958.1
+        - NC_091959.1
+        - NC_091960.1
+        - NC_091961.1
+        - NC_091962.1
+        - NC_091963.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

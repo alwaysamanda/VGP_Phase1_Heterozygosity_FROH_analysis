@@ -1,0 +1,94 @@
+    CLADE : reptiles 
+    SPEC_NAME : GopFla 
+    FULL_SPEC_NAME : Gopherus_flavomarginatus 
+    ALN_NAME : rGopFla 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_066617.1
+        - NC_066618.1
+        - NC_066619.1
+        - NC_066620.1
+        - NC_066621.1
+        - NC_066622.1
+        - NC_066623.1
+        - NC_066624.1
+        - NC_066625.1
+        - NC_066626.1
+        - NC_066627.1
+        - NC_066628.1
+        - NC_066629.1
+        - NC_066630.1
+        - NC_066631.1
+        - NC_066632.1
+        - NC_066633.1
+        - NC_066634.1
+        - NC_066635.1
+        - NC_066636.1
+        - NC_066637.1
+        - NC_066638.1
+        - NC_066639.1
+        - NC_066640.1
+        - NC_066641.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_066617.1
+        - NC_066618.1
+        - NC_066619.1
+        - NC_066620.1
+        - NC_066621.1
+        - NC_066622.1
+        - NC_066623.1
+        - NC_066624.1
+        - NC_066625.1
+        - NC_066626.1
+        - NC_066627.1
+        - NC_066628.1
+        - NC_066629.1
+        - NC_066630.1
+        - NC_066631.1
+        - NC_066632.1
+        - NC_066633.1
+        - NC_066634.1
+        - NC_066635.1
+        - NC_066636.1
+        - NC_066637.1
+        - NC_066638.1
+        - NC_066639.1
+        - NC_066640.1
+        - NC_066641.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

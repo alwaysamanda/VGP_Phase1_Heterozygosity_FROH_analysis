@@ -1,0 +1,90 @@
+    CLADE : mammals 
+    SPEC_NAME : MinSch 
+    FULL_SPEC_NAME : Miniopterus_schreibersii 
+    ALN_NAME : mMinSch
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ071092.2
+        - OZ071093.2
+        - OZ071094.2
+        - OZ071096.2
+        - OZ071097.2
+        - OZ071098.2
+        - OZ071099.2
+        - OZ071100.2
+        - OZ071101.2
+        - OZ071102.2
+        - OZ071103.2
+        - OZ071104.2
+        - OZ071105.2
+        - OZ071106.2
+        - OZ071107.2
+        - OZ071108.2
+        - OZ071109.2
+        - OZ071110.2
+        - OZ071111.2
+        - OZ071112.2
+        - OZ071114.2
+        - OZ071115.2 
+        - OZ071095.2
+        - OZ071113.2
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ071092.2
+        - OZ071093.2
+        - OZ071094.2
+        - OZ071096.2
+        - OZ071097.2
+        - OZ071098.2
+        - OZ071099.2
+        - OZ071100.2
+        - OZ071101.2
+        - OZ071102.2
+        - OZ071103.2
+        - OZ071104.2
+        - OZ071105.2
+        - OZ071106.2
+        - OZ071107.2
+        - OZ071108.2
+        - OZ071109.2
+        - OZ071110.2
+        - OZ071111.2
+        - OZ071112.2
+        - OZ071114.2
+        - OZ071115.2 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

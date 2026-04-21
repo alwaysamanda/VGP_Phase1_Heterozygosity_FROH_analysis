@@ -1,0 +1,90 @@
+    CLADE : birds 
+    SPEC_NAME : FalRus 
+    FULL_SPEC_NAME : Falco_rusticolus 
+    ALN_NAME : bFalRus 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 8 ## Rounded from 7.73
+    ALL_CHROMOSOMES : 
+        - NC_051187.1
+        - NC_051188.1
+        - NC_051189.1
+        - NC_051190.1
+        - NC_051191.1
+        - NC_051192.1
+        - NC_051193.1
+        - NC_051194.1
+        - NC_051195.1
+        - NC_051196.1
+        - NC_051197.1
+        - NC_051198.1
+        - NC_051199.1
+        - NC_051200.1
+        - NC_051201.1
+        - NC_051202.1
+        - NC_051203.1
+        - NC_051204.1
+        - NC_051205.1
+        - NC_051206.1
+        - NC_051207.1
+        - NC_051209.1
+        - NC_051210.1 
+        # - NC_051208.1 ## 20250829 Commented this out since there doesn't appear to be a chained alignment of it -- discuss with Richard
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_051187.1
+        - NC_051188.1
+        - NC_051189.1
+        - NC_051190.1
+        - NC_051191.1
+        - NC_051192.1
+        - NC_051193.1
+        - NC_051194.1
+        - NC_051195.1
+        - NC_051196.1
+        - NC_051197.1
+        - NC_051198.1
+        - NC_051199.1
+        - NC_051200.1
+        - NC_051201.1
+        - NC_051202.1
+        - NC_051203.1
+        - NC_051204.1
+        - NC_051205.1
+        - NC_051206.1
+        - NC_051207.1
+        # - NC_051208.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

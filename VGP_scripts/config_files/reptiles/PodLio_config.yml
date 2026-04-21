@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodLio 
+    FULL_SPEC_NAME : Podarcis_liolepis 
+    ALN_NAME : rPodLio 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ218098.1
+        - OZ218099.1
+        - OZ218100.1
+        - OZ218101.1
+        - OZ218102.1
+        - OZ218103.1
+        - OZ218104.1
+        - OZ218105.1
+        - OZ218106.1
+        - OZ218107.1
+        - OZ218108.1
+        - OZ218109.1
+        - OZ218110.1
+        - OZ218111.1
+        - OZ218113.1
+        - OZ218114.1
+        - OZ218115.1
+        - OZ218117.1
+        - OZ218112.1
+        - OZ218116.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ218098.1
+        - OZ218099.1
+        - OZ218100.1
+        - OZ218101.1
+        - OZ218102.1
+        - OZ218103.1
+        - OZ218104.1
+        - OZ218105.1
+        - OZ218106.1
+        - OZ218107.1
+        - OZ218108.1
+        - OZ218109.1
+        - OZ218110.1
+        - OZ218111.1
+        - OZ218113.1
+        - OZ218114.1
+        - OZ218115.1
+        - OZ218117.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

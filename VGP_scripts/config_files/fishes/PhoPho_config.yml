@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : PhoPho 
+    FULL_SPEC_NAME : Phoxinus_phoxinus 
+    ALN_NAME : fPhoPho 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX424409.1
+        - OX424410.1
+        - OX424411.1
+        - OX424412.1
+        - OX424413.1
+        - OX424414.1
+        - OX424415.1
+        - OX424416.1
+        - OX424417.1
+        - OX424418.1
+        - OX424419.1
+        - OX424420.1
+        - OX424421.1
+        - OX424422.1
+        - OX424423.1
+        - OX424424.1
+        - OX424425.1
+        - OX424426.1
+        - OX424427.1
+        - OX424428.1
+        - OX424429.1
+        - OX424430.1
+        - OX424431.1
+        - OX424432.1
+        - OX424433.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX424409.1
+        - OX424410.1
+        - OX424411.1
+        - OX424412.1
+        - OX424413.1
+        - OX424414.1
+        - OX424415.1
+        - OX424416.1
+        - OX424417.1
+        - OX424418.1
+        - OX424419.1
+        - OX424420.1
+        - OX424421.1
+        - OX424422.1
+        - OX424423.1
+        - OX424424.1
+        - OX424425.1
+        - OX424426.1
+        - OX424427.1
+        - OX424428.1
+        - OX424429.1
+        - OX424430.1
+        - OX424431.1
+        - OX424432.1
+        - OX424433.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

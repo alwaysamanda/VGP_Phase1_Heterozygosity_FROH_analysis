@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodVau 
+    FULL_SPEC_NAME : Podarcis_vaucheri 
+    ALN_NAME : rPodVau 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ220363.1
+        - OZ220364.1
+        - OZ220365.1
+        - OZ220366.1
+        - OZ220367.1
+        - OZ220368.1
+        - OZ220369.1
+        - OZ220370.1
+        - OZ220371.1
+        - OZ220372.1
+        - OZ220373.1
+        - OZ220374.1
+        - OZ220375.1
+        - OZ220376.1
+        - OZ220377.1
+        - OZ220378.1
+        - OZ220379.1
+        - OZ220380.1
+        - OZ220381.1
+        - OZ220382.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ220363.1
+        - OZ220364.1
+        - OZ220365.1
+        - OZ220366.1
+        - OZ220367.1
+        - OZ220368.1
+        - OZ220369.1
+        - OZ220370.1
+        - OZ220371.1
+        - OZ220372.1
+        - OZ220373.1
+        - OZ220374.1
+        - OZ220375.1
+        - OZ220376.1
+        - OZ220377.1
+        - OZ220378.1
+        - OZ220379.1
+        - OZ220380.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

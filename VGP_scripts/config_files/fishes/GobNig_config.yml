@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : GobNig 
+    FULL_SPEC_NAME : Gobius_niger 
+    ALN_NAME : fGobNig 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX637595.1
+        - OX637596.1
+        - OX637597.1
+        - OX637598.1
+        - OX637599.1
+        - OX637600.1
+        - OX637601.1
+        - OX637602.1
+        - OX637603.1
+        - OX637604.1
+        - OX637605.1
+        - OX637606.1
+        - OX637607.1
+        - OX637608.1
+        - OX637609.1
+        - OX637610.1
+        - OX637611.1
+        - OX637612.1
+        - OX637613.1
+        - OX637614.1
+        - OX637615.1
+        - OX637616.1
+        - OX637617.1
+        - OX637618.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX637595.1
+        - OX637596.1
+        - OX637597.1
+        - OX637598.1
+        - OX637599.1
+        - OX637600.1
+        - OX637601.1
+        - OX637602.1
+        - OX637603.1
+        - OX637604.1
+        - OX637605.1
+        - OX637606.1
+        - OX637607.1
+        - OX637608.1
+        - OX637609.1
+        - OX637610.1
+        - OX637611.1
+        - OX637612.1
+        - OX637613.1
+        - OX637614.1
+        - OX637615.1
+        - OX637616.1
+        - OX637617.1
+        - OX637618.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

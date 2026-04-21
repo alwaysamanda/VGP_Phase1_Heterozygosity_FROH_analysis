@@ -1,0 +1,84 @@
+    CLADE : fishes 
+    SPEC_NAME : AplTae 
+    FULL_SPEC_NAME : Aplochiton_taeniatus 
+    ALN_NAME : fAplTae 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM030172.1
+        - CM030173.1
+        - CM030174.1
+        - CM030175.1
+        - CM030176.1
+        - CM030177.1
+        - CM030178.1
+        - CM030179.1
+        - CM030180.1
+        - CM030181.1
+        - CM030182.1
+        - CM030183.1
+        - CM030184.1
+        - CM030185.1
+        - CM030186.1
+        - CM030187.1
+        - CM030188.1
+        - CM030189.1
+        - CM030190.1
+        - CM030191.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM030172.1
+        - CM030173.1
+        - CM030174.1
+        - CM030175.1
+        - CM030176.1
+        - CM030177.1
+        - CM030178.1
+        - CM030179.1
+        - CM030180.1
+        - CM030181.1
+        - CM030182.1
+        - CM030183.1
+        - CM030184.1
+        - CM030185.1
+        - CM030186.1
+        - CM030187.1
+        - CM030188.1
+        - CM030189.1
+        - CM030190.1
+        - CM030191.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

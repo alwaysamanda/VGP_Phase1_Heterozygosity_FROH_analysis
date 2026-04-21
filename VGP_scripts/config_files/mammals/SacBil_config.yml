@@ -1,0 +1,69 @@
+    CLADE : mammals 
+    SPEC_NAME : SacBil 
+    FULL_SPEC_NAME : Saccopteryx_bilineata 
+    ALN_NAME : mSacBil 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 12
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_089490.1
+        - NC_089491.1
+        - NC_089492.1
+        - NC_089493.1
+        - NC_089494.1
+        - NC_089495.1
+        - NC_089496.1
+        - NC_089497.1
+        - NC_089498.1
+        - NC_089499.1
+        - NC_089500.1
+        - NC_089501.1
+        - NC_089502.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_089490.1
+        - NC_089491.1
+        - NC_089492.1
+        - NC_089493.1
+        - NC_089494.1
+        - NC_089495.1
+        - NC_089496.1
+        - NC_089497.1
+        - NC_089498.1
+        - NC_089499.1
+        - NC_089500.1
+        - NC_089501.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

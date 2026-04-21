@@ -1,0 +1,90 @@
+    CLADE : mammals 
+    SPEC_NAME : MicPen 
+    FULL_SPEC_NAME : Microtus_pennsylvanicus  
+    ALN_NAME : mMicPen
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM073167.1
+        - CM073168.1
+        - CM073169.1
+        - CM073170.1
+        - CM073171.1
+        - CM073172.1
+        - CM073173.1
+        - CM073174.1
+        - CM073175.1
+        - CM073176.1
+        - CM073177.1
+        - CM073178.1
+        - CM073179.1
+        - CM073180.1
+        - CM073181.1
+        - CM073182.1
+        - CM073183.1
+        - CM073184.1
+        - CM073185.1
+        - CM073186.1
+        - CM073187.1
+        - CM073188.1
+        - CM073189.1
+        - CM073190.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM073167.1
+        - CM073168.1
+        - CM073169.1
+        - CM073170.1
+        - CM073171.1
+        - CM073172.1
+        - CM073173.1
+        - CM073174.1
+        - CM073175.1
+        - CM073176.1
+        - CM073177.1
+        - CM073178.1
+        - CM073179.1
+        - CM073180.1
+        - CM073181.1
+        - CM073182.1
+        - CM073183.1
+        - CM073184.1
+        - CM073185.1
+        - CM073186.1
+        - CM073187.1
+        - CM073188.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,75 @@
+    CLADE : mammals 
+    SPEC_NAME : ArtLit 
+    FULL_SPEC_NAME : Artibeus_lituratus
+    ALN_NAME : mArtLit
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 14
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM076378.2
+        - CM076379.2
+        - CM076380.2
+        - CM076381.2
+        - CM076382.2
+        - CM076383.2
+        - CM076384.2
+        - CM076385.2
+        - CM076386.2
+        - CM076387.2
+        - CM076388.2
+        - CM076389.2
+        - CM076390.2
+        - CM076391.2
+        - CM076392.2
+        - CM077782.1
+        - CM076394.2 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM076378.2
+        - CM076379.2
+        - CM076380.2
+        - CM076381.2
+        - CM076382.2
+        - CM076383.2
+        - CM076384.2
+        - CM076385.2
+        - CM076386.2
+        - CM076387.2
+        - CM076388.2
+        - CM076389.2
+        - CM076390.2
+        - CM076391.2
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

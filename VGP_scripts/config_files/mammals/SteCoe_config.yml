@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : SteCoe 
+    FULL_SPEC_NAME : Stenella_coeruleoalba 
+    ALN_NAME : mSteCoe 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX596385.1
+        - OX596386.1
+        - OX596387.1
+        - OX596388.1
+        - OX596389.1
+        - OX596390.1
+        - OX596391.1
+        - OX596392.1
+        - OX596393.1
+        - OX596394.1
+        - OX596395.1
+        - OX596396.1
+        - OX596397.1
+        - OX596398.1
+        - OX596399.1
+        - OX596400.1
+        - OX596401.1
+        - OX596402.1
+        - OX596403.1
+        - OX596404.1
+        - OX596405.1
+        - OX596406.1
+        - OX596407.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX596385.1
+        - OX596386.1
+        - OX596387.1
+        - OX596388.1
+        - OX596389.1
+        - OX596390.1
+        - OX596392.1
+        - OX596393.1
+        - OX596394.1
+        - OX596395.1
+        - OX596396.1
+        - OX596397.1
+        - OX596398.1
+        - OX596399.1
+        - OX596400.1
+        - OX596401.1
+        - OX596402.1
+        - OX596403.1
+        - OX596404.1
+        - OX596405.1
+        - OX596406.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

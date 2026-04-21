@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : EreDor 
+    FULL_SPEC_NAME : Erethizon_dorsatum 
+    ALN_NAME : mEreDor 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM051822.1
+        - CM051823.1
+        - CM051824.1
+        - CM051825.1
+        - CM051826.1
+        - CM051827.1
+        - CM051828.1
+        - CM051829.1
+        - CM051830.1
+        - CM051831.1
+        - CM051832.1
+        - CM051833.1
+        - CM051834.1
+        - CM051835.1
+        - CM051836.1
+        - CM051837.1
+        - CM051838.1
+        - CM051839.1
+        - CM051840.1
+        - CM051841.1
+        - CM051842.1
+        - CM051843.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM051822.1
+        - CM051823.1
+        - CM051824.1
+        - CM051825.1
+        - CM051826.1
+        - CM051827.1
+        - CM051828.1
+        - CM051829.1
+        - CM051830.1
+        - CM051831.1
+        - CM051832.1
+        - CM051833.1
+        - CM051834.1
+        - CM051835.1
+        - CM051836.1
+        - CM051837.1
+        - CM051838.1
+        - CM051839.1
+        - CM051840.1
+        - CM051841.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

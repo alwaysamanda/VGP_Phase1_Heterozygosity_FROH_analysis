@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodFil 
+    FULL_SPEC_NAME : Podarcis_filfolensis 
+    ALN_NAME : rPodFil 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ185435.1
+        - OZ185436.1
+        - OZ185437.1
+        - OZ185438.1
+        - OZ185439.1
+        - OZ185440.1
+        - OZ185441.1
+        - OZ185442.1
+        - OZ185443.1
+        - OZ185444.1
+        - OZ185445.1
+        - OZ185446.1
+        - OZ185447.1
+        - OZ185448.1
+        - OZ185450.1
+        - OZ185452.1
+        - OZ185453.1
+        - OZ185454.1
+        - OZ185451.1
+        - OZ185449.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ185435.1
+        - OZ185436.1
+        - OZ185437.1
+        - OZ185438.1
+        - OZ185439.1
+        - OZ185440.1
+        - OZ185441.1
+        - OZ185442.1
+        - OZ185443.1
+        - OZ185444.1
+        - OZ185445.1
+        - OZ185446.1
+        - OZ185447.1
+        - OZ185448.1
+        - OZ185450.1
+        - OZ185452.1
+        - OZ185453.1
+        - OZ185454.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

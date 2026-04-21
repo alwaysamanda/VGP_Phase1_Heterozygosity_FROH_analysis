@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodMur 
+    FULL_SPEC_NAME : Podarcis_muralis 
+    ALN_NAME : rPodMur 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ076954.1
+        - OZ076955.1
+        - OZ076956.1
+        - OZ076957.1
+        - OZ076958.1
+        - OZ076959.1
+        - OZ076960.1
+        - OZ076961.1
+        - OZ076962.1
+        - OZ076963.1
+        - OZ076964.1
+        - OZ076965.1
+        - OZ076966.1
+        - OZ076967.1
+        - OZ076969.1
+        - OZ076970.1
+        - OZ076971.1
+        - OZ076973.1
+        - OZ076968.1
+        - OZ076972.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ076954.1
+        - OZ076955.1
+        - OZ076956.1
+        - OZ076957.1
+        - OZ076958.1
+        - OZ076959.1
+        - OZ076960.1
+        - OZ076961.1
+        - OZ076962.1
+        - OZ076963.1
+        - OZ076964.1
+        - OZ076965.1
+        - OZ076966.1
+        - OZ076967.1
+        - OZ076969.1
+        - OZ076970.1
+        - OZ076971.1
+        - OZ076973.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

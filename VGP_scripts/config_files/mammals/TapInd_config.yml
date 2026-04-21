@@ -1,0 +1,95 @@
+    CLADE : mammals 
+    SPEC_NAME : TapInd 
+    FULL_SPEC_NAME : Tapirus_indicus 
+    ALN_NAME : mTapInd
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 26
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM062917.1
+        - CM062918.1
+        - CM062919.1
+        - CM062920.1
+        - CM062921.1
+        - CM062922.1
+        - CM062923.1
+        - CM062924.1
+        - CM062925.1
+        - CM062926.1
+        - CM062927.1
+        - CM062928.1
+        - CM062929.1
+        - CM062930.1
+        - CM062931.1
+        - CM062932.1
+        - CM062933.1
+        - CM062934.1
+        - CM062935.1
+        - CM062936.1
+        - CM062937.1
+        - CM062938.1
+        - CM062939.1
+        - CM062940.1
+        - CM062941.1
+        - CM062942.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM062917.1
+        - CM062918.1
+        - CM062919.1
+        - CM062920.1
+        - CM062921.1
+        - CM062922.1
+        - CM062923.1
+        - CM062924.1
+        - CM062925.1
+        - CM062926.1
+        - CM062927.1
+        - CM062928.1
+        - CM062929.1
+        - CM062930.1
+        - CM062931.1
+        - CM062932.1
+        - CM062933.1
+        - CM062934.1
+        - CM062935.1
+        - CM062936.1
+        - CM062937.1
+        - CM062938.1
+        - CM062939.1
+        - CM062940.1
+        - CM062941.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

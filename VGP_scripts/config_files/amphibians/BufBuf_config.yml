@@ -1,0 +1,66 @@
+    CLADE : amphibians 
+    SPEC_NAME : BufBuf 
+    FULL_SPEC_NAME : Bufo_bufo 
+    ALN_NAME : aBufBuf 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 11
+    NUM_ALL_CHR: 11
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_053389.1
+        - NC_053390.1
+        - NC_053391.1
+        - NC_053392.1
+        - NC_053393.1
+        - NC_053394.1
+        - NC_053395.1
+        - NC_053396.1
+        - NC_053397.1
+        - NC_053398.1
+        - NC_053399.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_053389.1
+        - NC_053390.1
+        - NC_053391.1
+        - NC_053392.1
+        - NC_053393.1
+        - NC_053394.1
+        - NC_053395.1
+        - NC_053396.1
+        - NC_053397.1
+        - NC_053398.1
+        - NC_053399.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

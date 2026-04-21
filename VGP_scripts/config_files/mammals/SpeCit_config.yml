@@ -1,0 +1,83 @@
+    CLADE : mammals 
+    SPEC_NAME : SpeCit 
+    FULL_SPEC_NAME : Spermophilus_citellus 
+    ALN_NAME : mSpeCit 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ077378.1
+        - OZ077379.1
+        - OZ077380.1
+        - OZ077381.1
+        - OZ077382.1
+        - OZ077383.1
+        - OZ077384.1
+        - OZ077385.1
+        - OZ077387.1
+        - OZ077388.1
+        - OZ077389.1
+        - OZ077390.1
+        - OZ077391.1
+        - OZ077392.1
+        - OZ077393.1
+        - OZ077394.1
+        - OZ077395.1
+        - OZ077396.1
+        - OZ077397.1 
+        - OZ077386.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ077378.1
+        - OZ077379.1
+        - OZ077380.1
+        - OZ077381.1
+        - OZ077382.1
+        - OZ077383.1
+        - OZ077384.1
+        - OZ077385.1
+        - OZ077387.1
+        - OZ077388.1
+        - OZ077389.1
+        - OZ077390.1
+        - OZ077391.1
+        - OZ077392.1
+        - OZ077393.1
+        - OZ077394.1
+        - OZ077395.1
+        - OZ077396.1
+        - OZ077397.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

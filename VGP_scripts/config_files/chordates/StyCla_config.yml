@@ -1,0 +1,74 @@
+    CLADE : chordates 
+    SPEC_NAME : StyCla 
+    FULL_SPEC_NAME : Styela_clava 
+    ALN_NAME : kStyCla 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 15
+    NUM_ALL_CHR: 15
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ123512.1
+        - OZ123513.1
+        - OZ123514.1
+        - OZ123515.1
+        - OZ123516.1
+        - OZ123517.1
+        - OZ123518.1
+        - OZ123519.1
+        - OZ123520.1
+        - OZ123521.1
+        - OZ123522.1
+        - OZ123523.1
+        - OZ123524.1
+        - OZ123525.1
+        - OZ123526.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ123512.1
+        - OZ123513.1
+        - OZ123514.1
+        - OZ123515.1
+        - OZ123516.1
+        - OZ123517.1
+        - OZ123518.1
+        - OZ123519.1
+        - OZ123520.1
+        - OZ123521.1
+        - OZ123522.1
+        - OZ123523.1
+        - OZ123524.1
+        - OZ123525.1
+        - OZ123526.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

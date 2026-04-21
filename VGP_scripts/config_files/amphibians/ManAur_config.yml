@@ -1,0 +1,70 @@
+    CLADE : amphibians 
+    SPEC_NAME : ManAur 
+    FULL_SPEC_NAME : Mantella_aurantiaca 
+    ALN_NAME : aManAur 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM108995.1
+        - CM108996.1
+        - CM108997.1
+        - CM108998.1
+        - CM108999.1
+        - CM109000.1
+        - CM109001.1
+        - CM109002.1
+        - CM109003.1
+        - CM109004.1
+        - CM109005.1
+        - CM109006.1
+        - CM109007.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM108995.1
+        - CM108996.1
+        - CM108997.1
+        - CM108998.1
+        - CM108999.1
+        - CM109000.1
+        - CM109001.1
+        - CM109002.1
+        - CM109003.1
+        - CM109004.1
+        - CM109005.1
+        - CM109006.1
+        - CM109007.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

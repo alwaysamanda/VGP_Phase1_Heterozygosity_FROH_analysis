@@ -1,0 +1,84 @@
+    CLADE : fishes 
+    SPEC_NAME : NotCoa 
+    FULL_SPEC_NAME : Notolepis_coatsorum 
+    ALN_NAME : fNotCoa 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ020583.1
+        - OZ020584.1
+        - OZ020585.1
+        - OZ020586.1
+        - OZ020587.1
+        - OZ020588.1
+        - OZ020589.1
+        - OZ020590.1
+        - OZ020591.1
+        - OZ020592.1
+        - OZ020593.1
+        - OZ020594.1
+        - OZ020595.1
+        - OZ020596.1
+        - OZ020597.1
+        - OZ020598.1
+        - OZ020599.1
+        - OZ020600.1
+        - OZ020601.1
+        - OZ020602.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ020583.1
+        - OZ020584.1
+        - OZ020585.1
+        - OZ020586.1
+        - OZ020587.1
+        - OZ020588.1
+        - OZ020589.1
+        - OZ020590.1
+        - OZ020591.1
+        - OZ020592.1
+        - OZ020593.1
+        - OZ020594.1
+        - OZ020595.1
+        - OZ020596.1
+        - OZ020597.1
+        - OZ020598.1
+        - OZ020599.1
+        - OZ020600.1
+        - OZ020601.1
+        - OZ020602.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

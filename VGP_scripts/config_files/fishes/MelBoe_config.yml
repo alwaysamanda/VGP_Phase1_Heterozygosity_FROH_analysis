@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : MelBoe 
+    FULL_SPEC_NAME : Melanotaenia_boesemani 
+    ALN_NAME : fMelBoe 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_055682.1
+        - NC_055683.1
+        - NC_055684.1
+        - NC_055685.1
+        - NC_055686.1
+        - NC_055687.1
+        - NC_055688.1
+        - NC_055689.1
+        - NC_055690.1
+        - NC_055691.1
+        - NC_055692.1
+        - NC_055693.1
+        - NC_055694.1
+        - NC_055695.1
+        - NC_055696.1
+        - NC_055697.1
+        - NC_055698.1
+        - NC_055699.1
+        - NC_055700.1
+        - NC_055701.1
+        - NC_055702.1
+        - NC_055703.1
+        - NC_055704.1
+        - NC_055705.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_055682.1
+        - NC_055683.1
+        - NC_055684.1
+        - NC_055685.1
+        - NC_055686.1
+        - NC_055687.1
+        - NC_055688.1
+        - NC_055689.1
+        - NC_055690.1
+        - NC_055691.1
+        - NC_055692.1
+        - NC_055693.1
+        - NC_055694.1
+        - NC_055695.1
+        - NC_055696.1
+        - NC_055697.1
+        - NC_055698.1
+        - NC_055699.1
+        - NC_055700.1
+        - NC_055701.1
+        - NC_055702.1
+        - NC_055703.1
+        - NC_055704.1
+        - NC_055705.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

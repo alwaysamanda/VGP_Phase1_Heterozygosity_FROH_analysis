@@ -1,0 +1,80 @@
+    CLADE : mammals 
+    SPEC_NAME : PanOnc 
+    FULL_SPEC_NAME : Panthera_onca  
+    ALN_NAME : mPanOnc
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM102058.1
+        - CM102059.1
+        - CM102060.1
+        - CM102061.1
+        - CM102062.1
+        - CM102063.1
+        - CM102064.1
+        - CM102065.1
+        - CM102066.1
+        - CM102067.1
+        - CM102068.1
+        - CM102069.1
+        - CM102070.1
+        - CM102071.1
+        - CM102072.1
+        - CM102073.1
+        - CM102074.1
+        - CM102075.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM102058.1
+        - CM102059.1
+        - CM102060.1
+        - CM102061.1
+        - CM102062.1
+        - CM102063.1
+        - CM102064.1
+        - CM102065.1
+        - CM102066.1
+        - CM102067.1
+        - CM102068.1
+        - CM102069.1
+        - CM102070.1
+        - CM102071.1
+        - CM102072.1
+        - CM102073.1
+        - CM102074.1
+        - CM102075.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,86 @@
+    CLADE : fishes 
+    SPEC_NAME : PunPun 
+    FULL_SPEC_NAME : Pungitius_pungitius 
+    ALN_NAME : fPunPun 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_084900.1
+        - NC_084901.1
+        - NC_084902.1
+        - NC_084903.1
+        - NC_084904.1
+        - NC_084905.1
+        - NC_084906.1
+        - NC_084907.1
+        - NC_084908.1
+        - NC_084909.1
+        - NC_084910.1
+        - NC_084911.1
+        - NC_084912.1
+        - NC_084913.1
+        - NC_084914.1
+        - NC_084915.1
+        - NC_084916.1
+        - NC_084917.1
+        - NC_084918.1
+        - NC_084919.1
+        - NC_084920.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_084900.1
+        - NC_084901.1
+        - NC_084902.1
+        - NC_084903.1
+        - NC_084904.1
+        - NC_084905.1
+        - NC_084906.1
+        - NC_084907.1
+        - NC_084908.1
+        - NC_084909.1
+        - NC_084910.1
+        - NC_084911.1
+        - NC_084912.1
+        - NC_084913.1
+        - NC_084914.1
+        - NC_084915.1
+        - NC_084916.1
+        - NC_084917.1
+        - NC_084918.1
+        - NC_084919.1
+        - NC_084920.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

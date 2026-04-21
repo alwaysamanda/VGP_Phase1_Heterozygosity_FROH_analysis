@@ -1,0 +1,82 @@
+    CLADE : mammals 
+    SPEC_NAME : LynCan 
+    FULL_SPEC_NAME : Lynx_canadensis 
+    ALN_NAME : mLynCan 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_044303.2
+        - NC_044304.2
+        - NC_044305.1
+        - NC_044306.2
+        - NC_044307.1
+        - NC_044308.2
+        - NC_044309.1
+        - NC_044310.1
+        - NC_044311.2
+        - NC_044312.2
+        - NC_044313.2
+        - NC_044314.2
+        - NC_044315.2
+        - NC_044316.2
+        - NC_044317.1
+        - NC_044318.1
+        - NC_044319.2
+        - NC_044320.2
+        - NC_044321.2
+        - NC_050200.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_044303.2
+        - NC_044304.2
+        - NC_044305.1
+        - NC_044306.2
+        - NC_044307.1
+        - NC_044308.2
+        - NC_044309.1
+        - NC_044310.1
+        - NC_044311.2
+        - NC_044312.2
+        - NC_044313.2
+        - NC_044314.2
+        - NC_044315.2
+        - NC_044316.2
+        - NC_044317.1
+        - NC_044318.1
+        - NC_044319.2
+        - NC_044320.2
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

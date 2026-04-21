@@ -1,0 +1,92 @@
+    CLADE : fishes
+    SPEC_NAME : PagPag 
+    FULL_SPEC_NAME : Pagrus_pagrus  
+    ALN_NAME : fPagPag
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ245635.1
+        - OZ245636.1
+        - OZ245637.1
+        - OZ245638.1
+        - OZ245639.1
+        - OZ245640.1
+        - OZ245641.1
+        - OZ245642.1
+        - OZ245643.1
+        - OZ245644.1
+        - OZ245645.1
+        - OZ245646.1
+        - OZ245647.1
+        - OZ245648.1
+        - OZ245649.1
+        - OZ245650.1
+        - OZ245651.1
+        - OZ245652.1
+        - OZ245653.1
+        - OZ245654.1
+        - OZ245655.1
+        - OZ245656.1
+        - OZ245657.1
+        - OZ245658.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ245635.1
+        - OZ245636.1
+        - OZ245637.1
+        - OZ245638.1
+        - OZ245639.1
+        - OZ245640.1
+        - OZ245641.1
+        - OZ245642.1
+        - OZ245643.1
+        - OZ245644.1
+        - OZ245645.1
+        - OZ245646.1
+        - OZ245647.1
+        - OZ245648.1
+        - OZ245649.1
+        - OZ245650.1
+        - OZ245651.1
+        - OZ245652.1
+        - OZ245653.1
+        - OZ245654.1
+        - OZ245655.1
+        - OZ245656.1
+        - OZ245657.1
+        - OZ245658.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

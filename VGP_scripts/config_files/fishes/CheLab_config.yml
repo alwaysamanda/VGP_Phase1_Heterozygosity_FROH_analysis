@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : CheLab 
+    FULL_SPEC_NAME : Chelon_labrosus 
+    ALN_NAME : fCheLab 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY741289.1
+        - OY741290.1
+        - OY741291.1
+        - OY741292.1
+        - OY741293.1
+        - OY741294.1
+        - OY741295.1
+        - OY741296.1
+        - OY741297.1
+        - OY741298.1
+        - OY741299.1
+        - OY741300.1
+        - OY741301.1
+        - OY741302.1
+        - OY741303.1
+        - OY741304.1
+        - OY741305.1
+        - OY741306.1
+        - OY741307.1
+        - OY741308.1
+        - OY741309.1
+        - OY741310.1
+        - OY741311.1
+        - OY741312.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY741289.1
+        - OY741290.1
+        - OY741291.1
+        - OY741292.1
+        - OY741293.1
+        - OY741294.1
+        - OY741295.1
+        - OY741296.1
+        - OY741297.1
+        - OY741298.1
+        - OY741299.1
+        - OY741300.1
+        - OY741301.1
+        - OY741302.1
+        - OY741303.1
+        - OY741304.1
+        - OY741305.1
+        - OY741306.1
+        - OY741307.1
+        - OY741308.1
+        - OY741309.1
+        - OY741310.1
+        - OY741311.1
+        - OY741312.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

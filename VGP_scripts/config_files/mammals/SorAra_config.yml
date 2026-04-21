@@ -1,0 +1,67 @@
+    CLADE : mammals 
+    SPEC_NAME : SorAra 
+    FULL_SPEC_NAME : Sorex_araneus 
+    ALN_NAME : mSorAra 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 11
+    NUM_ALL_CHR: 12
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_073302.1
+        - NC_073303.1
+        - NC_073304.1
+        - NC_073305.1
+        - NC_073306.1
+        - NC_073307.1
+        - NC_073308.1
+        - NC_073309.1
+        - NC_073310.1
+        - NC_073311.1
+        - NC_073312.1
+        - NC_073313.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_073302.1
+        - NC_073303.1
+        - NC_073304.1
+        - NC_073305.1
+        - NC_073306.1
+        - NC_073307.1
+        - NC_073308.1
+        - NC_073309.1
+        - NC_073310.1
+        - NC_073311.1
+        - NC_073312.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

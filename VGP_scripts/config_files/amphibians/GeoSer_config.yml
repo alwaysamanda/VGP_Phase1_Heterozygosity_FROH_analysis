@@ -1,0 +1,82 @@
+    CLADE : amphibians 
+    SPEC_NAME : GeoSer 
+    FULL_SPEC_NAME : Geotrypetes_seraphini 
+    ALN_NAME : aGeoSer 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_047084.1
+        - NC_047085.1
+        - NC_047086.1
+        - NC_047087.1
+        - NC_047088.1
+        - NC_047089.1
+        - NC_047090.1
+        - NC_047091.1
+        - NC_047092.1
+        - NC_047093.1
+        - NC_047094.1
+        - NC_047095.1
+        - NC_047096.1
+        - NC_047097.1
+        - NC_047098.1
+        - NC_047099.1
+        - NC_047100.1
+        - NC_047101.1
+        - NC_047102.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_047084.1
+        - NC_047085.1
+        - NC_047086.1
+        - NC_047087.1
+        - NC_047088.1
+        - NC_047089.1
+        - NC_047090.1
+        - NC_047091.1
+        - NC_047092.1
+        - NC_047093.1
+        - NC_047094.1
+        - NC_047095.1
+        - NC_047096.1
+        - NC_047097.1
+        - NC_047098.1
+        - NC_047099.1
+        - NC_047100.1
+        - NC_047101.1
+        - NC_047102.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : MicVar 
+    FULL_SPEC_NAME : Microchirus_variegatus 
+    ALN_NAME : fMicVar 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY735174.1
+        - OY735175.1
+        - OY735176.1
+        - OY735177.1
+        - OY735178.1
+        - OY735179.1
+        - OY735180.1
+        - OY735181.1
+        - OY735182.1
+        - OY735183.1
+        - OY735184.1
+        - OY735185.1
+        - OY735186.1
+        - OY735187.1
+        - OY735188.1
+        - OY735189.1
+        - OY735190.1
+        - OY735191.1
+        - OY735192.1
+        - OY735193.1
+        - OY735194.1
+        - OY735195.1
+        - OY735196.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY735174.1
+        - OY735175.1
+        - OY735176.1
+        - OY735177.1
+        - OY735178.1
+        - OY735179.1
+        - OY735180.1
+        - OY735181.1
+        - OY735182.1
+        - OY735183.1
+        - OY735184.1
+        - OY735185.1
+        - OY735186.1
+        - OY735187.1
+        - OY735188.1
+        - OY735189.1
+        - OY735190.1
+        - OY735191.1
+        - OY735192.1
+        - OY735193.1
+        - OY735194.1
+        - OY735195.1
+        - OY735196.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

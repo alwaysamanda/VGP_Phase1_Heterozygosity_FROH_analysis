@@ -1,0 +1,74 @@
+    CLADE : amphibians 
+    SPEC_NAME : DenEbr 
+    FULL_SPEC_NAME : Dendropsophus_ebraccatus 
+    ALN_NAME : aDenEbr 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 15
+    NUM_ALL_CHR: 15
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_091454.1
+        - NC_091455.1
+        - NC_091456.1
+        - NC_091457.1
+        - NC_091458.1
+        - NC_091459.1
+        - NC_091460.1
+        - NC_091461.1
+        - NC_091462.1
+        - NC_091463.1
+        - NC_091464.1
+        - NC_091465.1
+        - NC_091466.1
+        - NC_091467.1
+        - NC_091468.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_091454.1
+        - NC_091455.1
+        - NC_091456.1
+        - NC_091457.1
+        - NC_091458.1
+        - NC_091459.1
+        - NC_091460.1
+        - NC_091461.1
+        - NC_091462.1
+        - NC_091463.1
+        - NC_091464.1
+        - NC_091465.1
+        - NC_091466.1
+        - NC_091467.1
+        - NC_091468.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

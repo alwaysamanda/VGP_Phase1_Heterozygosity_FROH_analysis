@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : IniGeo 
+    FULL_SPEC_NAME : Inia_geoffrensis 
+    ALN_NAME : mIniGeo
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM070899.1
+        - CM070900.1
+        - CM070901.1
+        - CM070902.1
+        - CM070903.1
+        - CM070904.1
+        - CM070905.1
+        - CM070906.1
+        - CM070907.1
+        - CM070908.1
+        - CM070909.1
+        - CM070910.1
+        - CM070911.1
+        - CM070912.1
+        - CM070913.1
+        - CM070914.1
+        - CM070915.1
+        - CM070916.1
+        - CM070917.1
+        - CM070918.1
+        - CM070919.1
+        - CM070920.1
+        - CM070921.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM070899.1
+        - CM070900.1
+        - CM070901.1
+        - CM070902.1
+        - CM070903.1
+        - CM070904.1
+        - CM070905.1
+        - CM070906.1
+        - CM070907.1
+        - CM070908.1
+        - CM070909.1
+        - CM070910.1
+        - CM070911.1
+        - CM070912.1
+        - CM070913.1
+        - CM070914.1
+        - CM070915.1
+        - CM070916.1
+        - CM070917.1
+        - CM070918.1
+        - CM070919.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

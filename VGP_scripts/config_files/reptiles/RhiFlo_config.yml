@@ -1,0 +1,88 @@
+    CLADE : reptiles 
+    SPEC_NAME : RhiFlo 
+    FULL_SPEC_NAME : Rhineura_floridana 
+    ALN_NAME : rRhiFlo 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_084480.1
+        - NC_084481.1
+        - NC_084482.1
+        - NC_084483.1
+        - NC_084484.1
+        - NC_084485.1
+        - NC_084486.1
+        - NC_084487.1
+        - NC_084488.1
+        - NC_084489.1
+        - NC_084490.1
+        - NC_084491.1
+        - NC_084492.1
+        - NC_084493.1
+        - NC_084494.1
+        - NC_084495.1
+        - NC_084496.1
+        - NC_084497.1
+        - NC_084498.1
+        - NC_084499.1
+        - NC_084500.1
+        - NC_084501.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_084480.1
+        - NC_084481.1
+        - NC_084482.1
+        - NC_084483.1
+        - NC_084484.1
+        - NC_084485.1
+        - NC_084486.1
+        - NC_084487.1
+        - NC_084488.1
+        - NC_084489.1
+        - NC_084490.1
+        - NC_084491.1
+        - NC_084492.1
+        - NC_084493.1
+        - NC_084494.1
+        - NC_084495.1
+        - NC_084496.1
+        - NC_084497.1
+        - NC_084498.1
+        - NC_084499.1
+        - NC_084500.1
+        - NC_084501.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

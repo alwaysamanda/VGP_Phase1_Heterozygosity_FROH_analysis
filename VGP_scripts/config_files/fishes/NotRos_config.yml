@@ -1,0 +1,68 @@
+    CLADE : fishes 
+    SPEC_NAME : NotRos 
+    FULL_SPEC_NAME : Notothenia_rossii 
+    ALN_NAME : fNotRos 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 12
+    NUM_ALL_CHR: 12
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX449111.1
+        - OX449112.1
+        - OX449113.1
+        - OX449114.1
+        - OX449115.1
+        - OX449116.1
+        - OX449117.1
+        - OX449118.1
+        - OX449119.1
+        - OX449120.1
+        - OX449121.1
+        - OX449122.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX449111.1
+        - OX449112.1
+        - OX449113.1
+        - OX449114.1
+        - OX449115.1
+        - OX449116.1
+        - OX449117.1
+        - OX449118.1
+        - OX449119.1
+        - OX449120.1
+        - OX449121.1
+        - OX449122.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : MarFla 
+    FULL_SPEC_NAME : Marmota_flaviventris 
+    ALN_NAME : mMarFla
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_092498.1
+        - NC_092499.1
+        - NC_092500.1
+        - NC_092501.1
+        - NC_092502.1
+        - NC_092503.1
+        - NC_092504.1
+        - NC_092505.1
+        - NC_092506.1
+        - NC_092507.1
+        - NC_092508.1
+        - NC_092509.1
+        - NC_092510.1
+        - NC_092511.1
+        - NC_092512.1
+        - NC_092513.1
+        - NC_092514.1
+        - NC_092515.1
+        - NC_092516.1
+        - NC_092517.1
+        - NC_092518.1
+        - NC_092519.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_092498.1
+        - NC_092499.1
+        - NC_092500.1
+        - NC_092501.1
+        - NC_092502.1
+        - NC_092503.1
+        - NC_092504.1
+        - NC_092505.1
+        - NC_092506.1
+        - NC_092507.1
+        - NC_092508.1
+        - NC_092509.1
+        - NC_092510.1
+        - NC_092511.1
+        - NC_092512.1
+        - NC_092513.1
+        - NC_092514.1
+        - NC_092515.1
+        - NC_092516.1
+        - NC_092517.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

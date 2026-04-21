@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodTil 
+    FULL_SPEC_NAME : Podarcis_tiliguerta 
+    ALN_NAME : rPodTil 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ229110.1
+        - OZ229111.1
+        - OZ229112.1
+        - OZ229113.1
+        - OZ229114.1
+        - OZ229115.1
+        - OZ229116.1
+        - OZ229117.1
+        - OZ229118.1
+        - OZ229119.1
+        - OZ229120.1
+        - OZ229121.1
+        - OZ229122.1
+        - OZ229123.1
+        - OZ229124.1
+        - OZ229125.1
+        - OZ229126.1
+        - OZ229127.1
+        - OZ229128.1
+        - OZ229129.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ229110.1
+        - OZ229111.1
+        - OZ229112.1
+        - OZ229113.1
+        - OZ229114.1
+        - OZ229115.1
+        - OZ229116.1
+        - OZ229117.1
+        - OZ229118.1
+        - OZ229119.1
+        - OZ229120.1
+        - OZ229121.1
+        - OZ229122.1
+        - OZ229123.1
+        - OZ229124.1
+        - OZ229125.1
+        - OZ229126.1
+        - OZ229127.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,100 @@
+    CLADE : reptiles 
+    SPEC_NAME : NatDep 
+    FULL_SPEC_NAME : Natator_depressus 
+    ALN_NAME : rNatDep 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 28
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ223939.1
+        - OZ223940.1
+        - OZ223941.1
+        - OZ223942.1
+        - OZ223943.1
+        - OZ223944.1
+        - OZ223945.1
+        - OZ223946.1
+        - OZ223947.1
+        - OZ223948.1
+        - OZ223949.1
+        - OZ223950.1
+        - OZ223951.1
+        - OZ223952.1
+        - OZ223953.1
+        - OZ223954.1
+        - OZ223955.1
+        - OZ223956.1
+        - OZ223957.1
+        - OZ223958.1
+        - OZ223959.1
+        - OZ223960.1
+        - OZ223961.1
+        - OZ223962.1
+        - OZ223963.1
+        - OZ223964.1
+        - OZ223965.1
+        - OZ223966.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ223939.1
+        - OZ223940.1
+        - OZ223941.1
+        - OZ223942.1
+        - OZ223943.1
+        - OZ223944.1
+        - OZ223945.1
+        - OZ223946.1
+        - OZ223947.1
+        - OZ223948.1
+        - OZ223949.1
+        - OZ223950.1
+        - OZ223951.1
+        - OZ223952.1
+        - OZ223953.1
+        - OZ223954.1
+        - OZ223955.1
+        - OZ223956.1
+        - OZ223957.1
+        - OZ223958.1
+        - OZ223959.1
+        - OZ223960.1
+        - OZ223961.1
+        - OZ223962.1
+        - OZ223963.1
+        - OZ223964.1
+        - OZ223965.1
+        - OZ223966.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : CaeTer 
+    FULL_SPEC_NAME: "Caesio_teres"
+    ALN_NAME: "fCaeTer"
+    REF_NAME : GCA_048129055.1 
+    ALT_NAME : GCA_048129025.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 1
+    ALL_CHROMOSOMES : 
+        - CM107435.1
+        - CM107436.1
+        - CM107437.1
+        - CM107438.1
+        - CM107439.1
+        - CM107440.1
+        - CM107441.1
+        - CM107442.1
+        - CM107443.1
+        - CM107444.1
+        - CM107445.1
+        - CM107446.1
+        - CM107447.1
+        - CM107448.1
+        - CM107449.1
+        - CM107450.1
+        - CM107451.1
+        - CM107452.1
+        - CM107453.1
+        - CM107454.1
+        - CM107455.1
+        - CM107456.1
+        - CM107457.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM107435.1
+        - CM107436.1
+        - CM107437.1
+        - CM107438.1
+        - CM107439.1
+        - CM107440.1
+        - CM107441.1
+        - CM107442.1
+        - CM107443.1
+        - CM107444.1
+        - CM107445.1
+        - CM107446.1
+        - CM107447.1
+        - CM107448.1
+        - CM107449.1
+        - CM107450.1
+        - CM107451.1
+        - CM107452.1
+        - CM107453.1
+        - CM107454.1
+        - CM107455.1
+        - CM107456.1
+        - CM107457.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

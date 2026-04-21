@@ -1,0 +1,93 @@
+    CLADE : fishes 
+    SPEC_NAME : CoiMys 
+    FULL_SPEC_NAME: Coilia_mystus
+    ALN_NAME: fCoiMys
+    REF_NAME : GCA_048544225.1 
+    ALT_NAME : GCA_048544215.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 3
+    ALL_CHROMOSOMES : 
+        - CM108836.1
+        - CM108837.1
+        - CM108838.1
+        - CM108839.1
+        - CM108840.1
+        - CM108841.1
+        - CM108842.1
+        - CM108843.1
+        - CM108844.1
+        - CM108845.1
+        - CM108846.1
+        - CM108847.1
+        - CM108848.1
+        - CM108849.1
+        - CM108850.1
+        - CM108851.1
+        - CM108852.1
+        - CM108853.1
+        - CM108854.1
+        - CM108855.1
+        - CM108856.1
+        - CM108857.1
+        - CM108858.1
+        - CM108859.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM108836.1
+        - CM108837.1
+        - CM108838.1
+        - CM108839.1
+        - CM108840.1
+        - CM108841.1
+        - CM108842.1
+        - CM108843.1
+        - CM108844.1
+        - CM108845.1
+        - CM108846.1
+        - CM108847.1
+        - CM108848.1
+        - CM108849.1
+        - CM108850.1
+        - CM108851.1
+        - CM108852.1
+        - CM108853.1
+        - CM108854.1
+        - CM108855.1
+        - CM108856.1
+        - CM108857.1
+        - CM108858.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

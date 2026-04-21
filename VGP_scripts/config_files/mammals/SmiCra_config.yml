@@ -1,0 +1,57 @@
+    CLADE : mammals 
+    SPEC_NAME : SmiCra 
+    FULL_SPEC_NAME : Sminthopsis_crassicaudata  
+    ALN_NAME : mSmiCra
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 6
+    NUM_ALL_CHR: 7
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM109181.1
+        - CM109182.1
+        - CM109183.1
+        - CM109184.1
+        - CM109185.1
+        - CM109186.1
+        - CM109187.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM109181.1
+        - CM109182.1
+        - CM109183.1
+        - CM109184.1
+        - CM109185.1
+        - CM109186.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

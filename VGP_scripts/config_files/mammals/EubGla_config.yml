@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : EubGla 
+    FULL_SPEC_NAME : Eubalaena_glacialis  
+    ALN_NAME : mEubGla 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_083716.1
+        - NC_083717.1
+        - NC_083718.1
+        - NC_083719.1
+        - NC_083720.1
+        - NC_083721.1
+        - NC_083722.1
+        - NC_083723.1
+        - NC_083724.1
+        - NC_083725.1
+        - NC_083726.1
+        - NC_083727.1
+        - NC_083728.1
+        - NC_083729.1
+        - NC_083730.1
+        - NC_083731.1
+        - NC_083732.1
+        - NC_083733.1
+        - NC_083734.1
+        - NC_083735.1
+        - NC_083736.1
+        - NC_083737.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_083716.1
+        - NC_083717.1
+        - NC_083718.1
+        - NC_083719.1
+        - NC_083720.1
+        - NC_083721.1
+        - NC_083722.1
+        - NC_083723.1
+        - NC_083724.1
+        - NC_083725.1
+        - NC_083726.1
+        - NC_083727.1
+        - NC_083728.1
+        - NC_083729.1
+        - NC_083730.1
+        - NC_083731.1
+        - NC_083732.1
+        - NC_083733.1
+        - NC_083734.1
+        - NC_083735.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

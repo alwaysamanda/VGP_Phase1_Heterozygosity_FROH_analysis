@@ -1,0 +1,62 @@
+    CLADE : chordates 
+    SPEC_NAME : AscAsp 
+    FULL_SPEC_NAME : Ascidiella_aspersa 
+    ALN_NAME : kAscAsp 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 9
+    NUM_ALL_CHR: 9
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ004607.1
+        - OZ004608.1
+        - OZ004609.1
+        - OZ004610.1
+        - OZ004611.1
+        - OZ004612.1
+        - OZ004613.1
+        - OZ004614.1
+        - OZ004615.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ004607.1
+        - OZ004608.1
+        - OZ004609.1
+        - OZ004610.1
+        - OZ004611.1
+        - OZ004612.1
+        - OZ004613.1
+        - OZ004614.1
+        - OZ004615.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

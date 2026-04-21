@@ -1,0 +1,94 @@
+    CLADE : reptiles 
+    SPEC_NAME : PanTec 
+    FULL_SPEC_NAME : Pangshura_tecta 
+    ALN_NAME : rPanTec 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM099107.1
+        - CM099108.1
+        - CM099109.1
+        - CM099110.1
+        - CM099111.1
+        - CM099112.1
+        - CM099113.1
+        - CM099114.1
+        - CM099115.1
+        - CM099116.1
+        - CM099117.1
+        - CM099118.1
+        - CM099119.1
+        - CM099120.1
+        - CM099121.1
+        - CM099122.1
+        - CM099123.1
+        - CM099124.1
+        - CM099125.1
+        - CM099126.1
+        - CM099127.1
+        - CM099128.1
+        - CM099129.1
+        - CM099130.1
+        - CM099131.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM099107.1
+        - CM099108.1
+        - CM099109.1
+        - CM099110.1
+        - CM099111.1
+        - CM099112.1
+        - CM099113.1
+        - CM099114.1
+        - CM099115.1
+        - CM099116.1
+        - CM099117.1
+        - CM099118.1
+        - CM099119.1
+        - CM099120.1
+        - CM099121.1
+        - CM099122.1
+        - CM099123.1
+        - CM099124.1
+        - CM099125.1
+        - CM099126.1
+        - CM099127.1
+        - CM099128.1
+        - CM099129.1
+        - CM099130.1
+        - CM099131.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

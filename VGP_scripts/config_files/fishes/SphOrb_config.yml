@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : SphOrb 
+    FULL_SPEC_NAME : Sphaeramia_orbicularis 
+    ALN_NAME : fSphOrb 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_043957.1
+        - NC_043958.1
+        - NC_043959.1
+        - NC_043960.1
+        - NC_043961.1
+        - NC_043962.1
+        - NC_043963.1
+        - NC_043964.1
+        - NC_043965.1
+        - NC_043966.1
+        - NC_043967.1
+        - NC_043968.1
+        - NC_043969.1
+        - NC_043970.1
+        - NC_043971.1
+        - NC_043972.1
+        - NC_043973.1
+        - NC_043974.1
+        - NC_043975.1
+        - NC_043976.1
+        - NC_043977.1
+        - NC_043978.1
+        - NC_043979.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_043957.1
+        - NC_043958.1
+        - NC_043959.1
+        - NC_043960.1
+        - NC_043961.1
+        - NC_043962.1
+        - NC_043963.1
+        - NC_043964.1
+        - NC_043965.1
+        - NC_043966.1
+        - NC_043967.1
+        - NC_043968.1
+        - NC_043969.1
+        - NC_043970.1
+        - NC_043971.1
+        - NC_043972.1
+        - NC_043973.1
+        - NC_043974.1
+        - NC_043975.1
+        - NC_043976.1
+        - NC_043977.1
+        - NC_043978.1
+        - NC_043979.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

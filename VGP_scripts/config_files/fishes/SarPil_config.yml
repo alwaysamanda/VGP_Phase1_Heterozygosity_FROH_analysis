@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : SarPil 
+    FULL_SPEC_NAME : Sardina_pilchardus 
+    ALN_NAME : fSarPil 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_084994.1
+        - NC_084995.1
+        - NC_084996.1
+        - NC_084997.1
+        - NC_084998.1
+        - NC_084999.1
+        - NC_085000.1
+        - NC_085001.1
+        - NC_085002.1
+        - NC_085003.1
+        - NC_085004.1
+        - NC_085005.1
+        - NC_085006.1
+        - NC_085007.1
+        - NC_085008.1
+        - NC_085009.1
+        - NC_085010.1
+        - NC_085011.1
+        - NC_085012.1
+        - NC_085013.1
+        - NC_085014.1
+        - NC_085015.1
+        - NC_085016.1
+        - NC_085017.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_084994.1
+        - NC_084995.1
+        - NC_084996.1
+        - NC_084997.1
+        - NC_084998.1
+        - NC_084999.1
+        - NC_085000.1
+        - NC_085001.1
+        - NC_085002.1
+        - NC_085003.1
+        - NC_085004.1
+        - NC_085005.1
+        - NC_085006.1
+        - NC_085007.1
+        - NC_085008.1
+        - NC_085009.1
+        - NC_085010.1
+        - NC_085011.1
+        - NC_085012.1
+        - NC_085013.1
+        - NC_085014.1
+        - NC_085015.1
+        - NC_085016.1
+        - NC_085017.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

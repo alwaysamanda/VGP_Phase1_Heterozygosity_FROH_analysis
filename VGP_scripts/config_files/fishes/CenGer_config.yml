@@ -1,0 +1,94 @@
+    CLADE : fishes
+    SPEC_NAME : CenGer 
+    FULL_SPEC_NAME: "Centroberyx_gerrardi"
+    ALN_NAME: "fCenGer"
+    REF_NAME : GCA_048128805.1 
+    ALT_NAME : GCA_048129085.1 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 25
+    ALL_CHROMOSOMES : 
+        - CM107505.1
+        - CM107506.1
+        - CM107507.1
+        - CM107508.1
+        - CM107509.1
+        - CM107510.1
+        - CM107511.1
+        - CM107512.1
+        - CM107513.1
+        - CM107514.1
+        - CM107515.1
+        - CM107516.1
+        - CM107517.1
+        - CM107518.1
+        - CM107519.1
+        - CM107520.1
+        - CM107521.1
+        - CM107522.1
+        - CM107523.1
+        - CM107524.1
+        - CM107525.1
+        - CM107526.1
+        - CM107527.1
+        - CM107528.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM107505.1
+        - CM107506.1
+        - CM107507.1
+        - CM107508.1
+        - CM107509.1
+        - CM107510.1
+        - CM107511.1
+        - CM107512.1
+        - CM107513.1
+        - CM107514.1
+        - CM107515.1
+        - CM107516.1
+        - CM107517.1
+        - CM107518.1
+        - CM107519.1
+        - CM107520.1
+        - CM107521.1
+        - CM107522.1
+        - CM107523.1
+        - CM107524.1
+        - CM107525.1
+        - CM107526.1
+        - CM107527.1
+        - CM107528.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

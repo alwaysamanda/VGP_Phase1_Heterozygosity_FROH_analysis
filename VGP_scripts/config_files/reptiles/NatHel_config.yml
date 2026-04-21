@@ -1,0 +1,78 @@
+    CLADE : reptiles 
+    SPEC_NAME : NatHel 
+    FULL_SPEC_NAME : Natrix_helvetica 
+    ALN_NAME : rNatHel 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 16
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ187402.1
+        - OZ187403.1
+        - OZ187404.1
+        - OZ187405.1
+        - OZ187406.1
+        - OZ187409.1
+        - OZ187410.1
+        - OZ187411.1
+        - OZ187412.1
+        - OZ187413.1
+        - OZ187414.1
+        - OZ187415.1
+        - OZ187416.1
+        - OZ187417.1
+        - OZ187418.1
+        - OZ187419.1 
+        - OZ187407.1
+        - OZ187408.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ187402.1
+        - OZ187403.1
+        - OZ187404.1
+        - OZ187405.1
+        - OZ187406.1
+        - OZ187409.1
+        - OZ187410.1
+        - OZ187411.1
+        - OZ187412.1
+        - OZ187413.1
+        - OZ187414.1
+        - OZ187415.1
+        - OZ187416.1
+        - OZ187417.1
+        - OZ187418.1
+        - OZ187419.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

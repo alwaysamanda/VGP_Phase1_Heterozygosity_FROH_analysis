@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : PhoGun 
+    FULL_SPEC_NAME : Pholis_gunnellus 
+    ALN_NAME : fPhoGun 
+    CHROM_START_CHR : OU    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OU342804.1
+        - OU342805.1
+        - OU342806.1
+        - OU342807.1
+        - OU342808.1
+        - OU342809.1
+        - OU342810.1
+        - OU342811.1
+        - OU342812.1
+        - OU342813.1
+        - OU342814.1
+        - OU342815.1
+        - OU342816.1
+        - OU342817.1
+        - OU342818.1
+        - OU342819.1
+        - OU342820.1
+        - OU342821.1
+        - OU342822.1
+        - OU342823.1
+        - OU342824.1
+        - OU342825.1
+        - OU342826.1
+        - OU342827.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OU342804.1
+        - OU342805.1
+        - OU342806.1
+        - OU342807.1
+        - OU342808.1
+        - OU342809.1
+        - OU342810.1
+        - OU342811.1
+        - OU342812.1
+        - OU342813.1
+        - OU342814.1
+        - OU342815.1
+        - OU342816.1
+        - OU342817.1
+        - OU342818.1
+        - OU342819.1
+        - OU342820.1
+        - OU342821.1
+        - OU342822.1
+        - OU342823.1
+        - OU342824.1
+        - OU342825.1
+        - OU342826.1
+        - OU342827.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,78 @@
+    CLADE : amphibians 
+    SPEC_NAME : LisHel 
+    FULL_SPEC_NAME : Lissotriton_helveticus 
+    ALN_NAME : aLisHel 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 17
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ180042.1
+        - OZ180043.1
+        - OZ180044.1
+        - OZ180045.1
+        - OZ180046.1
+        - OZ180047.1
+        - OZ180048.1
+        - OZ180049.1
+        - OZ180050.1
+        - OZ180051.1
+        - OZ180052.1
+        - OZ180053.1
+        - OZ180054.1
+        - OZ180055.1
+        - OZ180056.1
+        - OZ180057.1
+        - OZ180058.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ180042.1
+        - OZ180043.1
+        - OZ180044.1
+        - OZ180045.1
+        - OZ180046.1
+        - OZ180047.1
+        - OZ180048.1
+        - OZ180049.1
+        - OZ180050.1
+        - OZ180051.1
+        - OZ180052.1
+        - OZ180053.1
+        - OZ180054.1
+        - OZ180055.1
+        - OZ180056.1
+        - OZ180057.1
+        - OZ180058.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

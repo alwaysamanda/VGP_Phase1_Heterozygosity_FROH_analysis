@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : MyoDau 
+    FULL_SPEC_NAME : Myotis_daubentonii 
+    ALN_NAME : mMyoDau 
+    CHROM_START_CHR : NC 
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_081840.1
+        - NC_081841.1
+        - NC_081842.1
+        - NC_081843.1
+        - NC_081844.1
+        - NC_081845.1
+        - NC_081846.1
+        - NC_081847.1
+        - NC_081848.1
+        - NC_081849.1
+        - NC_081850.1
+        - NC_081851.1
+        - NC_081852.1
+        - NC_081853.1
+        - NC_081854.1
+        - NC_081855.1
+        - NC_081856.1
+        - NC_081857.1
+        - NC_081858.1
+        - NC_081859.1
+        - NC_081860.1
+        - NC_081861.1
+        - NC_081862.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_081840.1
+        - NC_081841.1
+        - NC_081842.1
+        - NC_081843.1
+        - NC_081844.1
+        - NC_081845.1
+        - NC_081846.1
+        - NC_081847.1
+        - NC_081848.1
+        - NC_081849.1
+        - NC_081850.1
+        - NC_081851.1
+        - NC_081852.1
+        - NC_081853.1
+        - NC_081854.1
+        - NC_081855.1
+        - NC_081856.1
+        - NC_081857.1
+        - NC_081858.1
+        - NC_081859.1
+        - NC_081860.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

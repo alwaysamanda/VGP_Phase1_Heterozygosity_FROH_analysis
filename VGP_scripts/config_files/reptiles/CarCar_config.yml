@@ -1,0 +1,100 @@
+    CLADE : reptiles 
+    SPEC_NAME : CarCar 
+    FULL_SPEC_NAME : Caretta_caretta 
+    ALN_NAME : rCarCar 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 28
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ222808.1
+        - OZ222809.1
+        - OZ222810.1
+        - OZ222811.1
+        - OZ222812.1
+        - OZ222813.1
+        - OZ222814.1
+        - OZ222815.1
+        - OZ222816.1
+        - OZ222817.1
+        - OZ222818.1
+        - OZ222819.1
+        - OZ222820.1
+        - OZ222821.1
+        - OZ222822.1
+        - OZ222823.1
+        - OZ222824.1
+        - OZ222825.1
+        - OZ222826.1
+        - OZ222827.1
+        - OZ222828.1
+        - OZ222829.1
+        - OZ222830.1
+        - OZ222831.1
+        - OZ222832.1
+        - OZ222833.1
+        - OZ222834.1
+        - OZ222835.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ222808.1
+        - OZ222809.1
+        - OZ222810.1
+        - OZ222811.1
+        - OZ222812.1
+        - OZ222813.1
+        - OZ222814.1
+        - OZ222815.1
+        - OZ222816.1
+        - OZ222817.1
+        - OZ222818.1
+        - OZ222819.1
+        - OZ222820.1
+        - OZ222821.1
+        - OZ222822.1
+        - OZ222823.1
+        - OZ222824.1
+        - OZ222825.1
+        - OZ222826.1
+        - OZ222827.1
+        - OZ222828.1
+        - OZ222829.1
+        - OZ222830.1
+        - OZ222831.1
+        - OZ222832.1
+        - OZ222833.1
+        - OZ222834.1
+        - OZ222835.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

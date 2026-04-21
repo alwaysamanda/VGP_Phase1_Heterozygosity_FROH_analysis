@@ -1,0 +1,82 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodMel 
+    FULL_SPEC_NAME : Podarcis_melisellensis 
+    ALN_NAME : rPodMel 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ174275.1
+        - OZ174276.1
+        - OZ174277.1
+        - OZ174278.1
+        - OZ174279.1
+        - OZ174280.1
+        - OZ174281.1
+        - OZ174282.1
+        - OZ174283.1
+        - OZ174284.1
+        - OZ174285.1
+        - OZ174286.1
+        - OZ174287.1
+        - OZ174288.1
+        - OZ174290.1
+        - OZ174291.1
+        - OZ174292.1
+        - OZ174294.1
+        - OZ174293.1
+        - OZ174289.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ174275.1
+        - OZ174276.1
+        - OZ174277.1
+        - OZ174278.1
+        - OZ174279.1
+        - OZ174280.1
+        - OZ174281.1
+        - OZ174282.1
+        - OZ174283.1
+        - OZ174284.1
+        - OZ174285.1
+        - OZ174286.1
+        - OZ174287.1
+        - OZ174288.1
+        - OZ174290.1
+        - OZ174291.1
+        - OZ174292.1
+        - OZ174294.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

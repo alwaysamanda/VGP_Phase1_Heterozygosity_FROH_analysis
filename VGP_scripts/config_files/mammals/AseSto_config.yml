@@ -1,0 +1,74 @@
+    CLADE : mammals 
+    SPEC_NAME : AseSto 
+    FULL_SPEC_NAME : Aselliscus_stoliczkanus 
+    ALN_NAME : mAseSto 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 14
+    NUM_ALL_CHR: 16
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM093047.1
+        - CM093048.1
+        - CM093049.1
+        - CM093050.1
+        - CM093051.1
+        - CM093052.1
+        - CM093053.1
+        - CM093054.1
+        - CM093055.1
+        - CM093056.1
+        - CM093057.1
+        - CM093058.1
+        - CM093059.1
+        - CM093060.1
+        - CM093061.1
+        - CM093062.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM093047.1
+        - CM093048.1
+        - CM093049.1
+        - CM093050.1
+        - CM093051.1
+        - CM093052.1
+        - CM093053.1
+        - CM093054.1
+        - CM093055.1
+        - CM093056.1
+        - CM093057.1
+        - CM093058.1
+        - CM093059.1
+        - CM093060.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

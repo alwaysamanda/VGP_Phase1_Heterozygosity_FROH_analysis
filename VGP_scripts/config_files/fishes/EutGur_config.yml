@@ -1,0 +1,92 @@
+    CLADE : fishes 
+    SPEC_NAME : EutGur 
+    FULL_SPEC_NAME : Eutrigla_gurnardus 
+    ALN_NAME : fEutGur 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY741264.1
+        - OY741265.1
+        - OY741266.1
+        - OY741267.1
+        - OY741268.1
+        - OY741269.1
+        - OY741270.1
+        - OY741271.1
+        - OY741272.1
+        - OY741273.1
+        - OY741274.1
+        - OY741275.1
+        - OY741276.1
+        - OY741277.1
+        - OY741278.1
+        - OY741279.1
+        - OY741280.1
+        - OY741281.1
+        - OY741282.1
+        - OY741283.1
+        - OY741284.1
+        - OY741285.1
+        - OY741286.1
+        - OY741287.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY741264.1
+        - OY741265.1
+        - OY741266.1
+        - OY741267.1
+        - OY741268.1
+        - OY741269.1
+        - OY741270.1
+        - OY741271.1
+        - OY741272.1
+        - OY741273.1
+        - OY741274.1
+        - OY741275.1
+        - OY741276.1
+        - OY741277.1
+        - OY741278.1
+        - OY741279.1
+        - OY741280.1
+        - OY741281.1
+        - OY741282.1
+        - OY741283.1
+        - OY741284.1
+        - OY741285.1
+        - OY741286.1
+        - OY741287.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

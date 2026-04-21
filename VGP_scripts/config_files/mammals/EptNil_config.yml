@@ -1,0 +1,94 @@
+    CLADE : mammals 
+    SPEC_NAME : EptNil 
+    FULL_SPEC_NAME : Eptesicus_nilssonii 
+    ALN_NAME : mEptNil 
+    CHROM_START_CHR : OX
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 26
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX621280.1
+        - OX621281.1
+        - OX621282.1
+        - OX621283.1
+        - OX621284.1
+        - OX621285.1
+        - OX621286.1
+        - OX621287.1
+        - OX621288.1
+        - OX621289.1
+        - OX621290.1
+        - OX621291.1
+        - OX621292.1
+        - OX621293.1
+        - OX621294.1
+        - OX621295.1
+        - OX621296.1
+        - OX621297.1
+        - OX621298.1
+        - OX621299.1
+        - OX621300.1
+        - OX621301.1
+        - OX621302.1
+        - OX621303.1
+        - OX621304.1
+        - OX621279.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX621280.1
+        - OX621281.1
+        - OX621282.1
+        - OX621283.1
+        - OX621284.1
+        - OX621285.1
+        - OX621286.1
+        - OX621287.1
+        - OX621288.1
+        - OX621289.1
+        - OX621290.1
+        - OX621291.1
+        - OX621292.1
+        - OX621293.1
+        - OX621294.1
+        - OX621295.1
+        - OX621296.1
+        - OX621297.1
+        - OX621298.1
+        - OX621299.1
+        - OX621300.1
+        - OX621301.1
+        - OX621302.1
+        - OX621303.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

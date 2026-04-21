@@ -1,0 +1,70 @@
+    CLADE : amphibians 
+    SPEC_NAME : PelLes 
+    FULL_SPEC_NAME : Pelophylax_lessonae 
+    ALN_NAME : aPelLes 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ221975.1
+        - OZ221976.1
+        - OZ221977.1
+        - OZ221978.1
+        - OZ221979.1
+        - OZ221980.1
+        - OZ221981.1
+        - OZ221982.1
+        - OZ221983.1
+        - OZ221984.1
+        - OZ221985.1
+        - OZ221986.1
+        - OZ221987.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ221975.1
+        - OZ221976.1
+        - OZ221977.1
+        - OZ221978.1
+        - OZ221979.1
+        - OZ221980.1
+        - OZ221981.1
+        - OZ221982.1
+        - OZ221983.1
+        - OZ221984.1
+        - OZ221985.1
+        - OZ221986.1
+        - OZ221987.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

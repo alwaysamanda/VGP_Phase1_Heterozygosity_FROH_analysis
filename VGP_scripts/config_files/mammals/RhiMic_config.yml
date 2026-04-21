@@ -1,0 +1,85 @@
+    CLADE : mammals 
+    SPEC_NAME : RhiMic 
+    FULL_SPEC_NAME : Rhinopoma_microphyllum 
+    ALN_NAME : mRhiMic 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM093725.1
+        - CM093726.1
+        - CM093727.1
+        - CM093728.1
+        - CM093729.1
+        - CM093730.1
+        - CM093731.1
+        - CM093732.1
+        - CM093733.1
+        - CM093734.1
+        - CM093735.1
+        - CM093736.1
+        - CM093737.1
+        - CM093738.1
+        - CM093739.1
+        - CM093740.1
+        - CM093741.1
+        - CM093742.1
+        - CM093743.1
+        - CM093744.1
+        - CM093745.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM093725.1
+        - CM093726.1
+        - CM093727.1
+        - CM093728.1
+        - CM093729.1
+        - CM093730.1
+        - CM093731.1
+        - CM093732.1
+        - CM093733.1
+        - CM093734.1
+        - CM093735.1
+        - CM093736.1
+        - CM093737.1
+        - CM093738.1
+        - CM093739.1
+        - CM093740.1
+        - CM093741.1
+        - CM093742.1
+        - CM093743.1
+        - CM093744.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

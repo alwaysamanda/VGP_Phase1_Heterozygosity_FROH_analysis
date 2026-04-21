@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : AnaTes 
+    FULL_SPEC_NAME : Anabas_testudineus 
+    ALN_NAME : fAnaTes 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_046610.1
+        - NC_046611.1
+        - NC_046612.1
+        - NC_046613.1
+        - NC_046614.1
+        - NC_046615.1
+        - NC_046616.1
+        - NC_046617.1
+        - NC_046618.1
+        - NC_046619.1
+        - NC_046620.1
+        - NC_046621.1
+        - NC_046622.1
+        - NC_046623.1
+        - NC_046624.1
+        - NC_046625.1
+        - NC_046626.1
+        - NC_046627.1
+        - NC_046628.1
+        - NC_046629.1
+        - NC_046630.1
+        - NC_046631.1
+        - NC_046632.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_046610.1
+        - NC_046611.1
+        - NC_046612.1
+        - NC_046613.1
+        - NC_046614.1
+        - NC_046615.1
+        - NC_046616.1
+        - NC_046617.1
+        - NC_046618.1
+        - NC_046619.1
+        - NC_046620.1
+        - NC_046621.1
+        - NC_046622.1
+        - NC_046623.1
+        - NC_046624.1
+        - NC_046625.1
+        - NC_046626.1
+        - NC_046627.1
+        - NC_046628.1
+        - NC_046629.1
+        - NC_046630.1
+        - NC_046631.1
+        - NC_046632.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

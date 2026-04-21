@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : PipPip 
+    FULL_SPEC_NAME : Pipistrellus_pipistrellus 
+    ALN_NAME : mPipPip 
+    CHROM_START_CHR : LR
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - LR862356.1
+        - LR862357.1
+        - LR862358.1
+        - LR862360.1
+        - LR862361.1
+        - LR862362.1
+        - LR862363.1
+        - LR862364.1
+        - LR862365.1
+        - LR862366.1
+        - LR862367.1
+        - LR862368.1
+        - LR862369.1
+        - LR862370.1
+        - LR862371.1
+        - LR862372.1
+        - LR862373.1
+        - LR862374.1
+        - LR862375.1
+        - LR862376.1
+        - LR862377.1
+        - LR862359.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - LR862356.1
+        - LR862357.1
+        - LR862358.1
+        - LR862360.1
+        - LR862361.1
+        - LR862362.1
+        - LR862363.1
+        - LR862364.1
+        - LR862365.1
+        - LR862366.1
+        - LR862367.1
+        - LR862368.1
+        - LR862369.1
+        - LR862370.1
+        - LR862371.1
+        - LR862372.1
+        - LR862373.1
+        - LR862374.1
+        - LR862375.1
+        - LR862376.1
+        - LR862377.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

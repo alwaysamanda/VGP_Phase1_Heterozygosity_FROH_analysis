@@ -1,0 +1,88 @@
+    CLADE : fishes 
+    SPEC_NAME : SynTyp 
+    FULL_SPEC_NAME : Syngnathus_typhle 
+    ALN_NAME : fSynTyp
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM107665.1
+        - CM107666.1
+        - CM107667.1
+        - CM107668.1
+        - CM107669.1
+        - CM107670.1
+        - CM107671.1
+        - CM107672.1
+        - CM107673.1
+        - CM107674.1
+        - CM107675.1
+        - CM107676.1
+        - CM107677.1
+        - CM107678.1
+        - CM107679.1
+        - CM107680.1
+        - CM107681.1
+        - CM107682.1
+        - CM107683.1
+        - CM107684.1
+        - CM107685.1
+        - CM107686.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM107665.1
+        - CM107666.1
+        - CM107667.1
+        - CM107668.1
+        - CM107669.1
+        - CM107670.1
+        - CM107671.1
+        - CM107672.1
+        - CM107673.1
+        - CM107674.1
+        - CM107675.1
+        - CM107676.1
+        - CM107677.1
+        - CM107678.1
+        - CM107679.1
+        - CM107680.1
+        - CM107681.1
+        - CM107682.1
+        - CM107683.1
+        - CM107684.1
+        - CM107685.1
+        - CM107686.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

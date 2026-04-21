@@ -1,0 +1,82 @@
+    CLADE : fishes 
+    SPEC_NAME : AngAng 
+    FULL_SPEC_NAME : Anguilla_anguilla 
+    ALN_NAME : fAngAng 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_049201.1
+        - NC_049202.1
+        - NC_049203.1
+        - NC_049204.1
+        - NC_049205.1
+        - NC_049206.1
+        - NC_049207.1
+        - NC_049208.1
+        - NC_049209.1
+        - NC_049210.1
+        - NC_049211.1
+        - NC_049212.1
+        - NC_049213.1
+        - NC_049214.1
+        - NC_049215.1
+        - NC_049216.1
+        - NC_049217.1
+        - NC_049218.1
+        - NC_049219.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_049201.1
+        - NC_049202.1
+        - NC_049203.1
+        - NC_049204.1
+        - NC_049205.1
+        - NC_049206.1
+        - NC_049207.1
+        - NC_049208.1
+        - NC_049209.1
+        - NC_049210.1
+        - NC_049211.1
+        - NC_049212.1
+        - NC_049213.1
+        - NC_049214.1
+        - NC_049215.1
+        - NC_049216.1
+        - NC_049217.1
+        - NC_049218.1
+        - NC_049219.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

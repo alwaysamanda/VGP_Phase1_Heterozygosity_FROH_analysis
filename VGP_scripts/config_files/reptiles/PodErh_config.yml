@@ -1,0 +1,84 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodErh 
+    FULL_SPEC_NAME : Podarcis_erhardii 
+    ALN_NAME : rPodErh 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ176200.1
+        - OZ176201.1
+        - OZ176202.1
+        - OZ176203.1
+        - OZ176204.1
+        - OZ176205.1
+        - OZ176206.1
+        - OZ176207.1
+        - OZ176208.1
+        - OZ176209.1
+        - OZ176210.1
+        - OZ176211.1
+        - OZ176212.1
+        - OZ176213.1
+        - OZ176215.1
+        - OZ176216.1
+        - OZ176217.1
+        - OZ176218.1
+        - OZ176219.1
+        - OZ176218.1
+        - OZ176214.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ176200.1
+        - OZ176201.1
+        - OZ176202.1
+        - OZ176203.1
+        - OZ176204.1
+        - OZ176205.1
+        - OZ176206.1
+        - OZ176207.1
+        - OZ176208.1
+        - OZ176209.1
+        - OZ176210.1
+        - OZ176211.1
+        - OZ176212.1
+        - OZ176213.1
+        - OZ176215.1
+        - OZ176216.1
+        - OZ176217.1
+        - OZ176218.1
+        - OZ176219.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

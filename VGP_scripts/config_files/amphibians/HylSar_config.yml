@@ -1,0 +1,70 @@
+    CLADE : amphibians 
+    SPEC_NAME : HylSar 
+    FULL_SPEC_NAME : Hyla_sarda 
+    ALN_NAME : aHylSar 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 13
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_079189.1
+        - NC_079190.1
+        - NC_079191.1
+        - NC_079192.1
+        - NC_079193.1
+        - NC_079194.1
+        - NC_079195.1
+        - NC_079196.1
+        - NC_079197.1
+        - NC_079198.1
+        - NC_079199.1
+        - NC_079200.1
+        - NC_079201.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_079189.1
+        - NC_079190.1
+        - NC_079191.1
+        - NC_079192.1
+        - NC_079193.1
+        - NC_079194.1
+        - NC_079195.1
+        - NC_079196.1
+        - NC_079197.1
+        - NC_079198.1
+        - NC_079199.1
+        - NC_079200.1
+        - NC_079201.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

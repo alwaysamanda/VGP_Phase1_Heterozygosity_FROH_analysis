@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : ProPar 
+    FULL_SPEC_NAME : Protomyctophum_parallelum 
+    ALN_NAME : fProPar
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ077143.1
+        - OZ077144.1
+        - OZ077145.1
+        - OZ077146.1
+        - OZ077147.1
+        - OZ077148.1
+        - OZ077149.1
+        - OZ077150.1
+        - OZ077151.1
+        - OZ077152.1
+        - OZ077153.1
+        - OZ077154.1
+        - OZ077155.1
+        - OZ077156.1
+        - OZ077157.1
+        - OZ077158.1
+        - OZ077159.1
+        - OZ077160.1
+        - OZ077161.1
+        - OZ077162.1
+        - OZ077163.1
+        - OZ077164.1
+        - OZ077165.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ077143.1
+        - OZ077144.1
+        - OZ077145.1
+        - OZ077146.1
+        - OZ077147.1
+        - OZ077148.1
+        - OZ077149.1
+        - OZ077150.1
+        - OZ077151.1
+        - OZ077152.1
+        - OZ077153.1
+        - OZ077154.1
+        - OZ077155.1
+        - OZ077156.1
+        - OZ077157.1
+        - OZ077158.1
+        - OZ077159.1
+        - OZ077160.1
+        - OZ077161.1
+        - OZ077162.1
+        - OZ077163.1
+        - OZ077164.1
+        - OZ077165.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,86 @@
+    CLADE : mammals 
+    SPEC_NAME : MacNem 
+    FULL_SPEC_NAME : Macaca_nemestrina 
+    ALN_NAME : mMacNem 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 20
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_092125.1
+        - NC_092126.1
+        - NC_092127.1
+        - NC_092128.1
+        - NC_092129.1
+        - NC_092130.1
+        - NC_092131.1
+        - NC_092132.1
+        - NC_092133.1
+        - NC_092134.1
+        - NC_092135.1
+        - NC_092136.1
+        - NC_092137.1
+        - NC_092138.1
+        - NC_092139.1
+        - NC_092140.1
+        - NC_092141.1
+        - NC_092142.1
+        - NC_092143.1
+        - NC_092144.1
+        - NC_092145.1
+        - NC_092146.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_092125.1
+        - NC_092126.1
+        - NC_092127.1
+        - NC_092128.1
+        - NC_092129.1
+        - NC_092130.1
+        - NC_092131.1
+        - NC_092132.1
+        - NC_092133.1
+        - NC_092134.1
+        - NC_092135.1
+        - NC_092136.1
+        - NC_092137.1
+        - NC_092138.1
+        - NC_092139.1
+        - NC_092140.1
+        - NC_092141.1
+        - NC_092142.1
+        - NC_092143.1
+        - NC_092144.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

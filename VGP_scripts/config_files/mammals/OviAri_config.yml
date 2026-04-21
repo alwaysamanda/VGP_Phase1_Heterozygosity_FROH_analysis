@@ -1,0 +1,98 @@
+    CLADE : mammals 
+    SPEC_NAME : OviAri 
+    FULL_SPEC_NAME : Ovis_aries 
+    ALN_NAME : mOviAri 
+    CHROM_START_CHR : CP    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 26
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CP162240.1
+        - CP162241.1
+        - CP162242.1
+        - CP162243.1
+        - CP162244.1
+        - CP162245.1
+        - CP162246.1
+        - CP162247.1
+        - CP162248.1
+        - CP162249.1
+        - CP162250.1
+        - CP162251.1
+        - CP162252.1
+        - CP162253.1
+        - CP162254.1
+        - CP162255.1
+        - CP162256.1
+        - CP162257.1
+        - CP162258.1
+        - CP162259.1
+        - CP162260.1
+        - CP162261.1
+        - CP162262.1
+        - CP162263.1
+        - CP162264.1
+        - CP162265.1
+        - CP162266.1
+        - CP162267.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CP162240.1
+        - CP162241.1
+        - CP162242.1
+        - CP162243.1
+        - CP162244.1
+        - CP162245.1
+        - CP162246.1
+        - CP162247.1
+        - CP162248.1
+        - CP162249.1
+        - CP162250.1
+        - CP162251.1
+        - CP162252.1
+        - CP162253.1
+        - CP162254.1
+        - CP162255.1
+        - CP162256.1
+        - CP162257.1
+        - CP162258.1
+        - CP162259.1
+        - CP162260.1
+        - CP162261.1
+        - CP162262.1
+        - CP162263.1
+        - CP162264.1
+        - CP162265.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : MyoEma 
+    FULL_SPEC_NAME : Myotis_emarginatus 
+    ALN_NAME : mMyoEma
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.15e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ220647.1
+        - OZ220648.1
+        - OZ220649.1
+        - OZ220651.1
+        - OZ220652.1
+        - OZ220653.1
+        - OZ220654.1
+        - OZ220655.1
+        - OZ220656.1
+        - OZ220657.1
+        - OZ220658.1
+        - OZ220659.1
+        - OZ220660.1
+        - OZ220661.1
+        - OZ220662.1
+        - OZ220663.1
+        - OZ220664.1
+        - OZ220665.1
+        - OZ220666.1
+        - OZ220667.1
+        - OZ220668.1
+        - OZ220650.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ220647.1
+        - OZ220648.1
+        - OZ220649.1
+        - OZ220651.1
+        - OZ220652.1
+        - OZ220653.1
+        - OZ220654.1
+        - OZ220655.1
+        - OZ220656.1
+        - OZ220657.1
+        - OZ220658.1
+        - OZ220659.1
+        - OZ220660.1
+        - OZ220661.1
+        - OZ220662.1
+        - OZ220663.1
+        - OZ220664.1
+        - OZ220665.1
+        - OZ220666.1
+        - OZ220667.1
+        - OZ220668.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,87 @@
+    CLADE : mammals 
+    SPEC_NAME : BalBor 
+    FULL_SPEC_NAME : Balaenoptera_borealis 
+    ALN_NAME : mBalBor 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 22
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ239534.1
+        - OZ239535.1
+        - OZ239536.1
+        - OZ239537.1
+        - OZ239538.1
+        - OZ239539.1
+        - OZ239540.1
+        - OZ239541.1
+        - OZ239542.1
+        - OZ239543.1
+        - OZ239544.1
+        - OZ239545.1
+        - OZ239546.1
+        - OZ239547.1
+        - OZ239548.1
+        - OZ239549.1
+        - OZ239550.1
+        - OZ239551.1
+        - OZ239552.1
+        - OZ239553.1
+        - OZ239554.1
+        - OZ239555.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ239534.1
+        - OZ239535.1
+        - OZ239536.1
+        - OZ239537.1
+        - OZ239538.1
+        - OZ239539.1
+        - OZ239540.1
+        - OZ239541.1
+        - OZ239542.1
+        - OZ239543.1
+        - OZ239544.1
+        - OZ239545.1
+        - OZ239546.1
+        - OZ239547.1
+        - OZ239548.1
+        - OZ239549.1
+        - OZ239550.1
+        - OZ239551.1
+        - OZ239552.1
+        - OZ239553.1
+        - OZ239554.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

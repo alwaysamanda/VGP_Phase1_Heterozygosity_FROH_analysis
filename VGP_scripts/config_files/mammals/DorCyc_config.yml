@@ -1,0 +1,80 @@
+    CLADE : mammals 
+    SPEC_NAME : DorCyc 
+    FULL_SPEC_NAME : Doryrhina_cyclops 
+    ALN_NAME : mDorCyc 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 18
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM093760.1
+        - CM093761.1
+        - CM093762.1
+        - CM093763.1
+        - CM093764.1
+        - CM093765.1
+        - CM093766.1
+        - CM093767.1
+        - CM093768.1
+        - CM093769.1
+        - CM093770.1
+        - CM093771.1
+        - CM093772.1
+        - CM093773.1
+        - CM093774.1
+        - CM093775.1
+        - CM093776.1
+        - CM093777.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM093760.1
+        - CM093761.1
+        - CM093762.1
+        - CM093763.1
+        - CM093764.1
+        - CM093765.1
+        - CM093766.1
+        - CM093767.1
+        - CM093768.1
+        - CM093769.1
+        - CM093770.1
+        - CM093771.1
+        - CM093772.1
+        - CM093773.1
+        - CM093774.1
+        - CM093775.1
+        - CM093776.1
+        - CM093777.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

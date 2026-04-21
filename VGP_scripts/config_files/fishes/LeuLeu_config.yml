@@ -1,0 +1,94 @@
+    CLADE : fishes 
+    SPEC_NAME : LeuLeu
+    FULL_SPEC_NAME: Leuciscus_leuciscus
+    ALN_NAME: fLeuLeu
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 25
+    NUM_ALL_CHR: 25
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 5
+    ALL_CHROMOSOMES : 
+        - OZ220319.1
+        - OZ220320.1
+        - OZ220321.1
+        - OZ220322.1
+        - OZ220323.1
+        - OZ220324.1
+        - OZ220325.1
+        - OZ220326.1
+        - OZ220327.1
+        - OZ220328.1
+        - OZ220329.1
+        - OZ220330.1
+        - OZ220331.1
+        - OZ220332.1
+        - OZ220333.1
+        - OZ220334.1
+        - OZ220335.1
+        - OZ220336.1
+        - OZ220337.1
+        - OZ220338.1
+        - OZ220339.1
+        - OZ220340.1
+        - OZ220341.1
+        - OZ220342.1
+        - OZ220343.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ220319.1
+        - OZ220320.1
+        - OZ220321.1
+        - OZ220322.1
+        - OZ220323.1
+        - OZ220324.1
+        - OZ220325.1
+        - OZ220326.1
+        - OZ220327.1
+        - OZ220328.1
+        - OZ220329.1
+        - OZ220330.1
+        - OZ220331.1
+        - OZ220332.1
+        - OZ220333.1
+        - OZ220334.1
+        - OZ220335.1
+        - OZ220336.1
+        - OZ220337.1
+        - OZ220338.1
+        - OZ220339.1
+        - OZ220340.1
+        - OZ220341.1
+        - OZ220342.1
+        - OZ220343.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

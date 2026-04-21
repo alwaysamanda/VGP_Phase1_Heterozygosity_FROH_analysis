@@ -1,0 +1,91 @@
+    CLADE : mammals 
+    SPEC_NAME : OnyTor 
+    FULL_SPEC_NAME : Onychomys_torridus 
+    ALN_NAME : mOnyTor 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_050443.1
+        - NC_050444.1
+        - NC_050445.1
+        - NC_050446.1
+        - NC_050447.1
+        - NC_050448.1
+        - NC_050449.1
+        - NC_050450.1
+        - NC_050451.1
+        - NC_050452.1
+        - NC_050453.1
+        - NC_050454.1
+        - NC_050455.1
+        - NC_050456.1
+        - NC_050457.1
+        - NC_050458.1
+        - NC_050459.1
+        - NC_050460.1
+        - NC_050461.1
+        - NC_050462.1
+        - NC_050463.1
+        - NC_050464.1
+        - NC_050465.1
+        - NC_050466.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_050443.1
+        - NC_050444.1
+        - NC_050445.1
+        - NC_050446.1
+        - NC_050447.1
+        - NC_050448.1
+        - NC_050449.1
+        - NC_050450.1
+        - NC_050451.1
+        - NC_050452.1
+        - NC_050453.1
+        - NC_050454.1
+        - NC_050455.1
+        - NC_050456.1
+        - NC_050457.1
+        - NC_050458.1
+        - NC_050459.1
+        - NC_050460.1
+        - NC_050461.1
+        - NC_050462.1
+        - NC_050463.1
+        - NC_050464.1
+        - NC_050465.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,89 @@
+    CLADE : birds 
+    SPEC_NAME : FalPun 
+    FULL_SPEC_NAME : Falco_punctatus 
+    ALN_NAME : bFalPun 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 22
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY723433.1
+        - OY723434.1
+        - OY723435.1
+        - OY723436.1
+        - OY723437.1
+        - OY723438.1
+        - OY723439.1
+        - OY723440.1
+        - OY723441.1
+        - OY723442.1
+        - OY723443.1
+        - OY723444.1
+        - OY723445.1
+        - OY723446.1
+        - OY723447.1
+        - OY723448.1
+        - OY723449.1
+        - OY723450.1
+        - OY723451.1
+        - OY723452.1
+        - OY723453.1
+        - OY723454.1
+        - OY723455.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY723433.1
+        - OY723434.1
+        - OY723435.1
+        - OY723436.1
+        - OY723437.1
+        - OY723438.1
+        - OY723440.1
+        - OY723441.1
+        - OY723442.1
+        - OY723443.1
+        - OY723444.1
+        - OY723445.1
+        - OY723446.1
+        - OY723447.1
+        - OY723448.1
+        - OY723449.1
+        - OY723450.1
+        - OY723451.1
+        - OY723452.1
+        - OY723453.1
+        - OY723454.1
+        - OY723455.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

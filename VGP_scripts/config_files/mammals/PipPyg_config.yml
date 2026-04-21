@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : PipPyg 
+    FULL_SPEC_NAME : Pipistrellus_pygmaeus 
+    ALN_NAME : mPipPyg 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.15e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX465302.1
+        - OX465303.1
+        - OX465304.1
+        - OX465305.1
+        - OX465306.1
+        - OX465307.1
+        - OX465308.1
+        - OX465309.1
+        - OX465310.1
+        - OX465311.1
+        - OX465312.1
+        - OX465313.1
+        - OX465314.1
+        - OX465315.1
+        - OX465316.1
+        - OX465317.1
+        - OX465318.1
+        - OX465319.1
+        - OX465320.1
+        - OX465321.1
+        - OX465322.1
+        - OX465323.1
+        - OX465324.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX465302.1
+        - OX465303.1
+        - OX465304.1
+        - OX465305.1
+        - OX465307.1
+        - OX465308.1
+        - OX465309.1
+        - OX465310.1
+        - OX465311.1
+        - OX465312.1
+        - OX465313.1
+        - OX465314.1
+        - OX465315.1
+        - OX465316.1
+        - OX465317.1
+        - OX465318.1
+        - OX465319.1
+        - OX465320.1
+        - OX465321.1
+        - OX465322.1
+        - OX465323.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,94 @@
+    CLADE : birds 
+    SPEC_NAME : LatDis 
+    FULL_SPEC_NAME : Lathamus_discolor 
+    ALN_NAME : bLatDis 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 26
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 5 ## rounded from 5.4
+    ALL_CHROMOSOMES : 
+        - NC_088884.1
+        - NC_088885.1
+        - NC_088886.1
+        - NC_088887.1
+        - NC_088888.1
+        - NC_088889.1
+        - NC_088890.1
+        - NC_088891.1
+        - NC_088892.1
+        - NC_088893.1
+        - NC_088894.1
+        - NC_088895.1
+        - NC_088896.1
+        - NC_088897.1
+        - NC_088898.1
+        - NC_088899.1
+        - NC_088900.1
+        - NC_088901.1
+        - NC_088902.1
+        - NC_088903.1
+        - NC_088904.1
+        - NC_088905.1
+        - NC_088906.1
+        - NC_088907.1
+        - NC_088908.1
+        - NC_088909.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_088884.1
+        - NC_088885.1
+        - NC_088886.1
+        - NC_088887.1
+        - NC_088888.1
+        - NC_088889.1
+        - NC_088890.1
+        - NC_088891.1
+        - NC_088892.1
+        - NC_088893.1
+        - NC_088894.1
+        - NC_088895.1
+        - NC_088896.1
+        - NC_088897.1
+        - NC_088898.1
+        - NC_088899.1
+        - NC_088900.1
+        - NC_088901.1
+        - NC_088902.1
+        - NC_088903.1
+        - NC_088904.1
+        - NC_088905.1
+        - NC_088906.1
+        - NC_088907.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

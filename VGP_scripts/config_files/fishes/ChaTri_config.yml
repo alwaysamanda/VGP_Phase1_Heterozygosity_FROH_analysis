@@ -1,0 +1,94 @@
+    CLADE : fishes
+    SPEC_NAME : ChaTri 
+    FULL_SPEC_NAME: "Chaetodon_trifascialis"
+    ALN_NAME: "fChaTri"
+    REF_NAME : GCF_039877785.1 
+    ALT_NAME : GCA_039877575.1 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 24
+    NUM_ALL_CHR: 24
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 6
+    ALL_CHROMOSOMES : 
+        - NC_092056.1
+        - NC_092057.1
+        - NC_092058.1
+        - NC_092059.1
+        - NC_092060.1
+        - NC_092061.1
+        - NC_092062.1
+        - NC_092063.1
+        - NC_092064.1
+        - NC_092065.1
+        - NC_092066.1
+        - NC_092067.1
+        - NC_092068.1
+        - NC_092069.1
+        - NC_092070.1
+        - NC_092071.1
+        - NC_092072.1
+        - NC_092073.1
+        - NC_092074.1
+        - NC_092075.1
+        - NC_092076.1
+        - NC_092077.1
+        - NC_092078.1
+        - NC_092079.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_092056.1
+        - NC_092057.1
+        - NC_092058.1
+        - NC_092059.1
+        - NC_092060.1
+        - NC_092061.1
+        - NC_092062.1
+        - NC_092063.1
+        - NC_092064.1
+        - NC_092065.1
+        - NC_092066.1
+        - NC_092067.1
+        - NC_092068.1
+        - NC_092069.1
+        - NC_092070.1
+        - NC_092071.1
+        - NC_092072.1
+        - NC_092073.1
+        - NC_092074.1
+        - NC_092075.1
+        - NC_092076.1
+        - NC_092077.1
+        - NC_092078.1
+        - NC_092079.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

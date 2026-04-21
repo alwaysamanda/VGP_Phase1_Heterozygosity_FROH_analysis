@@ -1,0 +1,84 @@
+    CLADE : reptiles 
+    SPEC_NAME : PodPit 
+    FULL_SPEC_NAME : Podarcis_pityusensis 
+    ALN_NAME : rPodPit 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ067038.1
+        - OZ067039.1
+        - OZ067040.1
+        - OZ067041.1
+        - OZ067042.1
+        - OZ067043.1
+        - OZ067044.1
+        - OZ067045.1
+        - OZ067046.1
+        - OZ067047.1
+        - OZ067048.1
+        - OZ067049.1
+        - OZ067050.1
+        - OZ067051.1
+        - OZ067052.1
+        - OZ067053.1
+        - OZ067054.1
+        - OZ067055.1
+        - OZ078259.1
+        - OZ078260.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ067038.1
+        - OZ067039.1
+        - OZ067040.1
+        - OZ067041.1
+        - OZ067042.1
+        - OZ067043.1
+        - OZ067044.1
+        - OZ067045.1
+        - OZ067046.1
+        - OZ067047.1
+        - OZ067048.1
+        - OZ067049.1
+        - OZ067050.1
+        - OZ067051.1
+        - OZ067052.1
+        - OZ067053.1
+        - OZ067054.1
+        - OZ067055.1
+        - OZ078259.1
+        - OZ078260.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

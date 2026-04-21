@@ -1,0 +1,102 @@
+    CLADE : reptiles 
+    SPEC_NAME : EreImb 
+    FULL_SPEC_NAME : Eretmochelys_imbricata 
+    ALN_NAME : rEreImb 
+    CHROM_START_CHR : OZ    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 28
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ223882.1
+        - OZ223883.1
+        - OZ223884.1
+        - OZ223885.1
+        - OZ223886.1
+        - OZ223887.1
+        - OZ223888.1
+        - OZ223889.1
+        - OZ223890.1
+        - OZ223891.1
+        - OZ223892.1
+        - OZ223893.1
+        - OZ223894.1
+        - OZ223895.1
+        - OZ223896.1
+        - OZ223897.1
+        - OZ223898.1
+        - OZ223899.1
+        - OZ223900.1
+        - OZ223901.1
+        - OZ223902.1
+        - OZ223903.1
+        - OZ223904.1
+        - OZ223905.1
+        - OZ223906.1
+        - OZ223907.1
+        - OZ223908.1
+        - OZ223909.1
+        - OZ223910.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ223882.1
+        - OZ223883.1
+        - OZ223884.1
+        - OZ223885.1
+        - OZ223886.1
+        - OZ223887.1
+        - OZ223888.1
+        - OZ223889.1
+        - OZ223890.1
+        - OZ223891.1
+        - OZ223892.1
+        - OZ223893.1
+        - OZ223894.1
+        - OZ223895.1
+        - OZ223896.1
+        - OZ223897.1
+        - OZ223898.1
+        - OZ223899.1
+        - OZ223900.1
+        - OZ223901.1
+        - OZ223902.1
+        - OZ223903.1
+        - OZ223904.1
+        - OZ223905.1
+        - OZ223906.1
+        - OZ223907.1
+        - OZ223908.1
+        - OZ223909.1
+        - OZ223910.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

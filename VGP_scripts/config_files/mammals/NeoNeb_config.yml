@@ -1,0 +1,82 @@
+    CLADE : mammals 
+    SPEC_NAME : NeoNeb 
+    FULL_SPEC_NAME : Neofelis_nebulosa 
+    ALN_NAME : mNeoNeb 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_080782.1
+        - NC_080783.1
+        - NC_080784.1
+        - NC_080785.1
+        - NC_080786.1
+        - NC_080787.1
+        - NC_080788.1
+        - NC_080789.1
+        - NC_080790.1
+        - NC_080791.1
+        - NC_080792.1
+        - NC_080793.1
+        - NC_080794.1
+        - NC_080795.1
+        - NC_080796.1
+        - NC_080797.1
+        - NC_080798.1
+        - NC_080799.1
+        - NC_080800.1
+        - NC_080801.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_080782.1
+        - NC_080783.1
+        - NC_080784.1
+        - NC_080785.1
+        - NC_080786.1
+        - NC_080787.1
+        - NC_080788.1
+        - NC_080789.1
+        - NC_080790.1
+        - NC_080791.1
+        - NC_080792.1
+        - NC_080793.1
+        - NC_080794.1
+        - NC_080795.1
+        - NC_080796.1
+        - NC_080797.1
+        - NC_080798.1
+        - NC_080799.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

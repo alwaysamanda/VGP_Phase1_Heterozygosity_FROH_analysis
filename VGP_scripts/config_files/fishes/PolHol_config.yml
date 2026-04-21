@@ -1,0 +1,90 @@
+    CLADE : fishes 
+    SPEC_NAME : PolHol 
+    FULL_SPEC_NAME : Polymixia_hollisterae 
+    ALN_NAME : fPolHol 
+    CHROM_START_CHR : CM
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 23
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM108331.1
+        - CM108332.1
+        - CM108333.1
+        - CM108334.1
+        - CM108335.1
+        - CM108336.1
+        - CM108337.1
+        - CM108338.1
+        - CM108339.1
+        - CM108340.1
+        - CM108341.1
+        - CM108342.1
+        - CM108343.1
+        - CM108344.1
+        - CM108345.1
+        - CM108346.1
+        - CM108347.1
+        - CM108348.1
+        - CM108349.1
+        - CM108350.1
+        - CM108351.1
+        - CM108352.1
+        - CM108353.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM108331.1
+        - CM108332.1
+        - CM108333.1
+        - CM108334.1
+        - CM108335.1
+        - CM108336.1
+        - CM108337.1
+        - CM108338.1
+        - CM108339.1
+        - CM108340.1
+        - CM108341.1
+        - CM108342.1
+        - CM108343.1
+        - CM108344.1
+        - CM108345.1
+        - CM108346.1
+        - CM108347.1
+        - CM108348.1
+        - CM108349.1
+        - CM108350.1
+        - CM108351.1
+        - CM108352.1
+        - CM108353.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

@@ -1,0 +1,88 @@
+    CLADE : mammals 
+    SPEC_NAME : BalPhy 
+    FULL_SPEC_NAME : Balaenoptera_physalus 
+    ALN_NAME : mBalPhy  
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 21
+    NUM_ALL_CHR: 23
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ239510.1
+        - OZ239511.1
+        - OZ239512.1
+        - OZ239513.1
+        - OZ239514.1
+        - OZ239515.1
+        - OZ239516.1
+        - OZ239517.1
+        - OZ239518.1
+        - OZ239519.1
+        - OZ239520.1
+        - OZ239521.1
+        - OZ239522.1
+        - OZ239523.1
+        - OZ239524.1
+        - OZ239525.1
+        - OZ239526.1
+        - OZ239527.1
+        - OZ239528.1
+        - OZ239529.1
+        - OZ239530.1
+        - OZ239531.1
+        - OZ239532.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ239510.1
+        - OZ239511.1
+        - OZ239512.1
+        - OZ239513.1
+        - OZ239514.1
+        - OZ239515.1
+        - OZ239516.1
+        - OZ239517.1
+        - OZ239518.1
+        - OZ239519.1
+        - OZ239520.1
+        - OZ239521.1
+        - OZ239522.1
+        - OZ239523.1
+        - OZ239524.1
+        - OZ239525.1
+        - OZ239526.1
+        - OZ239527.1
+        - OZ239528.1
+        - OZ239529.1
+        - OZ239530.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

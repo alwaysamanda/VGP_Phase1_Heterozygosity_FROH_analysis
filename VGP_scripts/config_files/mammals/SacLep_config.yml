@@ -1,0 +1,71 @@
+    CLADE : mammals 
+    SPEC_NAME : SacLep 
+    FULL_SPEC_NAME : Saccopteryx_leptura 
+    ALN_NAME : mSacLep 
+    CHROM_START_CHR : NC    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 13
+    NUM_ALL_CHR: 14
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_089503.1
+        - NC_089504.1
+        - NC_089505.1
+        - NC_089506.1
+        - NC_089507.1
+        - NC_089508.1
+        - NC_089509.1
+        - NC_089510.1
+        - NC_089511.1
+        - NC_089512.1
+        - NC_089513.1
+        - NC_089514.1
+        - NC_089515.1
+        - NC_089516.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_089503.1
+        - NC_089504.1
+        - NC_089505.1
+        - NC_089506.1
+        - NC_089507.1
+        - NC_089508.1
+        - NC_089509.1
+        - NC_089510.1
+        - NC_089511.1
+        - NC_089512.1
+        - NC_089513.1
+        - NC_089514.1
+        - NC_089515.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

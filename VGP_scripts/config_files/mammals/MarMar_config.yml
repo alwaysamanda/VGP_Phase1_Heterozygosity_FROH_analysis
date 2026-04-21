@@ -1,0 +1,82 @@
+    CLADE : mammals 
+    SPEC_NAME : MarMar 
+    FULL_SPEC_NAME : Martes_martes 
+    ALN_NAME : mMarMar 
+    CHROM_START_CHR : OY
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 18
+    NUM_ALL_CHR: 20
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OY734063.1
+        - OY734064.1
+        - OY734065.1
+        - OY734066.1
+        - OY734067.1
+        - OY734068.1
+        - OY734069.1
+        - OY734070.1
+        - OY734071.1
+        - OY734073.1
+        - OY734074.1
+        - OY734075.1
+        - OY734076.1
+        - OY734077.1
+        - OY734078.1
+        - OY734079.1
+        - OY734080.1
+        - OY734081.1
+        - OY734072.1
+        - OY734082.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - OY734063.1
+        - OY734064.1
+        - OY734065.1
+        - OY734066.1
+        - OY734067.1
+        - OY734068.1
+        - OY734069.1
+        - OY734070.1
+        - OY734071.1
+        - OY734073.1
+        - OY734074.1
+        - OY734075.1
+        - OY734076.1
+        - OY734077.1
+        - OY734078.1
+        - OY734079.1
+        - OY734080.1
+        - OY734081.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

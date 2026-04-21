@@ -1,0 +1,84 @@
+    CLADE : mammals 
+    SPEC_NAME : SciVul 
+    FULL_SPEC_NAME : Sciurus_vulgaris 
+    ALN_NAME : mSciVul 
+    CHROM_START_CHR : LR    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 21
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - LR738611.1
+        - LR738612.1
+        - LR738613.1
+        - LR738614.1
+        - LR738615.1
+        - LR738616.1
+        - LR738617.1
+        - LR738618.1
+        - LR738619.1
+        - LR738620.1
+        - LR738622.1
+        - LR738623.1
+        - LR738624.1
+        - LR738625.1
+        - LR738626.1
+        - LR738627.1
+        - LR738628.1
+        - LR738629.1
+        - LR738630.1
+        - LR738621.1
+        - LR738631.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - LR738611.1
+        - LR738612.1
+        - LR738613.1
+        - LR738614.1
+        - LR738615.1
+        - LR738616.1
+        - LR738617.1
+        - LR738618.1
+        - LR738619.1
+        - LR738620.1
+        - LR738622.1
+        - LR738623.1
+        - LR738624.1
+        - LR738625.1
+        - LR738626.1
+        - LR738627.1
+        - LR738628.1
+        - LR738629.1
+        - LR738630.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

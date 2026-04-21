@@ -1,0 +1,68 @@
+    CLADE : amphibians 
+    SPEC_NAME : BomVar 
+    FULL_SPEC_NAME : Bombina_variegata 
+    ALN_NAME : aBomVar 
+    CHROM_START_CHR : OZ
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 12
+    NUM_ALL_CHR: 12
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OZ123727.1
+        - OZ123728.1
+        - OZ123729.1
+        - OZ123730.1
+        - OZ123731.1
+        - OZ123732.1
+        - OZ123733.1
+        - OZ123734.1
+        - OZ123735.1
+        - OZ123736.1
+        - OZ123737.1
+        - OZ123738.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OZ123727.1
+        - OZ123728.1
+        - OZ123729.1
+        - OZ123730.1
+        - OZ123731.1
+        - OZ123732.1
+        - OZ123733.1
+        - OZ123734.1
+        - OZ123735.1
+        - OZ123736.1
+        - OZ123737.1
+        - OZ123738.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

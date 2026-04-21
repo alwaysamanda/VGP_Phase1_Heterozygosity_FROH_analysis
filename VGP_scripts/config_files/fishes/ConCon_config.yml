@@ -1,0 +1,82 @@
+    CLADE : fishes 
+    SPEC_NAME : ConCon 
+    FULL_SPEC_NAME : Conger_conger 
+    ALN_NAME : fConCon 
+    CHROM_START_CHR : NC
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 19
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - NC_083760.1
+        - NC_083761.1
+        - NC_083762.1
+        - NC_083763.1
+        - NC_083764.1
+        - NC_083765.1
+        - NC_083766.1
+        - NC_083767.1
+        - NC_083768.1
+        - NC_083769.1
+        - NC_083770.1
+        - NC_083771.1
+        - NC_083772.1
+        - NC_083773.1
+        - NC_083774.1
+        - NC_083775.1
+        - NC_083776.1
+        - NC_083777.1
+        - NC_083778.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - NC_083760.1
+        - NC_083761.1
+        - NC_083762.1
+        - NC_083763.1
+        - NC_083764.1
+        - NC_083765.1
+        - NC_083766.1
+        - NC_083767.1
+        - NC_083768.1
+        - NC_083769.1
+        - NC_083770.1
+        - NC_083771.1
+        - NC_083772.1
+        - NC_083773.1
+        - NC_083774.1
+        - NC_083775.1
+        - NC_083776.1
+        - NC_083777.1
+        - NC_083778.1
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

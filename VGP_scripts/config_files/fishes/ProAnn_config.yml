@@ -1,0 +1,100 @@
+    CLADE : fishes 
+    SPEC_NAME : ProAnn 
+    FULL_SPEC_NAME : Protopterus_annectens 
+    ALN_NAME : fProAnn 
+    CHROM_START_CHR : CM    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 28
+    NUM_ALL_CHR: 28
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - CM082711.1
+        - CM082712.1
+        - CM082713.1
+        - CM082714.1
+        - CM082715.1
+        - CM082716.1
+        - CM082717.1
+        - CM082718.1
+        - CM082719.1
+        - CM082720.1
+        - CM082721.1
+        - CM082722.1
+        - CM082723.1
+        - CM082724.1
+        - CM082725.1
+        - CM082726.1
+        - CM082727.1
+        - CM082728.1
+        - CM082729.1
+        - CM082730.1
+        - CM082731.1
+        - CM082732.1
+        - CM082733.1
+        - CM082734.1
+        - CM082735.1
+        - CM082736.1
+        - CM082737.1
+        - CM082746.1 
+    AUTOSOMAL_CHROMOSOMES: 
+        - CM082711.1
+        - CM082712.1
+        - CM082713.1
+        - CM082714.1
+        - CM082715.1
+        - CM082716.1
+        - CM082717.1
+        - CM082718.1
+        - CM082719.1
+        - CM082720.1
+        - CM082721.1
+        - CM082722.1
+        - CM082723.1
+        - CM082724.1
+        - CM082725.1
+        - CM082726.1
+        - CM082727.1
+        - CM082728.1
+        - CM082729.1
+        - CM082730.1
+        - CM082731.1
+        - CM082732.1
+        - CM082733.1
+        - CM082734.1
+        - CM082735.1
+        - CM082736.1
+        - CM082737.1
+        - CM082746.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 

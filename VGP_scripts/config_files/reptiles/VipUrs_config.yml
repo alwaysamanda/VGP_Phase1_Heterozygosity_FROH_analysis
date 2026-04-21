@@ -1,0 +1,80 @@
+    CLADE : reptiles 
+    SPEC_NAME : VipUrs 
+    FULL_SPEC_NAME : Vipera_ursinii 
+    ALN_NAME : rVipUrs 
+    CHROM_START_CHR : OX    
+    WINDOW_INTERVAL : 500000 
+    WINDOW_LENGTH : 1000000 
+    NUM_AUT_CHROMOSOMES : 17
+    NUM_ALL_CHR: 19
+    MUTATION_RATE: 1.25e-8 
+    GENERATION_TIME: 
+    ALL_CHROMOSOMES : 
+        - OX365964.1
+        - OX365965.1
+        - OX365966.1
+        - OX365968.1
+        - OX365969.1
+        - OX365970.1
+        - OX365971.1
+        - OX365973.1
+        - OX365974.1
+        - OX365975.1
+        - OX365976.1
+        - OX365977.1
+        - OX365978.1
+        - OX365979.1
+        - OX365980.1
+        - OX365981.1
+        - OX365982.1 
+        - OX365967.1
+        - OX365972.1
+    AUTOSOMAL_CHROMOSOMES: 
+        - OX365964.1
+        - OX365965.1
+        - OX365966.1
+        - OX365968.1
+        - OX365969.1
+        - OX365970.1
+        - OX365971.1
+        - OX365973.1
+        - OX365974.1
+        - OX365975.1
+        - OX365976.1
+        - OX365977.1
+        - OX365978.1
+        - OX365979.1
+        - OX365980.1
+        - OX365981.1
+        - OX365982.1 
+    BOOTSTRAPPING_VALUES: 
+        - 0 
+        - 1 
+        - 2 
+        - 3 
+        - 4 
+        - 5 
+        - 6 
+        - 7 
+        - 8 
+        - 9 
+        - 10 
+        - 11 
+        - 12 
+        - 13 
+        - 14 
+        - 15 
+        - 16 
+        - 17 
+        - 18 
+        - 19 
+        - 20 
+        - 21 
+        - 22 
+        - 23 
+        - 24 
+        - 25 
+        - 26 
+        - 27 
+        - 28 
+        - 29 
