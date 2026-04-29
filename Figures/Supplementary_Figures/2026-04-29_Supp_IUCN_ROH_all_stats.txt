@@ -1,0 +1,69 @@
+=== PERMANOVA (centroid differences) ===
+Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = dist_mat ~ IUCN, data = dat_ord, permutations = 999, by = "margin")
+          Df SumOfSqs      R2      F Pr(>F)   
+IUCN       4     34.3 0.03961 4.4229  0.005 **
+Residual 429    831.7 0.96039                 
+Total    433    866.0 1.00000                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+=== Betadisper (dispersion/hull size differences) ===
+
+Permutation test for homogeneity of multivariate dispersions
+Permutation: free
+Number of permutations: 999
+
+Response: Distances
+           Df Sum Sq Mean Sq      F N.Perm Pr(>F)  
+Groups      4  15.31  3.8287 2.4345    999  0.061 .
+Residuals 429 674.69  1.5727                       
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+=== Pairwise Tukey HSD on dispersion ===
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = distances ~ group, data = df)
+
+$group
+             diff        lwr       upr     p adj
+EN-CR -0.01566939 -0.9786386 0.9472998 0.9999991
+VU-CR -0.36538901 -1.3446349 0.6138568 0.8450938
+NT-CR -0.41305420 -1.4864190 0.6603106 0.8297191
+LC-CR -0.57018831 -1.3615851 0.2212085 0.2806556
+VU-EN -0.34971962 -1.1899695 0.4905302 0.7850649
+NT-EN -0.39738481 -1.3456513 0.5508817 0.7807768
+LC-EN -0.55451892 -1.1655887 0.0565509 0.0957186
+NT-VU -0.04766519 -1.0124564 0.9171261 0.9999243
+LC-VU -0.20479930 -0.8412104 0.4316119 0.9036302
+LC-NT -0.15713411 -0.9305736 0.6163054 0.9810939
+
+
+=== Pairwise PERMANOVA (Bonferroni corrected) ===
+   group1 group2    R2 F_stat p_value p_adj significance
+1      CR     EN 0.012  0.662   0.477  1.00           ns
+2      CR     VU 0.066  3.515   0.076  0.76           ns
+3      CR     NT 0.076  3.196   0.076  0.76           ns
+4      CR     LC 0.036 12.954   0.001  0.01            *
+5      EN     VU 0.014  0.906   0.359  1.00           ns
+6      EN     NT 0.018  0.994   0.353  1.00           ns
+7      EN     LC 0.021  7.712   0.006  0.06           ns
+8      VU     NT 0.002  0.078   0.901  1.00           ns
+9      VU     LC 0.003  1.232   0.257  1.00           ns
+10     NT     LC 0.001  0.348   0.638  1.00           ns
+
+=== Convex hull areas per IUCN group ===
+# A tibble: 5 × 4
+  IUCN      n hull_area_raw hull_area_sqrt
+  <fct> <int>         <dbl>          <dbl>
+1 EN       35        39774.          132. 
+2 LC      326        29287.          124. 
+3 NT       21         9400.           59.0
+4 CR       20         5018.           34.1
+5 VU       32         4361.           33.6
