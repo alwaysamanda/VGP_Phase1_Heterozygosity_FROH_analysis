@@ -1,5 +1,5 @@
     default-resources:
         cpus_per_task: 1
-        slurm_account: "DURBIN-SL2-CPU"
-        slurm_partition: "icelake"
+        slurm_account: "YOUR-ACCOUNT-HERE"
+        slurm_partition: "YOUR-PARTITION-HERE"
         runtime: "10m"
