@@ -146,8 +146,7 @@ My_Theme = theme(
   axis.line = element_line(colour = 'black', linewidth = 1), 
   axis.ticks = element_blank(),
   axis.ticks.length=unit(.25, "cm"),
-  plot.margin = margin(5, 15, 5, 5), 
-  clip = "off"
+  plot.margin = margin(5, 15, 5, 5)
   )
 
 
@@ -161,9 +160,6 @@ iucn_colors <- c(
 
 
 #### ---- Set habitat color palettes ---- ####
-n_hab <- 18 ## Number of major IUCN habitats
-hab_colors <- qualitative_hcl(n_hab, palette = "Dark 3")
-
 Marine_flag_colors <- c(
     "yes" = "#1A7A8A", 
     "no" = "#C8C5BC"
@@ -183,7 +179,24 @@ microhabitat_colors <- c(
 ########## ========== MAIN FIGURE 1 ========== ##########
 #### ---- Heterozygosity for wild species ---- ####
 het_wild <- ggplot(data_wild, aes(x=IUCN, y=heterozygosity, color=IUCN, fill=IUCN)) +
-  geom_boxplot(outlier.shape = NA, alpha=0.5, color="black", lwd=1.1) + 
+  geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
+    outlier.shape = NA, 
+    alpha=0.5, 
+    color="black", 
+    lwd=1.1) + 
   geom_jitter(
     position = position_jitter(0.15),
     shape = 21,
@@ -195,11 +208,7 @@ het_wild <- ggplot(data_wild, aes(x=IUCN, y=heterozygosity, color=IUCN, fill=IUC
   ) + 
   xlab('') + 
   ylab('Heterozygosity per kb outside ROH ≥100kb') + 
-  scale_fill_manual(values = c(
-      "LC" = "#60C659", 
-      "NT" = "#CCE226", "VU" = "#F9E814", 
-      "EN" = "#FC7F3F", "CR" = "#D81E05"
-      ), 
+  scale_fill_manual(values = iucn_colors, 
       drop = FALSE, 
       breaks = c("CR", "EN", "VU", "NT", "LC") 
       ) +  
@@ -226,6 +235,19 @@ p_froh_longplus_wild <- ggplot(
     fill=IUCN
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    },
     outlier.shape = NA, 
     alpha=0.5, 
     color="black", 
@@ -271,7 +293,7 @@ Fig_one <- (
 
 
 ## Save figure
-Fig_one_name <- paste0(results_directory, "Main_Figures/", date, "_Main_Figure_1.svg") 
+Fig_one_name <- paste0(results_directory, "Main_Figures/", date, "_Main_Figure_1_mean.svg") 
 ggsave(
   Fig_one_name,
   plot = Fig_one,
@@ -628,9 +650,10 @@ data_read <- map2_dfr(
     spec_dat <- readr::read_table(.x, col_names = TRUE) %>%
   mutate(right_time_boundary = as.numeric(right_time_boundary))
     tibble(
-      Generations_end = spec_dat$left_time_boundary / mu,
+      Generations_end   = spec_dat$left_time_boundary / mu,
       Generations_start = spec_dat$right_time_boundary / mu, 
-      Ne = (1 / spec_dat$lambda) / (2 * mu),
+      mid_gen           = (spec_dat$left_time_boundary + spec_dat$right_time_boundary) / (2 * mu),
+      Ne                = (1 / spec_dat$lambda) / (2 * mu),
       Species = .y
     )
   }
@@ -639,55 +662,69 @@ data_read <- map2_dfr(
             by = c("Species" = "species"))
 data_read$IUCN <- factor(data_read$IUCN, levels=c("CR", "EN", "VU", "NT", "LC"))
 
-#### ---- Summarize data and save file ---- ####
-data_summary <- data_read %>%
-  group_by(Generations_end, IUCN) %>%
-  summarise(
-    Ne_median = median(Ne, na.rm = TRUE),
-    Ne_min = min(Ne, na.rm = TRUE), 
-    Ne_max = max(Ne, na.rm = TRUE), 
-    Ne_lq  = quantile(Ne, probs = 0.25, na.rm = TRUE),
-    Ne_uq  = quantile(Ne, probs = 0.75, na.rm = TRUE),
-    .groups = "drop"
-  )
-data_summary$IUCN <- factor(data_summary$IUCN, levels=c("CR", "EN", "VU", "NT", "LC"))
 
-write.csv(data_summary, paste0(results_directory, "Main_Figures/", date, "_wild_MSMC_grouped_stats.csv"))
+## -- Build common log time bins -- ##
+time_grid <- exp(seq(
+  log(min(data_read$Generations_start[data_read$Generations_start > 0])),
+  log(max(data_read$Generations_end)),
+  length.out = 200
+))
+
+## -- Interpolate all species onto the bins
+data_interp <- data_read %>%
+  group_by(Species, IUCN) %>%
+  group_modify(~{
+    tibble(
+      Generations = time_grid,
+      Ne = approx(
+        x    = .x$mid_gen,
+        y    = .x$Ne,
+        xout = time_grid,
+        rule = 2
+      )$y
+    )
+  }) %>%
+  ungroup()
+
+
+#### ---- Summarize data and save file ---- ####
+data_summary <- data_interp %>%
+  group_by(IUCN, Generations) %>%
+  summarise(
+    median_Ne = median(Ne, na.rm = TRUE),
+    lq_Ne     = quantile(Ne, 0.25, na.rm = TRUE),
+    uq_Ne     = quantile(Ne, 0.75, na.rm = TRUE),
+    .groups   = "drop"
+  )
+
+write.csv(data_summary, paste0(results_directory, date, "_wild_MSMC_grouped_stats.csv"))
 
 
 #### ---- Plot MSMC grouped by IUCN status ---- ####
 wild_iucn <- ggplot(
-  data_summary, 
-  aes(x = Generations_end, color = IUCN)
-  ) +
-  geom_smooth(
-    aes(y = Ne_median, color = IUCN, fill=IUCN), 
-    method = "loess", 
-    se = TRUE, 
-    linewidth=1, 
-    alpha=0.2
-    ) + 
-  scale_color_manual(
-    values = iucn_colors, 
-    drop = FALSE
-  ) +  
-  scale_fill_manual(
-    values = iucn_colors, 
-    drop = FALSE
-  ) + 
+  data_summary,
+  aes(
+    x     = Generations, 
+    y     = median_Ne, 
+    color = IUCN, 
+    fill  = IUCN)) +
+  geom_ribbon(
+    aes(ymin = lq_Ne, ymax = uq_Ne), 
+    alpha = 0.3, 
+    colour = NA) + 
+  geom_line(linewidth = 1) +
+  scale_color_manual(values = iucn_colors, drop = FALSE) +  
+  scale_fill_manual(values = iucn_colors, drop = FALSE) + 
+  scale_x_log10(labels = scales::label_scientific()) +
+  scale_y_log10(labels = scales::label_comma()) +
   labs(
     x = "Generations",
     y = "Effective Population Size",
     color = "IUCN Status",
     fill  = "IUCN Status"
   ) +
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0.01, 0)) +
-  coord_cartesian(
-    xlim = c(0, 3000000),
-    ylim = c(0, 5000000)
-  ) + 
-  My_Theme
+  My_Theme + 
+  annotation_logticks(sides = "bl")
 #### ---- END ---- ####
 
 
@@ -703,6 +740,19 @@ p_modern_ne <- ggplot(
     fill=IUCN
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha=0.5, 
     color="black", 
@@ -743,7 +793,7 @@ Fig_three <- (
 
 
 ## Save figure
-Fig_three_name <- paste0(results_directory, "Main_Figures/", date, "_Main_Figure_3.svg") 
+Fig_three_name <- paste0(results_directory, "Main_Figures/", date, "_Main_Figure_3_Mean.svg") 
 ggsave(
   Fig_three_name,
   plot = Fig_three,
@@ -797,6 +847,9 @@ data_subset_long_wild <- data_subset_wild %>%
   )
 data_subset_long_wild <- data_subset_long_wild %>% filter(presence == 1)
 
+## Set order for microhabitats in plots
+data_subset_long_wild$group <- factor(data_subset_long_wild$group, levels=c("Aer", "Arb", "Fos", "Ter", "Aqu"))
+
 #### ---- Plot species which occur in marine environments versus those that don't with FROH for ROH ≥1% of their chromosome in length ---- ####
 df_major_hab <- wild_gen_hab_dat %>%
   mutate(habitats = trimws(habitats),
@@ -825,6 +878,19 @@ marine_flag_wild_froh_long <- ggplot(
     y = longplus_froh, 
     fill=Marine_flag)) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.5, 
     lwd = 1.1) + 
@@ -878,6 +944,19 @@ microhabitat_plot_wild_frohlong <- ggplot(
     y = longplus_froh
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -897,21 +976,22 @@ microhabitat_plot_wild_frohlong <- ggplot(
   geom_signif(
     comparisons = comparisons_list,
     annotations = annotations_list,
-    step_increase = 0.1,    
+    step_increase = 0.04,    
     tip_length = 0.01,
     textsize = 5
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
   scale_y_continuous(
     name = "Inbreeding Coefficient (%) for ROH ≥1% of their chromosome", 
     trans = "sqrt", 
     breaks = seq(0, 100, by = 10), 
     labels = as.character(seq(0, 100, by = 10)),
-    expand = expansion(mult = c(0.01, 0.15)), 
-    limits = c(0, NA)
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 105)
   ) + 
   scale_fill_manual(values = microhabitat_colors) + 
-  My_Theme
+  My_Theme + 
+  theme(plot.margin = margin(t = 5, r = 80, b = 5, l = 5, unit = "pt"))
 
 
 #### ---- Microhabitat for Heterozygosity ---- ####
@@ -938,6 +1018,19 @@ microhabitat_het <- ggplot(
     y = heterozygosity
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -957,19 +1050,22 @@ microhabitat_het <- ggplot(
   geom_signif(
     comparisons = comparisons_list,
     annotations = annotations_list,
-    step_increase = 0.1,    
+    step_increase = 0.04,    
     tip_length = 0.01,
     textsize = 5
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
   scale_y_continuous(
     trans = "sqrt", 
     breaks = seq(0, 30, by=2),
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 47)
   ) +  
   scale_fill_manual(
     values=microhabitat_colors
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(plot.margin = margin(t = 5, r = 80, b = 5, l = 5, unit = "pt"))
 
 ## -- Test for statistically significant differences in het between microhabitats -- ##
 kruskal.test(heterozygosity ~ group, data = data_subset_long_wild)
@@ -986,9 +1082,17 @@ dunn.test::dunn.test(
 #### ---- Assemble Figure 4 ---- ####
 Fig_four <- (
     marine_flag_wild_froh_long /
-    microhabitat_plot_wild_frohlong / 
+    microhabitat_plot_wild_frohlong /
     microhabitat_het
-)
+) +
+  plot_layout(
+    guides = "collect",
+    axes = "collect"
+  ) &
+  theme(
+    legend.position = "bottom",
+    plot.margin = margin(t = 5, r = 80, b = 5, l = 5, unit = "pt")
+  )
 
 
 ## Save figure
@@ -1054,14 +1158,14 @@ het_alldat <- ggplot(
   coord_flip() 
 
 ## Save figure
-Het_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_Het_Supp_Fig.svg") 
+Het_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_Het_Fig.svg") 
 ggsave(
   Het_alldat_figname,
   plot = het_alldat,
-  width = 10, 
-  height = 5,
+  width = 20, 
+  height = 10,
   units = "in",
-  dpi = 600,
+  dpi = 300,
   device=svglite 
 )
 #### ---- END ---- ####
@@ -1113,14 +1217,14 @@ p_frohall_alldat <- ggplot(
 #### ---- END ---- ####
 
 ## Save figure
-froh_all_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_Wild_FROH_all_Supp_Fig.svg") 
+froh_all_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_Wild_FROH_all_Fig.svg") 
 ggsave(
   froh_all_alldat_figname,
   plot = p_frohall_alldat,
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
-  dpi = 600,
+  dpi = 300,
   device=svglite 
 )
 #### ---- END ---- ####
@@ -1173,14 +1277,14 @@ p_froh_longplus_alldat <- ggplot(
 
 
 ## Save figure
-froh_long_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_FROH_long_Supp_Fig.svg") 
+froh_long_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_FROH_long_Fig.svg") 
 ggsave(
   froh_long_alldat_figname,
   plot = p_froh_longplus_alldat,
-  width = 10, 
-  height = 5,
+  width = 20, 
+  height = 10,
   units = "in",
-  dpi = 600,
+  dpi = 300,
   device=svglite 
 )
 #### ---- END ---- ####
@@ -1232,14 +1336,14 @@ p_frohall_alldat <- ggplot(
 
 
 ## Save figure
-froh_all_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_FROH_all_Supp_Fig.svg") 
+froh_all_alldat_figname <- paste0(results_directory, "Supplementary_Figures/", date, "_AllData_FROH_all_Fig.svg") 
 ggsave(
   froh_all_alldat_figname,
   plot = p_frohall_alldat,
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
-  dpi = 600,
+  dpi = 300,
   device=svglite 
 )
 #### ---- END ---- ####
@@ -1352,7 +1456,7 @@ p <- ggplot(roh_summary_clean, aes(x = ROH_length_sum, y = ROH_count,
     legend.position = "none"
   )
 
-HGDP_fig_name <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_HGDP_pop_hulls.svg")
+HGDP_fig_name <- paste0(results_directory, "Supplementary_Figures/", date, "_HGDP_pop_hulls.svg")
 ggsave(
   HGDP_fig_name,
   p,
@@ -1576,7 +1680,7 @@ p_combined <- p_x + plot_spacer() + p_overlay + p_y +
     )
   )
 
-contours_all_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_supp_IUCN_ROH_all_density_contours.svg")
+contours_all_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_IUCN_ROH_all_density_contours.svg")
 ggsave(
   contours_all_file_name, 
   p_combined,
@@ -1585,7 +1689,7 @@ ggsave(
   device = svglite)
 
 #### ---- Run statistical tests for all data ---- ####
-stats_all_output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_IUCN_ROH_all_stats.txt")
+stats_all_output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_IUCN_ROH_all_stats.txt")
 
 ## -- Prepare scaled data -- ##
 dat_ord <- dat_clean %>%
@@ -1991,7 +2095,7 @@ leg_width  <- 1.2
 fig_w <- min(panel_size * ncols + leg_width, 49)
 fig_h <- min(panel_size * nrows,             49)
 
-contours_lineage_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_IUCN_ROH_wild_by_lineage.svg")
+contours_lineage_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_IUCN_ROH_wild_by_lineage.svg")
 ggsave(
   contours_lineage_file_name,
   p_final,
@@ -2020,9 +2124,10 @@ data_read <- map2_dfr(
     spec_dat <- readr::read_table(.x, col_names = TRUE) %>%
   mutate(right_time_boundary = as.numeric(right_time_boundary))
     tibble(
-      Generations_end = spec_dat$left_time_boundary / mu,
+      Generations_end   = spec_dat$left_time_boundary / mu,
       Generations_start = spec_dat$right_time_boundary / mu, 
-      Ne = (1 / spec_dat$lambda) / (2 * mu),
+      mid_gen           = (spec_dat$left_time_boundary + spec_dat$right_time_boundary) / (2 * mu),
+      Ne                = (1 / spec_dat$lambda) / (2 * mu),
       Species = .y
     )
   }
@@ -2032,55 +2137,77 @@ data_read <- map2_dfr(
 data_read$IUCN <- factor(data_read$IUCN, levels=c("CR", "EN", "VU", "NT", "LC"))
 
 
-data_summary <- data_read %>%
-  group_by(Generations_end, IUCN) %>%
-  summarise(
-    Ne_median = median(Ne, na.rm = TRUE),
-    Ne_min = min(Ne, na.rm = TRUE), 
-    Ne_max = max(Ne, na.rm = TRUE), 
-    Ne_lq  = quantile(Ne, probs = 0.25, na.rm = TRUE),
-    Ne_uq  = quantile(Ne, probs = 0.75, na.rm = TRUE),
-    .groups = "drop"
-  )
-data_summary$IUCN <- factor(data_summary$IUCN, levels=c("CR", "EN", "VU", "NT", "LC"))
+## -- Build common log-spaced time bins -- ##
+time_grid <- exp(seq(
+  log(min(data_read$Generations_start[data_read$Generations_start > 0])),
+  log(max(data_read$Generations_end)),
+  length.out = 200
+))
 
-write.csv(data_summary, paste0(date, "_Supp_alldat_MSMC_grouped_stats.csv"))
+## -- Bin all species -- ##
+data_interp <- data_read %>%
+  group_by(Species, IUCN) %>%
+  group_modify(~{
+    tibble(
+      Generations = time_grid,
+      Ne = approx(
+        x    = .x$mid_gen,
+        y    = .x$Ne,
+        xout = time_grid,
+        rule = 2
+      )$y
+    )
+  }) %>%
+  ungroup()
+
+#### ---- Summarize data and save file ---- ####
+data_summary <- data_interp %>%
+  group_by(IUCN, Generations) %>%
+  summarise(
+    median_Ne = median(Ne, na.rm = TRUE),
+    lq_Ne        = quantile(Ne, 0.25, na.rm = TRUE),
+    uq_Ne        = quantile(Ne, 0.75, na.rm = TRUE),
+    .groups   = "drop"
+  )
+
+write.csv(data_summary, paste0(results_directory, date, "_all_MSMC_grouped_stats.csv"))
+
 
 ## -- Plot -- ##
 all_iucn <- ggplot(
   data_summary, 
-  aes(x = Generations_end, color = IUCN)
-  ) +
-  geom_smooth(
-    aes(y = Ne_median, color = IUCN, fill=IUCN), 
-    method = "loess", 
-    se = TRUE, 
-    linewidth=1, 
-    alpha=0.2
-    ) + 
+  aes(
+    x = Generations, 
+    y = median_Ne,
+    colour = IUCN, 
+    fill = IUCN)) +
+  geom_ribbon(
+    aes(ymin = lq_Ne, ymax = uq_Ne), 
+    alpha = 0.3, 
+    colour = NA) +
+  geom_line(
+    linewidth = 1) +
   scale_color_manual(
     values = iucn_colors, 
     drop = FALSE
-  ) +  
+  ) + 
   scale_fill_manual(
     values = iucn_colors, 
     drop = FALSE
   ) + 
+  scale_x_log10(labels = scales::label_scientific()) +
+  scale_y_log10(labels = scales::label_comma()) +
   labs(
-    x = "Generations",
-    y = "Effective Population Size",
-    color = "IUCN Status",
-    fill  = "IUCN Status"
+    x      = "Generations ago",
+    y      = "Effective population size (Ne)",
+    colour = "IUCN status",
+    fill   = "IUCN status"
   ) +
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0.01, 0)) +
-  coord_cartesian(
-    xlim = c(0, 3000000),
-    ylim = c(0, 5000000)
-  ) + 
-  My_Theme
+  My_Theme + 
+  annotation_logticks(sides = "bl")
 
-MSMC_largex_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_MSMC_all_dat.svg")
+## -- Save file -- ##
+MSMC_largex_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_MSMC_all_dat.svg")
 ggsave(
   MSMC_largex_file_name,
   plot = all_iucn,
@@ -2107,6 +2234,19 @@ p_modern_ne <- ggplot(
     fill=IUCN
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha=0.5, 
     color="black", 
@@ -2138,7 +2278,7 @@ p_modern_ne <- ggplot(
   annotation_logticks(sides = "b") + 
   coord_flip()
 
-modern_Ne_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_MSMC_all_modern_Ne.svg")
+modern_Ne_file_name <- paste0(results_directory, "Supplementary_Figures/", date, "_MSMC_all_modern_Ne.svg")
 ggsave(
   modern_Ne_file_name,
   plot = p_modern_ne,
@@ -2167,7 +2307,19 @@ df_major_hab <- wild_gen_hab_dat %>%
             .groups = "drop")
 
 df_major_hab$major_habitat <- factor(df_major_hab$major_habitat, 
-  levels=c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", NA))
+  levels=c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", NA), 
+  labels=c("Forest", "Savanna", "Shrubland", "Grassland", "Wetlands (inland)", "Rocky Areas", 
+  "Caves (non-aquatic)", "Desert", "Marine Neritic", "Marine Oceanic", "Marine Deep Ocean Floor", 
+  "Marine Intertidal", "Marine Coastal/Supratidal", "Artificial Terrestrial", "Artificial Aquatic", 
+  "Introduced Vegetation", "Other"))
+
+highlight_habitats <- c("Marine Neritic", "Marine Oceanic", "Marine Deep Ocean Floor", "Marine Intertidal")
+
+habitat_colors <- setNames(
+  ifelse(levels(df_major_hab$major_habitat) %in% highlight_habitats, "#1A7A8A", "#C8C5BC"),
+  levels(df_major_hab$major_habitat)
+)
+
 
 ## -- Plot -- ##
 maj_hab_all_aln_FROH_percent <- ggplot(
@@ -2177,6 +2329,19 @@ maj_hab_all_aln_FROH_percent <- ggplot(
     y = all_aln_FROH_percent, 
     fill=major_habitat)) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA,
     alpha = 0.35,      
     lwd = 0.55,        
@@ -2186,11 +2351,11 @@ maj_hab_all_aln_FROH_percent <- ggplot(
     position = position_jitter(width = 0.18, height = 0.0),
     shape = 21,
     stroke = 0.3,       
-    size = 3,        
+    size = 4,        
     alpha = 0.65,
     aes(fill = major_habitat)
   ) +
-  scale_fill_manual(values = hab_colors) +
+  scale_fill_manual(values = habitat_colors) +
   scale_y_continuous(
     name = "Inbreeding coefficient (FROH) for ROH ≥ 100 kb (%)",
     trans = "sqrt",
@@ -2202,16 +2367,19 @@ maj_hab_all_aln_FROH_percent <- ggplot(
   xlab(NULL) +            
   coord_flip() +
   theme_classic(base_size = 11) +
-  My_Theme
+  My_Theme + 
+  theme(
+    legend.position = "none", 
+    axis.text.x = element_text(angle = 45, hjust = 1))
 
-output_file <- paste0("Figures/", date, "_major_habitats_wild_frohall.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_major_habitats_wild_frohall.svg")
 ggsave(
   output_file,
   plot = maj_hab_all_aln_FROH_percent,
-  width = 10, 
-  height = 7,
+  width = 20, 
+  height = 10,
   units = "in",
-  dpi = 600, 
+  dpi = 300, 
   device=svglite
 )
 #### ---- END ---- ####
@@ -2225,6 +2393,19 @@ maj_hab_all_aln_FROH_percent <- ggplot(
   aes(x = major_habitat, y = all_aln_FROH_percent, fill = major_habitat)
 ) +
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA,
     alpha = 0.35,      
     lwd = 0.55,        
@@ -2234,11 +2415,11 @@ maj_hab_all_aln_FROH_percent <- ggplot(
     position = position_jitter(width = 0.18, height = 0.0),
     shape = 21,
     stroke = 0.3,       
-    size = 3,        
+    size = 4,        
     alpha = 0.65,
     aes(fill = major_habitat)
   ) +
-  scale_fill_manual(values = hab_colors) +
+  scale_fill_manual(values = habitat_colors) +
   scale_y_continuous(
     name = "Inbreeding coefficient (FROH) for ROH ≥ 100 kb (%)",
     trans = "sqrt",
@@ -2250,17 +2431,20 @@ maj_hab_all_aln_FROH_percent <- ggplot(
   xlab(NULL) +            
   coord_flip() +
   theme_classic(base_size = 11) +
-  My_Theme
+  My_Theme + 
+  theme(
+    legend.position = "none", 
+    axis.text.x = element_text(angle = 45, hjust = 1))
 
 
-output_file <- paste0("Figures/", date, "_Supp_major_habitats_all_frohall.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_major_habitats_all_frohall.svg")
 ggsave(
   output_file,
   plot = maj_hab_all_aln_FROH_percent,
-  width = 4, 
-  height = 3,
+  width = 20, 
+  height = 10,
   units = "in",
-  dpi = 600, 
+  dpi = 300, 
   device=svglite
 )
 #### ---- END ---- ####
@@ -2269,6 +2453,39 @@ ggsave(
 
 
 #### ---- FROH for all ROH, by marine flag for wild species ---- ####
+wild_gen_hab_dat <- data_wild[c(
+  "species", 
+  "IUCN", 
+  "Combined_captivity_flag_primary", 
+  "habitats", 
+  "longplus_froh", 
+  "all_aln_FROH_percent", 
+  "heterozygosity"
+  )]
+
+wild_gen_hab_dat <- wild_gen_hab_dat %>%
+  mutate(
+    major_habitat_count = case_when(
+      is.na(habitats) ~ NA_integer_,
+      TRUE ~ habitats %>%
+        str_split(";\\s*") %>%
+        lapply(\(x) str_extract(x, "^[^_]+")) %>%
+        sapply(\(x) length(unique(x))) %>%
+        as.integer()
+    ),
+    all_habitat_count = case_when(
+      is.na(habitats) ~ NA_integer_,
+      TRUE ~ lengths(str_split(habitats, ";\\s*"))
+    )
+  )
+
+#### ---- Plot species which occur in marine environments versus those that don't ---- ####
+df_major_hab <- wild_gen_hab_dat %>%
+  mutate(habitats = trimws(habitats),
+         Marine_flag = if_else(str_detect(habitats, "(^|; )(9|10|11|12)_"), "yes", "no"))
+
+df_major_hab <- df_major_hab %>% filter(!is.na(Marine_flag))
+
 marine_hab_all_aln_FROH_percent <- ggplot(
   data = df_major_hab, 
   aes(
@@ -2276,6 +2493,19 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     y = all_aln_FROH_percent, 
     fill = Marine_flag)) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.5, 
     lwd = 1.1) + 
@@ -2299,16 +2529,17 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     expand = expansion(mult = c(0.01, 0.03)), 
     limits = c(0, NA)
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(legend.position = "none")
 
-output_file <- paste0("Figures/", date, "_Supp_marine_compare_wild_frohall.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_marine_compare_wild_frohall.svg")
 ggsave(
   output_file,
   plot = marine_hab_all_aln_FROH_percent,
   width = 20, 
-  height = 10,
+  height = 7,
   units = "in",
-  dpi = 600, 
+  dpi = 300, 
   device=svglite
 )
 #### ---- END ---- ####
@@ -2360,6 +2591,19 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     y = longplus_froh, 
     fill=Marine_flag)) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.5, 
     lwd = 1.1) + 
@@ -2383,16 +2627,17 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     limits = c(0, NA)
   ) + 
   coord_flip() + 
-  My_Theme
+  My_Theme + 
+  theme(legend.position = "none")
 
-output_file <- paste0("Figures/", date, "_Supp_marine_compare_all_frohlongplus.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_marine_compare_all_frohlongplus.svg")
 ggsave(
   output_file,
   plot = marine_hab_all_aln_FROH_percent,
   width = 20, 
-  height = 10,
+  height = 7,
   units = "in",
-  dpi = 600, 
+  dpi = 300, 
   device=svglite
 )
 #### ---- END ---- ####
@@ -2408,6 +2653,19 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     y = all_aln_FROH_percent, 
     fill = Marine_flag)) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.5, 
     lwd = 1.1) + 
@@ -2431,16 +2689,17 @@ marine_hab_all_aln_FROH_percent <- ggplot(
     expand = expansion(mult = c(0.01, 0.03)), 
     limits = c(0, NA)
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(legend.position="none")
 
-output_file <- paste0("Figures/", date, "_Supp_marine_compare_all_frohall.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_marine_compare_all_frohall.svg")
 ggsave(
   output_file,
   plot = marine_hab_all_aln_FROH_percent,
   width = 20, 
-  height = 10,
+  height = 7,
   units = "in",
-  dpi = 600, 
+  dpi = 300, 
   device=svglite
 )
 #### ---- END ---- ####
@@ -2450,6 +2709,9 @@ ggsave(
 
 
 #### ---- FROH for all ROH by microhabitat with wild data ---- ####
+## Set order for microhabitats in plots
+data_subset_long_wild$group <- factor(data_subset_long_wild$group, levels=c("Aer", "Arb", "Fos", "Ter", "Aqu"))
+
 microhabitat_plot <- ggplot(
   data_subset_long_wild, 
   aes(
@@ -2457,6 +2719,19 @@ microhabitat_plot <- ggplot(
     y = all_aln_FROH_percent
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -2468,22 +2743,32 @@ microhabitat_plot <- ggplot(
     position = position_jitter(
       width = 0.1, 
       height = 0), 
-    size = 2, 
+    size = 8, 
     shape = 21, 
     color = "black", 
     aes(fill=group)
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
+  scale_y_continuous(
+    name = "Inbreeding Coefficient (%) for ROH ≥1% of their chromosome", 
+    trans = "sqrt", 
+    breaks = seq(0, 100, by = 10), 
+    labels = as.character(seq(0, 100, by = 10)),
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 100)
+  ) + 
   scale_fill_manual(
     values=microhabitat_colors
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"), 
+  legend.position = "none")
 
-output_file <- paste0("Figures/", date, "_Supp_wild_microhabitat_all_aln_FROH_percent.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_wild_microhabitat_all_aln_FROH_percent.svg")
 ggsave(
   output_file,
   plot = microhabitat_plot,
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
   dpi = 300, 
@@ -2502,6 +2787,9 @@ data_subset_long <- data_subset %>%
     values_to = "presence"
   )
 data_subset_long <- data_subset_long %>% filter(presence == 1)
+
+## Set order for microhabitats in plots
+data_subset_long$group <- factor(data_subset_long$group, levels=c("Aer", "Arb", "Fos", "Ter", "Aqu"))
 #### ---- END --- ####
 
 
@@ -2515,6 +2803,19 @@ microhabitat_plot_longplus <- ggplot(
     y = longplus_froh
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -2526,22 +2827,33 @@ microhabitat_plot_longplus <- ggplot(
     position = position_jitter(
       width = 0.1, 
       height = 0), 
-    size = 2, 
+    size = 8, 
     shape = 21, 
     color = "black", 
     aes(fill=group)
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
+  scale_y_continuous(
+    name = "Inbreeding Coefficient (%) for ROH ≥1% of their chromosome", 
+    trans = "sqrt", 
+    breaks = seq(0, 100, by = 10), 
+    labels = as.character(seq(0, 100, by = 10)),
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 100)
+  ) + 
   scale_fill_manual(
     values=microhabitat_colors
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(
+    plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"), 
+    legend.position = "none")
 
-output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_microhabitat_froh_longplus.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_microhabitat_froh_longplus.svg")
 ggsave(
   output_file,
   plot = microhabitat_plot_longplus,
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
   dpi = 300, 
@@ -2560,6 +2872,19 @@ microhabitat_plot <- ggplot(
     y = all_aln_FROH_percent
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -2571,22 +2896,33 @@ microhabitat_plot <- ggplot(
     position = position_jitter(
       width = 0.1, 
       height = 0), 
-    size = 2, 
+    size = 8, 
     shape = 21, 
     color = "black", 
     aes(fill=group)
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
+  scale_y_continuous(
+    name = "Inbreeding Coefficient (%) for ROH ≥1% of their chromosome", 
+    trans = "sqrt", 
+    breaks = seq(0, 100, by = 10), 
+    labels = as.character(seq(0, 100, by = 10)),
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 100)
+  ) + 
   scale_fill_manual(
     values=microhabitat_colors
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(
+    plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"), 
+    legend.position = "none")
 
-output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_Supp_microhabitat_all_aln_FROH_percent.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_microhabitat_all_aln_FROH_percent.svg")
 ggsave(
   output_file,
   plot = microhabitat_plot,
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
   dpi = 300, 
@@ -2605,6 +2941,19 @@ microhabitat_het <- ggplot(
     y = heterozygosity
   )) + 
   geom_boxplot(
+    stat = "summary",
+    fun.data = function(x) {
+        q1  <- quantile(x, 0.25)
+        q3  <- quantile(x, 0.75)
+        iqr <- q3 - q1
+        data.frame(
+            ymin   = max(min(x), q1 - 1.5 * iqr),
+            lower  = q1,
+            middle = mean(x),
+            upper  = q3,
+            ymax   = min(max(x), q3 + 1.5 * iqr)
+        )
+    }, 
     outlier.shape = NA, 
     alpha = 0.6,
     color = "black", 
@@ -2616,22 +2965,31 @@ microhabitat_het <- ggplot(
     position = position_jitter(
       width = 0.1, 
       height = 0), 
-    size = 2, 
+    size = 8, 
     shape = 21, 
     color = "black", 
     aes(fill=group)
   ) +
-  coord_flip() + 
+  coord_flip(clip = "off") + 
+  scale_y_continuous(
+    trans = "sqrt", 
+    breaks = seq(0, 30, by=2),
+    expand = expansion(mult = c(0.01, 0.01)), 
+    limits = c(0, 35)
+  ) + 
   scale_fill_manual(
     values=microhabitat_colors
   ) + 
-  My_Theme
+  My_Theme + 
+  theme(
+    plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"), 
+    legend.position = "none")
 
-output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_supp_all_microhabitat_het.svg")
+output_file <- paste0(results_directory, "Supplementary_Figures/", date, "_all_microhabitat_het.svg")
 ggsave(
   output_file,
   plot = microhabitat_het, 
-  width = 10, 
+  width = 20, 
   height = 10,
   units = "in",
   dpi = 300, 
