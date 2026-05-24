@@ -69,6 +69,13 @@ data$Extended_lineage <- factor(
         "Cartilaginous fishes"
     ))
 
+## -- Set categories for IDRisk -- ##
+data$IDRisk_category <- cut(
+  data$IDRisk_longplus,
+  breaks = c(-Inf, 0.05, 0.25, 0.5, Inf),
+  labels = c("Low risk", "Moderate risk", "High risk", "Extreme risk"),
+  right  = TRUE
+)
 
 ## -- Filter out for wild only species -- ##
 data_wild <- data %>% filter(Combined_captivity_flag_primary == "no" | Combined_captivity_flag_primary == "no likely")
@@ -173,7 +180,13 @@ microhabitat_colors <- c(
   "Aer" = "#6BAED6"
 )
 
-
+#### ---- Set IDRisk color palette ---- ####
+idrisk_colors <- c(
+  "Low risk"      = "#FFD700",
+  "Moderate risk" = "#DAA520",
+  "High risk"     = "#B8600A",
+  "Extreme risk"  = "#8B1A1A"
+)
 
 
 ########## ========== MAIN FIGURE 1 ========== ##########
@@ -1109,12 +1122,106 @@ ggsave(
 #### ---- END ---- ####
 
 
+#### ---- Figure 5: IDRISK ---- ####
+## -- Set equation for IDRisk clines -- ##
+cline_values <- c(0.05, 0.25, 0.5)
 
+cline_dat_wild <- do.call(rbind, lapply(cline_values, function(k) {
+  x_seq <- seq(min(data_wild$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               max(data_wild$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               length.out = 200)
+  data.frame(x = x_seq, y = k / x_seq, k = as.factor(k))
+}))
+cline_dat_wild$k <- as.numeric(as.character(cline_dat_wild$k))
+cline_meta <- data.frame(
+  k      = c(0.05, 0.25, 0.5),       
+  color  = c("#DAA520", "#B8600A", "#8B1A1A")  
+)
+cline_dat_wild <- do.call(rbind, lapply(cline_values, function(k) {
+  x_seq <- seq(min(data_wild$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               max(data_wild$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               length.out = 200)
+  data.frame(x = x_seq, y = k / x_seq, k = k)
+}))
+cline_dat_wild <- merge(cline_dat_wild, cline_meta, by = "k")
+label_x <- max(data_wild$`1%+_aln_FROH_percent`/100, na.rm = TRUE) * 0.85
+region_labels <- data.frame(
+  x     = rep(label_x, 4),
+  y     = c(
+    0.5 * cline_values[1] / label_x,                              # below line 1
+    sqrt(cline_values[1]/label_x * cline_values[2]/label_x),      # between lines 1-2
+    sqrt(cline_values[2]/label_x * cline_values[3]/label_x),      # between lines 2-3
+    1.5 * cline_values[3] / label_x                               # above line 3
+  ),
+  label = c("Low risk", "Moderate risk", "High risk", "Extreme risk"),
+  color = c("#FFD700", "#DAA520", "#B8600A", "#8B1A1A")
+)
 
+## -- Define outliers which should be labeled -- ##
+data_wild$outlier_IDRisk_longplus <- ifelse(
+  data_wild$IDRisk_longplus >= 0.5,
+  data_wild$species,
+  NA
+)
 
+## -- Plot -- ##
+IDRisk_wild_IUCN_filename <- paste0("Figures/", date, '_IDRisk_longplus_wild_shape_IUCN.png')
+png(file = IDRisk_wild_IUCN_filename, width = 2000, height = 2000, res = 300)
 
+ggplot(
+  data_wild,
+  aes(
+    x     = `1%+_aln_FROH_percent` / 100,
+    y     = heterozygosity,
+    shape = IUCN,
+    color = IDRisk_category
+  )
+) +
+  geom_line(
+    data        = cline_dat_wild,
+    aes(x = x, y = y, group = k),
+    color       = cline_dat_wild$color,
+    linewidth   = 0.8,
+    inherit.aes = FALSE
+  ) +
+  geom_point(size = 2) +
+  scale_color_manual(
+    values = idrisk_colors,
+    name   = expression(ID[risk] ~ category),
+    drop   = FALSE
+  ) +
+  geom_text(
+    data        = region_labels,
+    aes(x = x, y = y, label = label),
+    inherit.aes = FALSE,
+    color       = region_labels$color,
+    hjust       = 1,
+    size        = 3,
+    fontface    = "bold"
+  ) +
+  xlab('FROH for ROH ≥1% of their chromosome') +
+  ylab('Het/kb in non-ROH regions') +
+  scale_shape_manual(values = iucn_shapes) +
+  scale_x_sqrt() +
+  scale_y_sqrt(limits = c(0, 35)) +
+  geom_text_repel(
+    data         = subset(data_wild, !is.na(outlier_IDRisk_longplus)),
+    aes(label    = species),
+    na.rm        = TRUE,
+    size         = 3,
+    max.overlaps = Inf,
+    color        = "black"
+  ) +
+  theme_classic() +
+  theme(
+    legend.position = "right",
+    panel.border    = element_rect(color = "black", fill = NA, linewidth = 1),
+    axis.line       = element_blank()
+  ) +
+  My_Theme
 
-
+dev.off()
+#### ---- END ---- ####
 
 
 ########## ========== SUPPLEMENTARY FIGURES ========== ##########
@@ -2995,4 +3102,104 @@ ggsave(
   dpi = 300, 
   device = svglite
 )
+#### ---- END ---- ####
+
+
+#### ---- IDRisk for all species ---- ####
+## -- Set clines -- ##
+cline_dat <- do.call(rbind, lapply(cline_values, function(k) {
+  x_seq <- seq(min(data$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               max(data$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               length.out = 200)
+  data.frame(x = x_seq, y = k / x_seq, k = as.factor(k))
+}))
+cline_dat$k <- as.numeric(as.character(cline_dat$k))
+cline_meta <- data.frame(
+  k      = c(0.05, 0.25, 0.5),       
+  color  = c("#DAA520", "#B8600A", "#8B1A1A")  
+)
+cline_dat <- do.call(rbind, lapply(cline_values, function(k) {
+  x_seq <- seq(min(data$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               max(data$`1%+_aln_FROH_percent`/100, na.rm = TRUE),
+               length.out = 200)
+  data.frame(x = x_seq, y = k / x_seq, k = k)
+}))
+cline_dat <- merge(cline_dat, cline_meta, by = "k")
+label_x <- max(data$`1%+_aln_FROH_percent`/100, na.rm = TRUE) * 0.85
+region_labels <- data.frame(
+  x     = rep(label_x, 4),
+  y     = c(
+    0.5 * cline_values[1] / label_x,                              # below line 1
+    sqrt(cline_values[1]/label_x * cline_values[2]/label_x),      # between lines 1-2
+    sqrt(cline_values[2]/label_x * cline_values[3]/label_x),      # between lines 2-3
+    1.5 * cline_values[3] / label_x                               # above line 3
+  ),
+  label = c("Low risk", "Moderate risk", "High risk", "Extreme risk"),
+  color = c("#FFD700", "#DAA520", "#B8600A", "#8B1A1A")
+)
+
+## -- Label outliers -- ##
+data$outlier_IDRisk_longplus <- ifelse(
+  data$IDRisk_longplus >= 0.5,
+  data$species,
+  NA
+)
+
+## -- Plot -- ##
+IDRisk_all_IUCN_filename <- paste0("Figures/", date, '_IDRisk_longplus_all_shape_IUCN.png')
+png(file = IDRisk_all_IUCN_filename, width = 2000, height = 2000, res = 300)
+
+ggplot(
+  data,
+  aes(
+    x     = `1%+_aln_FROH_percent` / 100,
+    y     = heterozygosity,
+    shape = IUCN,
+    color = IDRisk_category
+  )
+) +
+  geom_line(
+    data         = cline_dat,
+    aes(x = x, y = y, group = k),
+    color        = cline_dat_wild$color,   # <-- direct vector, no aes()
+    linewidth    = 0.8,
+    inherit.aes  = FALSE
+  ) +
+  geom_point(size = 2) +
+  scale_color_manual(
+    values = idrisk_colors,
+    name   = expression(ID[risk] ~ category),
+    drop   = FALSE
+  ) +
+  geom_text(
+    data         = region_labels,
+    aes(x = x, y = y, label = label),
+    inherit.aes  = FALSE,
+    color        = region_labels$color,
+    hjust        = 1,
+    size         = 3,
+    fontface     = "bold"
+  ) +
+  xlab('FROH for ROH ≥1% of their chromosome') +
+  ylab('Het/kb in non-ROH regions') +
+  scale_shape_manual(values = iucn_shapes) +
+  scale_x_sqrt() +
+  scale_y_sqrt(limits = c(0, 35)) +
+  geom_text_repel(
+    data         = subset(data_wild, !is.na(outlier_IDRisk_longplus)),
+    aes(label    = species),
+    na.rm        = TRUE,
+    size         = 3,
+    max.overlaps = Inf,
+    color        = "black"
+  ) +
+  theme_classic() +
+  theme(
+    legend.position = "right",
+    panel.border    = element_rect(color = "black", fill = NA, linewidth = 1),
+    axis.line       = element_blank()
+  ) +
+  My_Theme
+
+dev.off()
 #### ---- END ---- ####
