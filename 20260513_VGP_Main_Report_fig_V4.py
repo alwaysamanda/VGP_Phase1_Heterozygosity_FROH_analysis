@@ -21,7 +21,8 @@ from itertools import combinations
 
 ########## ========== LOAD IN DATA AND VARIABLES ========== ##########
 data              = pd.read_csv(sys.argv[1])
-results_directory = sys.argv[2]
+msmc_dat          = pd.read_csv(sys.argv[2])
+results_directory = sys.argv[3]
 today             = date.today()
 
 ########## ========== FILTERING CRITERIA ========== ##########
@@ -587,7 +588,7 @@ fig2.update_xaxes(
     ticktext=[str(v) for v in x_breaks],
     tickfont=dict(size=12),
     title=dict(
-        text="<b>F<sub>ROH</sub> (%) — ROH ≥ 100 kb (√ scale)</b>",
+        text="<b>F<sub>ROH</sub> (%) — ROH ≥ 100 kb </b>",
         font=dict(size=13),
     ),
     range=[0, np.sqrt(x_raw_max * 1.05)],
@@ -601,7 +602,7 @@ fig2.update_yaxes(
     ticktext=[str(v) for v in y_breaks],
     tickfont=dict(size=12),
     title=dict(
-        text="<b>N<sub>ROH</sub> (normalised, √ scale)</b>",
+        text="<b>N<sub>ROH</sub> (normalised)</b>",
         font=dict(size=13),
     ),
     range=[0, None],
@@ -627,34 +628,42 @@ mu            = 1.25e-8
 cutoff_old    = 3000
 cutoff_recent = 1000
 
-#### ---- Read MSMC files ---- ####
-msmc_frames = []
+#### ---- Read MSMC data ---- ####
+## -- Pivot from wide to long format -- ##
+id_cols = ["species", "lineage", "IUCN_status", "captivity_flag"]
 
-for _, row in data_wild.iterrows():
-    fpath   = row["MSMC_file_name"]
-    species = row["species"]
+df_long = msmc_dat.melt(id_vars=id_cols, var_name="variable", value_name="value")
 
-    if not os.path.isfile(fpath):
-        print(f"Skipping missing file: {fpath}")
-        continue
+## -- Parse variable names -- ##
+df_long[["component", "segment"]] = df_long["variable"].str.extract(
+    r"^(left_time_boundary|right_time_boundary|lambda)_(\d+)$"
+)
+df_long = df_long.dropna(subset=["component"])
+df_long["segment"] = df_long["segment"].astype(int)
 
-    try:
-        spec_dat = pd.read_table(fpath)
-        spec_dat["right_time_boundary"] = pd.to_numeric(
-            spec_dat["right_time_boundary"], errors="coerce"
-        )
+## -- Pivot back so each segment is one row --##
+df_wide = df_long.pivot_table(
+    index=id_cols + ["segment"],
+    columns="component",
+    values="value",
+    aggfunc="first"
+).reset_index()
+df_wide.columns.name = None
 
-        msmc_frames.append(pd.DataFrame({
-            "Generations_end":   spec_dat["left_time_boundary"]  / mu,
-            "Generations_start": spec_dat["right_time_boundary"] / mu,
-            "mid_gen":           (spec_dat["left_time_boundary"] + spec_dat["right_time_boundary"]) / (2 * mu),
-            "Ne":                (1 / spec_dat["lambda"]) / (2 * mu),
-            "Species":           species,
-        }))
-    except Exception as e:
-        print(f"Error reading {fpath}: {e}")
+## -- Drop infinite/NA values -- ##
+df_wide = df_wide[
+    df_wide["lambda"].notna() &
+    np.isfinite(df_wide["lambda"])
+]
 
-data_read = pd.concat(msmc_frames, ignore_index=True)
+## -- Compute values -- ##
+df_wide["Generations_end"]   = df_wide["left_time_boundary"]  / mu
+df_wide["Generations_start"] = df_wide["right_time_boundary"] / mu
+df_wide["mid_gen"]           = (df_wide["left_time_boundary"] + df_wide["right_time_boundary"]) / (2 * mu)
+df_wide["Ne"]                = (1 / df_wide["lambda"]) / (2 * mu)
+df_wide["Species"]           = df_wide["species"]
+
+data_read = df_wide[["Species", "Generations_end", "Generations_start", "mid_gen", "Ne"]].copy()
 
 ## -- Attach IUCN + lineage from main data -- ##
 meta_cols = data[["species", "IUCN", "Extended_lineage"]].drop_duplicates()
@@ -900,7 +909,7 @@ for row_idx in [2, 3]:
         tickvals=ne_tickvals,
         ticktext=ne_ticktext,
         tickfont=dict(size=12),
-        title=dict(text="<b>N<sub>e</sub> (log<sub>10</sub> scale)</b>", font=dict(size=13)),
+        title=dict(text="<b>N<sub>e</sub> </b>", font=dict(size=13)),
         showgrid=True, gridcolor="#dddddd",
         zeroline=False,
         row=row_idx, col=1,
@@ -1439,7 +1448,7 @@ fig4.update_xaxes(
     ticktext=froh_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>F<sub>ROH</sub> (%) — ROH ≥1% chromosome (√ scale)</b>",
+        text="<b>F<sub>ROH</sub> (%) — ROH ≥1% chromosome </b>",
         font=dict(size=13),
     ),
     range=[0, froh_marine_max * 1.25],
@@ -1461,7 +1470,7 @@ fig4.update_xaxes(
     ticktext=froh_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>F<sub>ROH</sub> (%) — ROH ≥1% chromosome (√ scale)</b>",
+        text="<b>F<sub>ROH</sub> (%) — ROH ≥1% chromosome</b>",
         font=dict(size=13),
     ),
     range=[0, froh_micro_max * 1.30],
@@ -1483,7 +1492,7 @@ fig4.update_xaxes(
     ticktext=het_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>Heterozygosity per kb outside ROH (√ scale)</b>",
+        text="<b>Heterozygosity per kb outside ROH </b>",
         font=dict(size=13),
     ),
     range=[0, het_micro_max * 1.30],
@@ -1708,7 +1717,7 @@ fig5.update_xaxes(
     ticktext=froh_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>F<sub>ROH</sub> for ROH ≥1% of chromosome (√ scale)</b>",
+        text="<b>F<sub>ROH</sub> for ROH ≥1% of chromosome </b>",
         font=dict(size=13),
     ),
     range=[0, np.sqrt(x_max) * 1.05],
@@ -1725,7 +1734,7 @@ fig5.update_yaxes(
     ticktext=het_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>Het/kb in non-ROH regions (√ scale)</b>",
+        text="<b>Het/kb in non-ROH regions </b>",
         font=dict(size=13),
     ),
     range=[0, np.sqrt(35)],
