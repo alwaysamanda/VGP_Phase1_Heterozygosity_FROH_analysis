@@ -301,7 +301,7 @@ fig = make_subplots(
     shared_xaxes=False,
     vertical_spacing=0.12,
     subplot_titles=[
-        "Heterozygosity per kb outside ROH \u2265100kb",
+        "Heterozygosity per kb (excl.ROH)",
         "Inbreeding Coefficient (%) for ROH \u22651% of their chromosome",
     ],
 )
@@ -1313,7 +1313,7 @@ fig4 = make_subplots(
     subplot_titles=[
         "F<sub>ROH</sub> (%) by Marine Habitat",
         "F<sub>ROH</sub> (%) by Microhabitat",
-        "Heterozygosity by Microhabitat",
+        "Heterozygosity  per kb (excl. ROH) by Microhabitat",
     ],
     vertical_spacing=0.10,
     row_heights=[0.25, 0.40, 0.40],
@@ -1492,7 +1492,7 @@ fig4.update_xaxes(
     ticktext=het_ticktext,
     tickfont=dict(size=12),
     title=dict(
-        text="<b>Heterozygosity per kb outside ROH </b>",
+        text="<b>Heterozygosity  per kb (excl. ROH)</b>",
         font=dict(size=13),
     ),
     range=[0, het_micro_max * 1.30],
@@ -1625,7 +1625,7 @@ for lvl in iucn_levels:
     if sub.empty:
         continue
 
-    marker_colors = sub["IDRisk_category"].map(idrisk_colors).fillna("#888888")
+    marker_colors = [iucn_colors.get(lvl, "#888888")] * len(sub)
 
     custom = np.column_stack([
         sub["species"].values,
@@ -1655,7 +1655,7 @@ for lvl in iucn_levels:
             "IUCN: %{customdata[1]}<br>"
             "Lineage: %{customdata[2]}<br>"
             "FROH (%): %{customdata[3]:.3f}<br>"
-            "Heterozygosity: %{customdata[4]:.3f}<br>"
+            "Heterozygosity per kb (excl. ROH): %{customdata[4]:.3f}<br>"
             "IDRisk: %{customdata[5]:.3f}<br>"
             "Risk category: %{customdata[6]}<extra></extra>"
         ),
@@ -1706,7 +1706,7 @@ fig5.update_layout(
         tracegroupgap=8,
     ),
     title=dict(
-        text="ID<sub>risk</sub> — F<sub>ROH</sub> vs Heterozygosity (wild species)",
+        text="ID<sub>risk</sub> — F<sub>ROH</sub> vs Heterozygosity per kb (excl. ROH)",
         font=dict(size=14),
         x=0.5,
     ),
