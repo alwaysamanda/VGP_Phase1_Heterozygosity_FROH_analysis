@@ -2,6 +2,7 @@
 #  Inbreeding and Heterozygosity in VGP Phase 1 species
 
 Author: Amanda Gardiner and Richard Durbin
+
 First: April 20th, 2026
 
 ##  Overview
@@ -30,7 +31,7 @@ This work was performed using resources provided by the Cambridge Service for Da
 The input data was .1aln files that were the output of FastGA alingments between the primary and secondary genomes for each species. More information on FastGA is available [here](https://github.com/thegenemyers/FASTGA?tab=readme-ov-file#FastGA). The genomes were from the VGP Phase 1 data freeze, with some supplemented additional secondary genomes. A list of all species and accession numbers is available in Supplementary_Tables/exported_species_db.csv.
 
 ##  VGP_analysis
-Snakemake was used to automate the analysis for all species. Conda environments were used for running the snakefile and also for all downstream scripts. All conda packages used are in the file Conda_packages_list.txt.
+Snakemake was used to automate the analysis for all species. Additional scripts were written in [R](https://www.r-project.org/) and [Python](http://www.python.org). Conda environments were used for running the snakefile and also for all downstream scripts. All conda packages used are in the file Conda_packages_list.txt.
 
 All code that was used to run analysis for each individual species in available in the directory **VGP_scripts**. Each species had a config file created, which are all stored in **config_files** subdirectory, which is organized by clade and then shortname for each species (first letter of clade followed by first three letters in genus and species each, for example Homo sapiens becomes mHomSap). The **profiles** subdirectory contains the config.yaml file which was used to specify the base paraemters for running snakemake on an HPC.
 
@@ -62,10 +63,14 @@ Amanda Gardiner: ag2427@cam.ac.uk
 ##  References
 Cousins, Trevor, Aylwyn Scally, and Richard Durbin. “A Structured Coalescent Model Reveals Deep Ancestral Structure Shared by All Modern Humans.” Nature Genetics 57, no. 4 (2025): 856–64. https://doi.org/10.1038/s41588-025-02117-1.
 
-Mölder, Felix, Kim Philipp Jablonski, Brice Letcher, et al. “Sustainable Data Analysis with Snakemake.” 10:33. Preprint, F1000Research, April 19, 2021. https://doi.org/10.12688/f1000research.29032.2.
-
 Li, Heng. “Minimap2: Pairwise Alignment for Nucleotide Sequences.” Bioinformatics 34, no. 18 (2018): 3094–100. https://doi.org/10.1093/bioinformatics/bty191.
+
+Mölder, Felix, Kim Philipp Jablonski, Brice Letcher, et al. “Sustainable Data Analysis with Snakemake.” 10:33. Preprint, F1000Research, April 19, 2021. https://doi.org/10.12688/f1000research.29032.2.
 
 Myers, Gene, Richard Durbin, and Chenxi Zhou. “FastGA: Fast Genome Alignment.” Bioinformatics Advances 5, no. 1 (2024): vbaf238. https://doi.org/10.1093/bioadv/vbaf238.
 
+Python Software Foundation. Python Langauge Reference. V. 3.7.4. Released 1995. http://www.python.org.
+
 Schiffels, Stephan, and Ke Wang. “MSMC and MSMC2: The Multiple Sequentially Markovian Coalescent.” In Methods in Molecular Biology, vol. 2090, edited by Julien Y. Dutheil. 2020. https://doi.org/10.1007/978-1-0716-0199-0_7.
+
+Team, R. Core. “R: A Language and Environment for Statistical Computing.” R Foundation for Statistical Computing (Vienna, Austria), 2018. https://www.r-project.org/.
