@@ -274,23 +274,23 @@
 <polygon points='107.00,425.24 116.39,408.98 97.62,408.98 ' style='stroke-width: 1.13; stroke: #000000; stroke-opacity: 0.85; fill: #60C659; fill-opacity: 0.85;' />
 <polygon points='398.67,536.36 408.06,520.11 389.29,520.11 ' style='stroke-width: 1.13; stroke: #000000; stroke-opacity: 0.85; fill: #60C659; fill-opacity: 0.85;' />
 <polygon points='98.58,307.38 107.96,291.13 89.19,291.13 ' style='stroke-width: 1.13; stroke: #000000; stroke-opacity: 0.85; fill: #60C659; fill-opacity: 0.85;' />
-<line x1='505.10' y1='430.37' x2='497.62' y2='437.80' style='stroke-width: 1.07;' />
-<line x1='577.48' y1='337.07' x2='566.38' y2='348.32' style='stroke-width: 1.07;' />
-<line x1='470.34' y1='455.80' x2='479.06' y2='447.08' style='stroke-width: 1.07;' />
-<text x='333.04' y='353.96' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='111.87px' lengthAdjust='spacingAndGlyphs'>Anolis_sagrei</text>
-<text x='584.53' y='428.57' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='233.85px' lengthAdjust='spacingAndGlyphs'>Callospermophilus_lateralis</text>
-<text x='474.31' y='354.89' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='156.36px' lengthAdjust='spacingAndGlyphs'>Clarias_gariepinus</text>
-<text x='578.76' y='401.20' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='124.25px' lengthAdjust='spacingAndGlyphs'>Colius_striatus</text>
-<text x='597.19' y='450.51' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='208.54px' lengthAdjust='spacingAndGlyphs'>Eleutherodactylus_coqui</text>
-<text x='623.16' y='335.27' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='156.57px' lengthAdjust='spacingAndGlyphs'>Eudromia_elegans</text>
-<text x='475.86' y='245.71' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='166.23px' lengthAdjust='spacingAndGlyphs'>Gallinula_chloropus</text>
-<text x='414.29' y='470.04' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='203.89px' lengthAdjust='spacingAndGlyphs'>Gasterosteus_aculeatus</text>
-<text x='350.00' y='431.22' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='221.67px' lengthAdjust='spacingAndGlyphs'>Hippopotamus_amphibius</text>
-<text x='553.47' y='496.29' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='175.85px' lengthAdjust='spacingAndGlyphs'>Hoplias_malabaricus</text>
-<text x='426.73' y='408.93' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='165.77px' lengthAdjust='spacingAndGlyphs'>Myotis_daubentonii</text>
-<text x='415.06' y='381.60' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='179.39px' lengthAdjust='spacingAndGlyphs'>Patagioenas_fasciata</text>
-<text x='606.61' y='374.51' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='189.69px' lengthAdjust='spacingAndGlyphs'>Pipistrellus_pygmaeus</text>
-<text x='411.52' y='204.13' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='172.65px' lengthAdjust='spacingAndGlyphs'>Taeniopygia_guttata</text>
+<line x1='505.12' y1='430.35' x2='497.62' y2='437.80' style='stroke-width: 1.07;' />
+<line x1='610.60' y1='439.97' x2='616.23' y2='434.08' style='stroke-width: 1.07;' />
+<line x1='577.48' y1='337.08' x2='566.38' y2='348.32' style='stroke-width: 1.07;' />
+<text x='332.78' y='353.98' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='111.87px' lengthAdjust='spacingAndGlyphs'>Anolis_sagrei</text>
+<text x='584.53' y='428.55' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='233.85px' lengthAdjust='spacingAndGlyphs'>Callospermophilus_lateralis</text>
+<text x='473.97' y='354.90' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='156.36px' lengthAdjust='spacingAndGlyphs'>Clarias_gariepinus</text>
+<text x='577.12' y='401.20' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='124.25px' lengthAdjust='spacingAndGlyphs'>Colius_striatus</text>
+<text x='597.19' y='454.22' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='208.54px' lengthAdjust='spacingAndGlyphs'>Eleutherodactylus_coqui</text>
+<text x='623.14' y='335.28' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='156.57px' lengthAdjust='spacingAndGlyphs'>Eudromia_elegans</text>
+<text x='479.86' y='245.64' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='166.23px' lengthAdjust='spacingAndGlyphs'>Gallinula_chloropus</text>
+<text x='378.73' y='463.40' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='203.89px' lengthAdjust='spacingAndGlyphs'>Gasterosteus_aculeatus</text>
+<text x='349.79' y='431.57' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='221.67px' lengthAdjust='spacingAndGlyphs'>Hippopotamus_amphibius</text>
+<text x='575.77' y='474.19' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='175.85px' lengthAdjust='spacingAndGlyphs'>Hoplias_malabaricus</text>
+<text x='425.01' y='408.93' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='165.77px' lengthAdjust='spacingAndGlyphs'>Myotis_daubentonii</text>
+<text x='414.85' y='381.55' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='179.39px' lengthAdjust='spacingAndGlyphs'>Patagioenas_fasciata</text>
+<text x='606.61' y='374.50' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='189.69px' lengthAdjust='spacingAndGlyphs'>Pipistrellus_pygmaeus</text>
+<text x='375.72' y='226.00' text-anchor='middle' style='font-size: 17.07px; font-family: "Liberation Sans";' textLength='172.65px' lengthAdjust='spacingAndGlyphs'>Taeniopygia_guttata</text>
 <rect x='36.51' y='4.98' width='668.55' height='662.18' style='stroke-width: 2.13;' />
 </g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw3MjAuMDA=)'>
