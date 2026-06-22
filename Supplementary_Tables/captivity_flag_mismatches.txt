@@ -1,0 +1,13 @@
+species	primary_accession_num	alternate_accession_num
+Petromyzon_marinus	GCF_010993605.1	GCA_010993595.1
+Electrophorus_electricus	GCA_041902795.1	GCA_013347915.1
+Mastacembelus_armatus	GCF_900324485.2	GCA_900700395.1
+Pygocentrus_nattereri	GCF_015220715.1	GCA_015220065.1
+Gouania_willdenowi	GCF_900634775.1	GCA_900650505.1
+Takifugu_rubripes	GCF_901000725.2	GCA_901000745.3
+Denticeps_clupeoides	GCF_900700375.1	GCA_900700345.2
+Parambassis_ranga	GCF_900634625.1	GCA_900651595.1
+Amblyraja_radiata	GCF_010909765.2	GCA_010909745.1
+Dermochelys_coriacea	GCF_009764565.3	GCA_009762595.2
+Falco_punctatus	GCA_963210335.1	GCA_963210275.1
+Suncus_etruscus	GCF_024139225.1	GCA_024140225.1
